@@ -1,32 +1,19 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-/* Подключаем шрифты из Google */
+/* Твои настройки шрифтов и кастомные стили */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&family=Inter:wght@400;500;600&display=swap');
 
 :root {
-  --background: #f8fafc; /* Чуть мягче белый */
-  --foreground: #0f172a; /* Глубокий синий, не черный */
-  --primary: #f97316; /* Наш оранжевый */
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #f8fafc;
-    --foreground: #0f172a;
-  }
+  --background: #f8fafc;
+  --foreground: #0f172a;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: 'Inter', Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Inter', sans-serif;
 }
 
-/* Применяем шрифт заголовков */
-.font-black, h1, h2 {
+h1, h2, h3, .font-black {
   font-family: 'Montserrat', sans-serif;
 }
