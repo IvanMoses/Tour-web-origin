@@ -52,7 +52,7 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
           {TOURS.map((tour: any) => (
             <div key={tour.id} className="bg-white overflow-hidden shadow-2xl shadow-slate-200/70 border border-slate-100 flex flex-col group transition-all duration-300 hover:shadow-orange-100/50 hover:-translate-y-1">
-              <div className="h-64 w-full overflow-hidden">
+              <div className="h-48 sm:h-64 w-full overflow-hidden">
                 <img 
                   src={tour.image} 
                   alt="" 
