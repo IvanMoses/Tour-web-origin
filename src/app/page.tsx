@@ -12,9 +12,9 @@ export default function Home() {
       <nav className="bg-white border-b sticky top-0 z-50 shadow-sm">
         <div className="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
           <div className="font-black text-orange-600 leading-none">
-            <div className="text-2xl">HURGHADA</div>
-            <div className="text-[11px] tracking-[0.3em] text-slate-400 uppercase font-bold">For You</div>
-          </div>
+          <div className="text-2xl tracking-tighter italic">AHVAN</div>
+          <div className="text-[11px] tracking-[0.4em] text-slate-400 uppercase font-bold">Tour</div>
+</div>
 
           {/* Языки — Более удобный переключатель */}
           <div className="flex gap-1.5 bg-slate-100 p-1.5 rounded-full border border-slate-200/50">
@@ -90,9 +90,9 @@ export default function Home() {
 
       {/* Футер */}
       <footer className="bg-slate-950 text-slate-600 py-16 text-center border-t border-slate-800 px-6">
-        <p className="font-black text-orange-600 text-3xl mb-3">HURGHADA FOR YOU</p>
-        <p className="text-sm">© 2026. All rights reserved. Let's make your trip perfect.</p>
-      </footer>
+  <p className="font-black text-orange-600 text-3xl mb-3 tracking-tighter italic">AHVAN TOUR</p>
+  <p className="text-sm">© 2026. All rights reserved. Your expert guide in Hurghada.</p>
+</footer> 
     </main>
   );
 }

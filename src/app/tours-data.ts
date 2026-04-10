@@ -1,30 +1,30 @@
 export const CONTACTS = {
-  whatsapp: "201", // ЗАМЕНИ НА СВОЙ НОМЕР БЕЗ ПЛЮСА
+  whatsapp: "+201556464007", // ЗАМЕНИ НА СВОЙ НОМЕР БЕЗ ПЛЮСА
 };
 
 export const LANGUAGES: any = {
   ru: { 
-    name: "RU", heroTitle: "Хургада ждет тебя", heroSub: "Лучшие экскурсии от прямых организаторов",
+    name: "RU", brand: "AhVan Tour", heroTitle: "Хургада ждет тебя", heroSub: "Лучшие экскурсии от прямых организаторов",
     toursTitle: "Популярные экскурсии", btn: "Заказать", waHello: "Здравствуйте! Хочу забронировать тур: " 
   },
   en: { 
-    name: "EN", heroTitle: "Hurghada is Waiting", heroSub: "Best excursions from direct organizers",
+    name: "EN", brand: "AhVan Tour", heroTitle: "Hurghada is Waiting", heroSub: "Best excursions from direct organizers",
     toursTitle: "Popular Excursions", btn: "Book Now", waHello: "Hello! I want to book a tour: " 
   },
   de: { 
-    name: "DE", heroTitle: "Hurghada wartet", heroSub: "Beste Ausflüge von direkten Organisatoren",
+    name: "DE", brand: "AhVan Tour", heroTitle: "Hurghada wartet", heroSub: "Beste Ausflüge von direkten Organisatoren",
     toursTitle: "Beliebte Ausflüge", btn: "Buchen", waHello: "Hallo! Ich möchte eine Tour buchen: " 
   },
   pl: { 
-    name: "PL", heroTitle: "Hurghada czeka", heroSub: "Najlepsze wycieczki od bezpośrednich organizatorów",
+    name: "PL", brand: "AhVan Tour", heroTitle: "Hurghada czeka", heroSub: "Najlepsze wycieczki od bezpośrednich organizatorów",
     toursTitle: "Popularne wycieczki", btn: "Zarezerwuj", waHello: "Dzień dobry! Chcę zarezerwować wycieczkę: " 
   },
   fr: { 
-    name: "FR", heroTitle: "Hurghada vous attend", heroSub: "Les meilleures excursions d'organisateurs directs",
+    name: "FR", brand: "AhVan Tour", heroTitle: "Hurghada vous attend", heroSub: "Les meilleures excursions d'organisateurs directs",
     toursTitle: "Excursions populaires", btn: "Réserver", waHello: "Bonjour! Je souhaite réserver une excursion: " 
   },
   ro: { 
-    name: "RO", heroTitle: "Hurghada te așteaptă", heroSub: "Cele mai bune excursii de la organizatori direcți",
+    name: "RO", brand: "AhVan Tour", heroTitle: "Hurghada te așteaptă", heroSub: "Cele mai bune excursii de la organizatori direcți",
     toursTitle: "Excursii populare", btn: "Rezervă", waHello: "Bună ziua! Vreau să rezerv un tur: " 
   }
 };
