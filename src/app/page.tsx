@@ -71,7 +71,7 @@ export default function Home() {
         id="home" 
         className="relative h-[85vh] min-h-[600px] flex items-center justify-center text-center overflow-hidden bg-slate-900"
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1506929647638-498fe3003c02?q=80&w=2500')`,
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://aladdin-travels.com/wp-content/uploads/2023/01/%D0%9B%D1%83%D0%BA%D1%81%D0%BE%D1%80-%D0%91%D0%B0%D0%BD%D0%B0%D0%BD%D0%BE%D0%B2%D1%8B%D0%B9-%D0%BE%D1%81%D1%82%D1%80%D0%BE%D0%B2-%D1%80%D0%B0%D0%B7%D0%BD%D1%8B%D0%B5-%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D1%8B11-300x300.jpg')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
