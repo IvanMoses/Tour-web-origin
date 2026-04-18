@@ -66,50 +66,40 @@ export default function Home() {
           </div>
       </nav>
 
-      {/* HERO SECTION — С СОЧНЫМ ФОНОМ И СЧАСТЛИВОЙ АТМОСФЕРОЙ */}
-      <section className="py-48 md:py-64 relative flex items-center justify-center text-center text-white overflow-hidden">
+      {/* HERO SECTION — ГАРАНТИРОВАННО СОЧНЫЙ ФОН */}
+      <section id="home" className="relative h-[80vh] min-h-[600px] flex items-center justify-center text-center overflow-hidden">
           
-          {/* ФОНОВОЕ ИЗОБРАЖЕНИЕ: Счастливые люди на яхте в Красном море */}
+          {/* ФОНОВАЯ КАРТИНКА (БЕЗ СЕРЫХ КЛАССОВ) */}
           <div className="absolute inset-0 z-0">
             <img 
-              src="https://images.unsplash.com/photo-1590515152865-c3d3e6480a4c?q=80&w=2500" 
-              alt="Happy tourists on a yacht in Hurghada, Red Sea"
-              className="w-full h-full object-cover grayscale-0 scale-100 transition-transform duration-[10000ms] ease-out group-hover:scale-110"
+              src="https://images.unsplash.com/photo-1505118380757-91f5f45d8de4?q=80&w=2500" 
+              alt="Hurghada Sea"
+              className="w-full h-full object-cover shadow-2xl"
             />
+            {/* ТЕМНЫЙ ГРАДИЕНТ ПОВЕРХ, ЧТОБЫ БЕЛЫЙ ТЕКСТ "ГОРЕЛ" */}
+            <div className="absolute inset-0 bg-black/40"></div>
           </div>
-          
-          {/* СЛОИ НАЛОЖЕНИЯ (OVERLAYS) ДЛЯ ЧИТАЕМОСТИ И ЦВЕТА */}
-          {/* 1. Глубокий градиент снизу вверх (чтобы "Popular Excursions" не сливались с фоном) */}
-          <div className="absolute inset-0 z-10 bg-gradient-to-t from-white via-white/10 to-transparent"></div>
-          
-          {/* 2. Тёмный оверлей поверх всего фото (для максимального контраста белого текста) */}
-          <div className="absolute inset-0 z-10 bg-slate-950/40"></div>
-          
-          {/* 3. Фирменный оранжевый акцент (накладывает оранжевый оттенок) */}
-          <div className="absolute inset-0 z-10 bg-orange-600/10 mix-blend-color"></div>
 
-          {/* КОНТЕНТ (ТЕКСТ) — Обязательно z-20, чтобы быть над всеми слоями */}
-          <div className="relative z-20 px-6 max-w-5xl mx-auto flex flex-col items-center">
+          {/* ТЕКСТ ХИРО */}
+          <div className="relative z-10 px-6 max-w-5xl mx-auto">
+            <div className="h-1.5 w-24 bg-orange-600 mx-auto mb-10 rounded-full"></div>
             
-            {/* Декоративный элемент над заголовком */}
-            <div className="h-1 w-20 bg-orange-500 rounded-full mb-8"></div>
+            <h1 className="text-6xl md:text-9xl font-black uppercase italic tracking-tighter mb-6 leading-none text-white drop-shadow-2xl">
+              {t.heroTitle}
+            </h1>
             
-            {/* ГЛАВНЫЙ ЗАГОЛОВОК: Стал ещё крупнее и жирнее */}
-<h1 className="text-7xl md:text-9xl font-black uppercase italic tracking-tighter mb-6 leading-[0.9] text-white drop-shadow-xl">
-  {t.heroTitle}
-</h1>
-            {/* ПОДЗАГОЛОВОК: Оранжевый, на отдельной строке, с большим отступом между буквами */}
-            <p className="text-orange-400 font-extrabold uppercase tracking-[0.4em] text-sm md:text-base bg-slate-950/30 px-6 py-2 rounded-full inline-block backdrop-blur-sm">
+            <p className="text-orange-500 font-black uppercase tracking-[0.5em] text-sm md:text-lg drop-shadow-md bg-black/20 backdrop-blur-sm px-4 py-2 rounded-lg inline-block">
               {t.heroSub}
             </p>
-            
-            {/* КНОПКА ПРИЗЫВА К ДЕЙСТВИЮ (CTA) — Опционально, если хочешь, чтобы сразу бронировали */}
-            <a 
-              href="#trips" 
-              className="mt-12 bg-white text-slate-900 px-10 py-4 rounded-full font-black text-xs uppercase tracking-[0.2em] shadow-2xl hover:bg-orange-600 hover:text-white transition-all hover:scale-105 active:scale-95"
-            >
-              Explore Now
-            </a>
+
+            <div className="mt-12">
+               <a 
+                href="#trips" 
+                className="bg-orange-600 text-white px-12 py-5 rounded-full font-black text-xs uppercase tracking-[0.2em] shadow-2xl hover:bg-white hover:text-orange-600 transition-all active:scale-95 inline-block"
+              >
+                Start Journey
+              </a>
+            </div>
           </div>
       </section>
 
