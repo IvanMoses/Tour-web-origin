@@ -107,9 +107,8 @@ export default function Home() {
       {/* TRIPS (Сетка туров с ценами) */}
       <section id="trips" className="bg-white py-24 px-6 border-y border-slate-100 scroll-mt-24">
         <div className="max-w-7xl mx-auto">
-         <h2 className="text-5xl md:text-7xl font-black uppercase italic tracking-tighter mb-16 border-l-8 border-orange-600 pl-8">
-  {menu.trips}
-</h2>
+         {/* Было: {menu.gallery} */}
+<h2 className="text-5xl md:text-7xl font-black uppercase italic tracking-tighter mb-4">All Excursions</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             {TOURS.map((tour: any) => (
               <div key={tour.id} className="group bg-white border border-slate-100 rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
