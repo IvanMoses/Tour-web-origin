@@ -1,5 +1,5 @@
 export const CONTACTS = {
-  whatsapp: "1234567890", // Замени на свой номер без +
+  whatsapp: "+201556464007", // Замени на свой номер без +
 };
 
 export const LANGUAGES: any = {
