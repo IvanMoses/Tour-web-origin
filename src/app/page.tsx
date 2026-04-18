@@ -8,8 +8,8 @@ export default function Home() {
   const t = LANGUAGES[lang];
 
   const menu = {
-    ru: { home: "Главная", trips: "Экскурсии", about: "О нас", contact: "Контакты" },
     en: { home: "Home", trips: "Trips", about: "About Us", contact: "Contacts" },
+    ru: { home: "Главная", trips: "Экскурсии", about: "О нас", contact: "Контакты" },
     de: { home: "Startseite", trips: "Touren", about: "Über uns", contact: "Kontakte" },
     pl: { home: "Główna", trips: "Wycieczki", about: "O nas", contact: "Kontakt" },
     fr: { home: "Accueil", trips: "Excursions", about: "À propos", contact: "Contacts" },
