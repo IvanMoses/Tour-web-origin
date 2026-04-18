@@ -80,7 +80,7 @@ export default function Home() {
       <section id="gallery" className="max-w-7xl mx-auto py-24 px-6 scroll-mt-24">
         <div className="text-center mb-16">
           {/* ЗАМЕНЕНО: Теперь здесь всегда All Excursions */}
-          <h2 className="text-5xl md:text-7xl font-black uppercase italic tracking-tighter mb-4">All Excursions</h2>
+          <h2 className="text-5xl md:text-7xl font-black uppercase italic tracking-tighter mb-4">Galery</h2>
           <p className="text-slate-400 uppercase tracking-widest font-bold text-sm italic">Real moments from our trips</p>
         </div>
 
