@@ -45,7 +45,7 @@ export default function Home() {
 
       {/* НАВИГАЦИЯ */}
       <nav className="bg-white/95 backdrop-blur-lg border-b sticky top-0 z-50 shadow-sm px-6 h-20 flex justify-between items-center">
-          <div className="font-black text-orange-600 leading-none italic uppercase text-2xl">AhVan <span className="text-slate-400 text-[11px] not-italic tracking-[0.4em] block">Tour</span></div>
+          <div className="font-black text-orange-600 leading-none italic uppercase text-2xl">Blue Wave <span className="text-slate-400 text-[11px] not-italic tracking-[0.4em] block">Tour</span></div>
           
           <div className="hidden lg:flex gap-9 items-center">
             {Object.entries(menu).map(([key, label]) => (
@@ -165,7 +165,7 @@ export default function Home() {
 
       {/* FOOTER */}
 <footer id="contact" className="py-20 text-center bg-slate-950 text-white scroll-mt-20">
-    <div className="text-4xl font-black italic text-orange-600 mb-6 tracking-tighter uppercase">AhVan Tour</div>
+    <div className="text-4xl font-black italic text-orange-600 mb-6 tracking-tighter uppercase">Blue Wave Tour</div>
     <div className="flex justify-center gap-8 mb-8 opacity-50 text-white">
        <Instagram size={20} className="hover:text-orange-500 cursor-pointer transition-colors" /> 
        <Send size={20} className="hover:text-orange-500 cursor-pointer transition-colors" /> 

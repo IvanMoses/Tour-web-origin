@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin", "cyrillic"] });
 
 // НАСТРОЙКИ ДЛЯ GOOGLE И ПОИСКОВИКОВ
 export const metadata: Metadata = {
-  title: "Primal Tour | Лучшие экскурсии в Хургаде и Египте",
+  title: "Blue Wave Tour | Лучшие экскурсии в Хургаде и Египте",
   description: "Забронируйте незабываемые экскурсии в Хургаде: Сафари, Луксор, Морские прогулки и Оранжевый остров. Прямые цены от организаторов AhVan Tour.",
   keywords: ["экскурсии хургада", "сафари египет", "луксор из хургады", "AhVan Tour", "туры египет", "оранжевый остров"],
   
@@ -16,10 +16,10 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "AhVan Tour — Экскурсии, которые вы полюбите",
+    title: "Blue Wave Tour — Экскурсии, которые вы полюбите",
     description: "Лучшие цены на экскурсии в Египте. Профессиональные гиды и комфортный трансфер.",
     url: "https://tour-web-origin.vercel.app",
-    siteName: "AhVan Tour",
+    siteName: "Blue Wave Tour",
     locale: "ru_RU",
     type: "website",
   },
