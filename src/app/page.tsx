@@ -9,13 +9,13 @@ export default function Home() {
   const t = LANGUAGES[lang];
 
   const menu = {
-    ru: { home: "Главная", trips: "Наши экскурсии", gallery: "Галерея", contact: "Контакты" },
-    en: { home: "Home", trips: "Our Trips", gallery: "Gallery", contact: "Contacts" },
-    de: { home: "Startseite", trips: "Unsere Touren", gallery: "Galerie", contact: "Kontakte" },
-    pl: { home: "Główna", trips: "Nasze wycieczki", gallery: "Galeria", contact: "Kontakt" },
-    fr: { home: "Accueil", trips: "Nos excursions", gallery: "Galerie", contact: "Contacts" },
-    ro: { home: "Acasă", trips: "Tururile noastre", gallery: "Galerie", contact: "Contact" }
-  }[lang] || { home: "Home", trips: "Our Trips", gallery: "Gallery", contact: "Contacts" };
+    ru: { home: "Главная", trips: "Экскурсии", gallery: "Галерея", contact: "Контакты" },
+    en: { home: "Home", trips: "Trips", gallery: "Gallery", contact: "Contacts" },
+    de: { home: "Startseite", trips: "Touren", gallery: "Galerie", contact: "Kontakte" },
+    pl: { home: "Główna", trips: "Wycieczki", gallery: "Galeria", contact: "Kontakt" },
+    fr: { home: "Accueil", trips: "Excursions", gallery: "Galerie", contact: "Contacts" },
+    ro: { home: "Acasă", trips: "Tururi", gallery: "Galerie", contact: "Contact" }
+  }[lang] || { home: "Home", trips: "Trips", gallery: "Gallery", contact: "Contacts" };
 
   return (
     <main className="min-h-screen bg-slate-50 text-slate-900 selection:bg-orange-100 font-sans antialiased">
@@ -76,9 +76,10 @@ export default function Home() {
           </div>
       </section>
 
-      {/* ГАЛЕРЕЯ (Альбомы) */}
+      {/* ГАЛЕРЕЯ (То, что ты видишь на главной как плитку) */}
       <section id="gallery" className="max-w-7xl mx-auto py-24 px-6 scroll-mt-24">
         <div className="text-center mb-16">
+          {/* ЗАМЕНЕНО: Теперь здесь всегда All Excursions */}
           <h2 className="text-5xl md:text-7xl font-black uppercase italic tracking-tighter mb-4">All Excursions</h2>
           <p className="text-slate-400 uppercase tracking-widest font-bold text-sm italic">Real moments from our trips</p>
         </div>
@@ -104,18 +105,16 @@ export default function Home() {
         </div>
       </section>
 
-      {/* TRIPS (Сетка туров с ценами) */}
+      {/* TRIPS (Сетка с ценами и WhatsApp) */}
       <section id="trips" className="bg-white py-24 px-6 border-y border-slate-100 scroll-mt-24">
         <div className="max-w-7xl mx-auto">
-         {/* Было: {menu.gallery} */}
-<h2 className="text-5xl md:text-7xl font-black uppercase italic tracking-tighter mb-4">Our Trips</h2>
+          <h2 className="text-5xl md:text-7xl font-black uppercase italic tracking-tighter mb-16 border-l-8 border-orange-600 pl-8">{t.toursTitle}</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             {TOURS.map((tour: any) => (
               <div key={tour.id} className="group bg-white border border-slate-100 rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
                 <div className="h-72 w-full relative overflow-hidden">
                   <img src={tour.image} className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" alt="" />
                   
-                  {/* ЦЕННИК - Слой z-20 гарантирует видимость поверх фото */}
                   <div className="absolute top-5 right-5 z-20 bg-orange-600 text-white px-5 py-2 rounded-full font-black text-xs shadow-xl tracking-widest">
                     ${tour.price}
                   </div>
