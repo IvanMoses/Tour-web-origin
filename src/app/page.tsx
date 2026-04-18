@@ -95,10 +95,9 @@ export default function Home() {
             <div className="h-1 w-20 bg-orange-500 rounded-full mb-8"></div>
             
             {/* ГЛАВНЫЙ ЗАГОЛОВОК: Стал ещё крупнее и жирнее */}
-            <h1 className="text-7xl md:text-9xl font-black uppercase italic tracking-tighter mb-6 leading-[0.9] text-white drop-shadow-xl">
-              {t.heroTitle}
-            </td>
-            
+<h1 className="text-7xl md:text-9xl font-black uppercase italic tracking-tighter mb-6 leading-[0.9] text-white drop-shadow-xl">
+  {t.heroTitle}
+</h1>
             {/* ПОДЗАГОЛОВОК: Оранжевый, на отдельной строке, с большим отступом между буквами */}
             <p className="text-orange-400 font-extrabold uppercase tracking-[0.4em] text-sm md:text-base bg-slate-950/30 px-6 py-2 rounded-full inline-block backdrop-blur-sm">
               {t.heroSub}
