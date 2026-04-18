@@ -1,6 +1,6 @@
 'use client';
 import { useState } from 'react';
-import { Instagram, Send, Facebook, Phone, X, ImageIcon } from 'lucide-react';
+import { Instagram, Send, Facebook, X, ImageIcon } from 'lucide-react';
 import { TOURS, CONTACTS, LANGUAGES } from './tours-data';
 
 export default function Home() {
@@ -18,24 +18,20 @@ export default function Home() {
   }[lang] || { home: "Home", trips: "Trips", gallery: "Gallery", contact: "Contacts" };
 
   return (
-    <main className="min-h-screen bg-slate-50 text-slate-900 selection:bg-orange-100 font-sans antialiased">
+    <main className="min-h-screen bg-white text-slate-900 selection:bg-orange-100 font-sans antialiased">
       
-      {/* МОДАЛЬНОЕ ОКНО ГАЛЕРЕИ */}
+      {/* МОДАЛЬНОЕ ОКНО (Если нужно показать фото при клике) */}
       {activeAlbum && (
         <div className="fixed inset-0 z-[200] bg-slate-950/95 backdrop-blur-xl flex items-center justify-center p-4 md:p-10">
-          <button 
-            onClick={() => setActiveAlbum(null)}
-            className="absolute top-6 right-6 text-white hover:text-orange-500 transition-colors"
-          >
+          <button onClick={() => setActiveAlbum(null)} className="absolute top-6 right-6 text-white hover:text-orange-500 transition-colors">
             <X size={40} />
           </button>
-          
-          <div className="max-w-6xl w-full h-full overflow-y-auto custom-scrollbar">
+          <div className="max-w-6xl w-full h-full overflow-y-auto p-4">
             <h2 className="text-white text-3xl font-black uppercase italic mb-8 mt-10">{activeAlbum.names[lang]}</h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pb-20">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 pb-20">
               {activeAlbum.gallery?.map((img: string, idx: number) => (
                 <div key={idx} className="aspect-square overflow-hidden rounded-xl bg-slate-800 shadow-2xl">
-                  <img src={img} className="w-full h-full object-cover hover:scale-110 transition-transform duration-700" alt="" />
+                  <img src={img} className="w-full h-full object-cover" alt="" />
                 </div>
               ))}
             </div>
@@ -45,12 +41,15 @@ export default function Home() {
 
       {/* НАВИГАЦИЯ */}
       <nav className="bg-white/95 backdrop-blur-lg border-b sticky top-0 z-50 shadow-sm px-6 h-20 flex justify-between items-center">
-          <div className="font-black text-orange-600 leading-none italic uppercase text-2xl">AhVan <span className="text-slate-400 text-[11px] not-italic tracking-[0.4em] block">Tour</span></div>
+          <div className="font-black text-orange-600 leading-none italic uppercase text-2xl">
+            AhVan <span className="text-slate-400 text-[11px] not-italic tracking-[0.4em] block">Tour</span>
+          </div>
           
           <div className="hidden lg:flex gap-9 items-center">
-            {Object.entries(menu).map(([key, label]) => (
-              <a key={key} href={`#${key}`} className="text-[11px] uppercase font-black tracking-[0.25em] text-slate-600 hover:text-orange-600 transition-colors italic">{label}</a>
-            ))}
+            <a href="/" className="text-[11px] uppercase font-black tracking-[0.25em] text-slate-600 hover:text-orange-600 italic">{menu.home}</a>
+            <a href="#trips" className="text-[11px] uppercase font-black tracking-[0.25em] text-slate-600 hover:text-orange-600 italic">{menu.trips}</a>
+            <a href="/gallery" className="text-[11px] uppercase font-black tracking-[0.25em] text-slate-600 hover:text-orange-600 italic">{menu.gallery}</a>
+            <a href="#contact" className="text-[11px] uppercase font-black tracking-[0.25em] text-slate-600 hover:text-orange-600 italic">{menu.contact}</a>
           </div>
 
           <div className="flex gap-2">
@@ -58,7 +57,7 @@ export default function Home() {
               <button 
                 key={l} 
                 onClick={() => setLang(l)} 
-                className={`text-[10px] font-bold px-3 py-2 rounded-full border transition-all ${lang === l ? 'bg-orange-600 text-white border-orange-600' : 'text-slate-500 border-slate-200 hover:border-orange-300'}`}
+                className={`text-[10px] font-bold px-3 py-2 rounded-full border ${lang === l ? 'bg-orange-600 text-white border-orange-600' : 'text-slate-500 border-slate-200'}`}
               >
                 {LANGUAGES[l].name}
               </button>
@@ -67,86 +66,58 @@ export default function Home() {
       </nav>
 
       {/* HERO */}
-      <section id="home" className="py-40 md:py-60 relative flex items-center justify-center text-center text-white">
+      <section className="py-40 md:py-60 relative flex items-center justify-center text-center text-white">
           <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1544145945-f904253d0c71?q=80&w=2000')] bg-cover bg-center"></div>
-          <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
+          <div className="absolute inset-0 bg-black/40"></div>
           <div className="relative z-10 px-6">
             <h1 className="text-6xl md:text-9xl font-black uppercase italic tracking-tighter mb-4">{t.heroTitle}</h1>
             <p className="text-orange-500 font-black uppercase tracking-[0.5em] text-lg">{t.heroSub}</p>
           </div>
       </section>
 
-      {/* ГАЛЕРЕЯ (То, что ты видишь на главной как плитку) */}
-      <section id="gallery" className="max-w-7xl mx-auto py-24 px-6 scroll-mt-24">
-        <div className="text-center mb-16">
-          {/* ЗАМЕНЕНО: Теперь здесь всегда All Excursions */}
-          <h2 className="text-5xl md:text-7xl font-black uppercase italic tracking-tighter mb-4">Galery</h2>
-          <p className="text-slate-400 uppercase tracking-widest font-bold text-sm italic">Real moments from our trips</p>
+      {/* ТОЛЬКО ТУРЫ С ЦЕНАМИ (БЕЗ ЛИШНЕЙ ГАЛЕРЕИ) */}
+      <section id="trips" className="max-w-7xl mx-auto py-24 px-6">
+        <div className="mb-16">
+          <h2 className="text-5xl md:text-7xl font-black uppercase italic tracking-tighter text-slate-950">
+            All Excursions
+          </h2>
+          <div className="h-2 w-24 bg-orange-600 mt-4"></div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {TOURS.map((tour: any) => (
-            <div 
-              key={tour.id} 
-              onClick={() => setActiveAlbum(tour)}
-              className="group relative h-80 rounded-3xl overflow-hidden cursor-pointer shadow-xl transition-all hover:-translate-y-2"
-            >
-              <img src={tour.image} className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 grayscale-[30%] group-hover:grayscale-0" alt="" />
-              <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
-              <div className="absolute bottom-6 left-6 text-white">
-                <div className="flex items-center gap-2 mb-1">
-                  <ImageIcon size={16} className="text-orange-500" />
-                  <span className="text-[10px] font-bold uppercase tracking-widest opacity-70">8 Photos</span>
+            <div key={tour.id} className="group bg-white border border-slate-100 rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500">
+              <div className="h-72 w-full relative overflow-hidden">
+                <img src={tour.image} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" alt="" />
+                
+                {/* ЦЕННИК */}
+                <div className="absolute top-5 right-5 z-20 bg-orange-600 text-white px-5 py-2 rounded-full font-black text-xs shadow-xl tracking-widest">
+                  ${tour.price}
                 </div>
-                <h3 className="text-xl font-black uppercase italic tracking-tight">{tour.names[lang]}</h3>
+              </div>
+              
+              <div className="p-8">
+                <h3 className="text-2xl font-black uppercase italic mb-4 tracking-tight line-clamp-1">{tour.names[lang]}</h3>
+                <p className="text-slate-500 text-sm leading-relaxed mb-8 h-12 line-clamp-2">{tour.desc[lang]}</p>
+                
+                <a 
+                  href={`https://wa.me/${CONTACTS.whatsapp}?text=${encodeURIComponent(t.waHello + tour.names[lang])}`}
+                  target="_blank"
+                  className="block w-full bg-slate-900 text-white text-center py-4 rounded-xl font-bold text-[11px] uppercase tracking-[0.3em] hover:bg-orange-600 transition-all"
+                >
+                  {t.btn}
+                </a>
               </div>
             </div>
           ))}
         </div>
       </section>
 
-      {/* TRIPS (Сетка с ценами и WhatsApp) */}
-      <section id="trips" className="bg-white py-24 px-6 border-y border-slate-100 scroll-mt-24">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-5xl md:text-7xl font-black uppercase italic tracking-tighter mb-16 border-l-8 border-orange-600 pl-8">{t.toursTitle}</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-            {TOURS.map((tour: any) => (
-              <div key={tour.id} className="group bg-white border border-slate-100 rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
-                <div className="h-72 w-full relative overflow-hidden">
-                  <img src={tour.image} className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" alt="" />
-                  
-                  <div className="absolute top-5 right-5 z-20 bg-orange-600 text-white px-5 py-2 rounded-full font-black text-xs shadow-xl tracking-widest">
-                    ${tour.price}
-                  </div>
-                  
-                  <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500"></div>
-                </div>
-                
-                <div className="p-8">
-                  <h3 className="text-2xl font-black uppercase italic mb-4 tracking-tight line-clamp-1">{tour.names[lang]}</h3>
-                  <p className="text-slate-500 text-sm leading-relaxed mb-8 h-12 line-clamp-2 font-medium">{tour.desc[lang]}</p>
-                  
-                  <a 
-                    href={`https://wa.me/${CONTACTS.whatsapp}?text=${encodeURIComponent(t.waHello + tour.names[lang])}`}
-                    target="_blank"
-                    className="block w-full bg-slate-900 text-white text-center py-4 rounded-xl font-bold text-[11px] uppercase tracking-[0.3em] hover:bg-orange-600 transition-all shadow-lg active:scale-95"
-                  >
-                    {t.btn}
-                  </a>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* FOOTER */}
       <footer id="contact" className="py-20 text-center bg-slate-950 text-white">
           <div className="text-4xl font-black italic text-orange-600 mb-6 tracking-tighter uppercase">AhVan Tour</div>
-          <div className="flex justify-center gap-8 mb-8 opacity-50">
-             <Instagram className="hover:text-orange-500 cursor-pointer" size={20} />
-             <Send className="hover:text-orange-500 cursor-pointer" size={20} />
-             <Facebook className="hover:text-orange-500 cursor-pointer" size={20} />
+          <div className="flex justify-center gap-8 mb-8 opacity-50 text-white">
+             <Instagram size={20} /> <Send size={20} /> <Facebook size={20} />
           </div>
           <p className="text-slate-500 text-xs uppercase tracking-[0.3em]">Quality matters. Since 2026.</p>
       </footer>
