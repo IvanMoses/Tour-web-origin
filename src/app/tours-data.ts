@@ -61,9 +61,18 @@ export const TOURS: any = [
     id: 2,
     image: "https://thumbs.dreamstime.com/b/off-road-vehicles-driving-sahara-sand-desert-23312292.jpg?w=992",
     price: 20,
-    names: { ru: "Супер Сафари", en: "Super Safari", de: "Super Safari", pl: "Super Safari", fr: "Super Safari", ro: "Super Safari" },
+    names: { ru: "Сафари", en: "Safari", de: "Safari", pl: "Safari", fr: "Safari", ro: "Safari" },
     desc: { ru: "Экстрим в пустыне: квадроциклы, багги и ужин у бедуинов.", en: "Desert extreme: quads, buggies and Bedouin dinner.", de: "Wüstenextrem.", pl: "Ekstremalna pustynia.", fr: "Extrême désert.", ro: "Extrem în deșert." },
-    gallery: getDummyGallery("1509233725247-49e657c54213")
+    gallery: [
+      "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/0e/9c/25/b9.jpg",
+      "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/0e/8f/88/9b.jpg",
+      "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/0e/8f/8a/6f.jpg",
+      "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/0e/8f/8a/85.jpg",
+      "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/0e/8f/8a/aa.jpg",
+      "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/0e/9c/25/bc.jpg",
+      "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/0e/9c/25/bf.jpg",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/32/b7/93/60/caption.jpg?w=1400&h=-1&s=1"
+    ]
   },
   {
     id: 3,
@@ -79,7 +88,16 @@ export const TOURS: any = [
     price: 45,
     names: { ru: "Дайвинг", en: "Diving", de: "Tauchen", pl: "Nurkowanie", fr: "Plongée", ro: "Scufundări" },
     desc: { ru: "Два погружения на рифах. Красота Красного моря.", en: "Two dives on reefs. Red Sea beauty.", de: "Zwei Tauchgänge.", pl: "Dwa nurkowania.", fr: "Deux plongées.", ro: "Două scufundări." },
-    gallery: getDummyGallery("1544551763-47a0159c92b2")
+    gallery: [
+      "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/07/a5/5e/43.jpg",
+      "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/07/a5/5e/0e.jpg",
+      "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/07/a5/5e/11.jpg",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/a3/fc/3f/2018-04-12-06-largejpg.jpg?w=800&h=-1&s=1",
+      "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/06/74/6d/53.jpg",
+      "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/07/a5/5e/47.jpg",
+      "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/06/e4/7b/8f.jpg",
+      "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/08/3b/23/fa.jpg"
+    ]
   },
   {
     id: 5,
@@ -95,7 +113,16 @@ export const TOURS: any = [
     price: 80,
     names: { ru: "Каир и Пирамиды", en: "Cairo & Pyramids", de: "Kairo & Pyramiden", pl: "Kair i Piramidy", fr: "Le Caire et les Pyramides", ro: "Cairo și Piramidele" },
     desc: { ru: "Пирамиды Гизы и Египетский музей.", en: "Giza Pyramids and Egyptian Museum.", de: "Gizeh-Pyramiden.", pl: "Piramidy w Gizie.", fr: "Pyramides de Gizeh.", ro: "Piramidele din Giza." },
-    gallery: getDummyGallery("1566112905121-15b9924404df")
+    gallery: [
+      "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/06/73/37/ea.jpg",
+      "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/09/25/1f/b5.jpg",
+      "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/09/25/1f/dd.jpg",
+      "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/0b/7b/a1/fd.jpg",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/26/98/7e/f2/caption.jpg?w=1100&h=-1&s=1",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/25/94/c9/16/dolphin-house.jpg?w=1400&h=-1&s=1",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/25/49/78/db/caption.jpg?w=1100&h=-1&s=1",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/24/29/87/79/dolphin-house.jpg?w=1400&h=-1&s=1"
+    ]
   },
   {
     id: 7,
@@ -103,7 +130,16 @@ export const TOURS: any = [
     price: 30,
     names: { ru: "Подводная лодка", en: "Submarine", de: "U-Boot", pl: "Łódź podwodna", fr: "Sous-marin", ro: "Submarin" },
     desc: { ru: "Погружение на глубину для всей семьи.", en: "Safe deep dive for the whole family.", de: "Sicherer Tieftauchgang.", pl: "Bezpieczne nurkowanie.", fr: "Plongée profonde.", ro: "Scufundare sigură." },
-    gallery: getDummyGallery("1544644181-1484b3fdfc62")
+    gallery: [
+      "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/07/72/00/b1.jpg",
+      "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/0b/0e/06/8e.jpg",
+      "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/0b/0e/06/94.jpg",
+      "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/11/5c/ee/db.jpg",
+      "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/11/51/06/fd.jpg",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/2f/d8/97/caption.jpg?w=1100&h=-1&s=1",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/2f/d8/91/caption.jpg?w=1100&h=-1&s=1",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/2f/d8/8d/caption.jpg?w=1400&h=-1&s=1"
+    ]
   },
   {
     id: 8,
@@ -111,7 +147,16 @@ export const TOURS: any = [
     price: 25,
     names: { ru: "Парасейлинг", en: "Parasailing", de: "Parasailing", pl: "Parasailing", fr: "Parachute ascensionnel", ro: "Parasailing" },
     desc: { ru: "Полет на парашюте над морем.", en: "Parachute flight over the sea.", de: "Fallschirmflug.", pl: "Lot spadochronem.", fr: "Parachute ascensionnel.", ro: "Zbor cu parașuta." },
-    gallery: getDummyGallery("1590523277543-a94d2e4eb00b")
+    gallery: [
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbBtKgMB0hp7IN7RMGuTYighurrr0iGp08xQ&s",
+      "https://cdn.getyourguide.com/img/tour/3a7106359bddd890.jpeg/68.jpg",
+      "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/11/c7/27/8d.jpg",
+      "https://media.tacdn.com/media/attractions-splice-spp-674x446/17/0c/e4/85.jpg",
+      "https://hurghadaforyou.com/sites/default/files/styles/medium/public/listings-gallery/Parasailing%20hurghada%20for%20you%204.jpg?itok=Tpz8sivL",
+      "https://d3rr2gvhjw0wwy.cloudfront.net/uploads/activity_teasers/301242/600x400-1-50-572d58cfe12d354b8ef89bf2b7fe481a.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx9rQvjyF_XniRKAt30mBZnzWVfP1GAnFfwQ&s",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/30/15/06/b2/caption.jpg?w=500&h=400&s=1"
+    ]
   },
   {
     id: 9,
@@ -119,6 +164,15 @@ export const TOURS: any = [
     price: 30,
     names: { ru: "Морская прогулка", en: "Sea Trip", de: "Seereise", pl: "Wycieczka morska", fr: "Voyage en mer", ro: "Călătorie pe mare" },
     desc: { ru: "День на яхте: снорклинг, рыбалка и обед.", en: "Day on a yacht: snorkeling and fishing.", de: "Tag auf einer Yacht.", pl: "Dzień na jachcie.", fr: "Journée sur un yacht.", ro: "Zi pe un iaht." },
-    gallery: getDummyGallery("1559136555-9303baea8ebd")
+    gallery: [
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/22/7e/7e/6a/caption.jpg?w=1400&h=-1&s=1",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/21/72/73/99/private-trip.jpg?w=1400&h=-1&s=1",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/21/72/73/93/private-trip.jpg?w=1400&h=-1&s=1",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1d/85/ab/59/caption.jpg?w=500&h=-1&s=1",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/a1/99/b8/private-trip.jpg?w=1400&h=-1&s=1",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/7a/34/3a/koral.jpg?w=1400&h=-1&s=1",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/7a/34/18/na-na-na-na-chytam-chytam.jpg?w=1100&h=-1&s=1",
+      "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/06/73/37/f5.jpg"
+    ]
   }
 ];
