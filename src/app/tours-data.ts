@@ -32,7 +32,7 @@ export const LANGUAGES: any = {
 export const TOURS: any = [
   {
     id: 1,
-    image: "https://images.unsplash.com/photo-1544145945-f904253d0c71?auto=format&fit=crop&q=80&w=800",
+    image: "https://dynamic-media.tacdn.com/media/photo-o/2e/f1/e0/e0/caption.jpg?w=1400&h=1000&s=1",
     price: 25,
     names: { ru: "Оранжевый остров", en: "Orange Bay Island", de: "Insel Orange Bay", pl: "Pomarańczowa Zatoka", fr: "Île d'Orange Bay", ro: "Insula Orange Bay" },
     desc: { ru: "Египетские Мальдивы: белоснежный песок, лазурная вода и отдых на стильном пляже.", en: "Egyptian Maldives: white sand, azure water and relaxation on a stylish beach.", de: "Ägyptische Malediven: weißer Sand, azurblaues Wasser und Entspannung an einem stilvollen Strand.", pl: "Egipskie Malediwy: biały piasek, lazurowa woda i relaks na stylowej plaży.", fr: "Maldives égyptiennes : sable blanc, eau azur et détente sur une plage élégante.", ro: "Maldivele Egiptului: nisip alb, apă de azur și relaxare pe o plajă elegantă." }
