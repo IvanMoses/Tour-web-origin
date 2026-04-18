@@ -66,20 +66,16 @@ export default function Home() {
           </div>
       </nav>
 
-     {/* HERO SECTION */}
-      <section id="home" className="relative h-[85vh] min-h-[600px] flex items-center justify-center text-center overflow-hidden">
-          
-          {/* ФОНОВОЕ ИЗОБРАЖЕНИЕ — ЗАМЕНИ ССЫЛКУ НИЖЕ НА СВОЮ */}
-          <div className="absolute inset-0 z-0">
-            <img 
-              src="https://images.unsplash.com/photo-1506929647638-498fe3003c02?q=80&w=2500" 
-              alt="Background"
-              className="w-full h-full object-cover"
-            />
-            {/* Затемнение, чтобы текст читался (можно менять 0.3 на 0.5 если слишком светло) */}
-            <div className="absolute inset-0 bg-black/30"></div>
-          </div>
-
+    {/* HERO SECTION — ИСПРАВЛЕННЫЙ ВАРИАНТ */}
+      <section 
+        id="home" 
+        className="relative h-[85vh] min-h-[600px] flex items-center justify-center text-center overflow-hidden bg-slate-900"
+        style={{
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1506929647638-498fe3003c02?q=80&w=2500')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      >
           {/* КОНТЕНТ */}
           <div className="relative z-10 px-6 max-w-5xl mx-auto">
             <div className="h-1.5 w-24 bg-orange-600 mx-auto mb-10 rounded-full"></div>
@@ -88,7 +84,7 @@ export default function Home() {
               {t.heroTitle}
             </h1>
             
-            <p className="text-orange-500 font-black uppercase tracking-[0.5em] text-sm md:text-lg drop-shadow-md bg-black/20 backdrop-blur-sm px-6 py-2 rounded-full inline-block">
+            <p className="text-orange-500 font-black uppercase tracking-[0.4em] text-sm md:text-lg drop-shadow-md bg-black/20 backdrop-blur-sm px-6 py-2 rounded-full inline-block">
               {t.heroSub}
             </p>
 
