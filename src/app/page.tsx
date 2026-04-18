@@ -79,7 +79,7 @@ export default function Home() {
       {/* ГАЛЕРЕЯ (Альбомы) */}
       <section id="gallery" className="max-w-7xl mx-auto py-24 px-6 scroll-mt-24">
         <div className="text-center mb-16">
-          <h2 className="text-5xl md:text-7xl font-black uppercase italic tracking-tighter mb-4">{menu.gallery}</h2>
+          <h2 className="text-5xl md:text-7xl font-black uppercase italic tracking-tighter mb-4">All Excursions</h2>
           <p className="text-slate-400 uppercase tracking-widest font-bold text-sm italic">Real moments from our trips</p>
         </div>
 
@@ -108,7 +108,7 @@ export default function Home() {
       <section id="trips" className="bg-white py-24 px-6 border-y border-slate-100 scroll-mt-24">
         <div className="max-w-7xl mx-auto">
          {/* Было: {menu.gallery} */}
-<h2 className="text-5xl md:text-7xl font-black uppercase italic tracking-tighter mb-4">All Excursions</h2>
+<h2 className="text-5xl md:text-7xl font-black uppercase italic tracking-tighter mb-4">Our Trips</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             {TOURS.map((tour: any) => (
               <div key={tour.id} className="group bg-white border border-slate-100 rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
