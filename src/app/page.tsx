@@ -4,7 +4,7 @@ import { Instagram, Send, Facebook, Phone } from 'lucide-react'; // Импорт
 import { TOURS, CONTACTS, LANGUAGES } from './tours-data';
 
 export default function Home() {
-  const [lang, setLang] = useState('ru');
+  const [lang, setLang] = useState('en');
   const t = LANGUAGES[lang];
 
   const menu = {
