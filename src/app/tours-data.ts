@@ -80,7 +80,16 @@ export const TOURS: any = [
     price: 50,
     names: { ru: "Луксор", en: "Luxor", de: "Luxor", pl: "Luksor", fr: "Louxor", ro: "Luxor" },
     desc: { ru: "Путешествие в историю: Карнакский храм и Долина Царей.", en: "A journey into history: Karnak Temple and Valley of the Kings.", de: "Reise in die Geschichte.", pl: "Podróż do historii.", fr: "Voyage en histoire.", ro: "Călătorie în istorie." },
-    gallery: getDummyGallery("1503177119275-0aa32b3a9368")
+    gallery: [
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/02/60/dc/f5/temple-of-karnak.jpg?w=900&h=-1&s=1",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/2d/bc/a9/photo2jpg.jpg?w=1400&h=-1&s=1",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/02/2c/94/17/habu-temple.jpg?w=600&h=-1&s=1",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/02/2c/94/33/the-boys.jpg?w=600&h=-1&s=1",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/1b/80/ef/muzeum-luksorskie.jpg?w=2000&h=-1&s=1",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/01/ac/55/97/misc-bits-of-the-jigsaw.jpg?w=2400&h=-1&s=1",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/01/8c/4f/8f/luxor-temple.jpg?w=2400&h=-1&s=1",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/f2/16/6b/caption.jpg?w=600&h=-1&s=1"
+    ]
   },
   {
     id: 4,
