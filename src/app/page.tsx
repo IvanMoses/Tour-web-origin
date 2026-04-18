@@ -9,13 +9,13 @@ export default function Home() {
   const t = LANGUAGES[lang];
 
   const menu = {
-    ru: { home: "Главная", trips: "Экскурсии", gallery: "Галерея", contact: "Контакты" },
-    en: { home: "Home", trips: "Trips", gallery: "Gallery", contact: "Contacts" },
-    de: { home: "Startseite", trips: "Touren", gallery: "Galerie", contact: "Kontakte" },
-    pl: { home: "Główna", trips: "Wycieczki", gallery: "Galeria", contact: "Kontakt" },
-    fr: { home: "Accueil", trips: "Excursions", gallery: "Galerie", contact: "Contacts" },
-    ro: { home: "Acasă", trips: "Tururi", gallery: "Galerie", contact: "Contact" }
-  }[lang] || { home: "Home", trips: "Trips", gallery: "Gallery", contact: "Contacts" };
+    ru: { home: "Главная", trips: "Наши экскурсии", gallery: "Галерея", contact: "Контакты" },
+    en: { home: "Home", trips: "Our Trips", gallery: "Gallery", contact: "Contacts" },
+    de: { home: "Startseite", trips: "Unsere Touren", gallery: "Galerie", contact: "Kontakte" },
+    pl: { home: "Główna", trips: "Nasze wycieczki", gallery: "Galeria", contact: "Kontakt" },
+    fr: { home: "Accueil", trips: "Nos excursions", gallery: "Galerie", contact: "Contacts" },
+    ro: { home: "Acasă", trips: "Tururile noastre", gallery: "Galerie", contact: "Contact" }
+  }[lang] || { home: "Home", trips: "Our Trips", gallery: "Gallery", contact: "Contacts" };
 
   return (
     <main className="min-h-screen bg-slate-50 text-slate-900 selection:bg-orange-100 font-sans antialiased">
