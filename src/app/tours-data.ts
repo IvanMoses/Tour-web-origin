@@ -114,14 +114,6 @@ export const TOURS: any = [
     price: 35,
     names: { ru: "Дом Дельфинов", en: "Dolphin House", de: "Delfinhaus", pl: "Dom Delfinów", fr: "Maison des Dauphins", ro: "Casa Delfinilor" },
     desc: { ru: "Плавание с дельфинами в открытом море.", en: "Swimming with dolphins in the open sea.", de: "Schwimmen mit Delfinen.", pl: "Pływanie z delfinami.", fr: "Nager avec les dauphins.", ro: "Înot cu delfinii." },
-    gallery: getDummyGallery("1570481662006-a3a1374699e8")
-  },
-  {
-    id: 6,
-    image: "https://as1.ftcdn.net/v2/jpg/02/79/09/84/1000_F_279098467_wy75eVNsfvhmqULOxzoFvGsjJwtSLyx8.jpg",
-    price: 80,
-    names: { ru: "Каир и Пирамиды", en: "Cairo & Pyramids", de: "Kairo & Pyramiden", pl: "Kair i Piramidy", fr: "Le Caire et les Pyramides", ro: "Cairo și Piramidele" },
-    desc: { ru: "Пирамиды Гизы и Египетский музей.", en: "Giza Pyramids and Egyptian Museum.", de: "Gizeh-Pyramiden.", pl: "Piramidy w Gizie.", fr: "Pyramides de Gizeh.", ro: "Piramidele din Giza." },
     gallery: [
       "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/06/73/37/ea.jpg",
       "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/09/25/1f/b5.jpg",
@@ -131,6 +123,23 @@ export const TOURS: any = [
       "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/25/94/c9/16/dolphin-house.jpg?w=1400&h=-1&s=1",
       "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/25/49/78/db/caption.jpg?w=1100&h=-1&s=1",
       "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/24/29/87/79/dolphin-house.jpg?w=1400&h=-1&s=1"
+    ]
+  },
+  {
+    id: 6,
+    image: "https://as1.ftcdn.net/v2/jpg/02/79/09/84/1000_F_279098467_wy75eVNsfvhmqULOxzoFvGsjJwtSLyx8.jpg",
+    price: 80,
+    names: { ru: "Каир и Пирамиды", en: "Cairo & Pyramids", de: "Kairo & Pyramiden", pl: "Kair i Piramidy", fr: "Le Caire et les Pyramides", ro: "Cairo și Piramidele" },
+    desc: { ru: "Пирамиды Гизы и Египетский музей.", en: "Giza Pyramids and Egyptian Museum.", de: "Gizeh-Pyramiden.", pl: "Piramidy w Gizie.", fr: "Pyramides de Gizeh.", ro: "Piramidele din Giza." },
+    gallery: [
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/7e/7d/2c/pyramids-of-giza.jpg?w=1600&h=-1&s=1",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/7e/e9/36/pyramids-of-giza.jpg?w=2000&h=-1&s=1",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/05/30/1b/d2/pyramiden-von-gizeh.jpg?w=2000&h=-1&s=1",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/05/2b/9d/61/caption.jpg?w=1100&h=-1&s=1",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/05/19/09/14/pyramids-of-giza.jpg?w=2000&h=-1&s=1",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/04/48/46/2b/piramides-de-gize.jpg?w=2000&h=-1&s=1",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/03/f4/bf/10/pyramids-of-giza.jpg?w=1000&h=-1&s=1",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/03/4f/9c/21/pyramids-of-giza.jpg?w=2000&h=-1&s=1"
     ]
   },
   {
