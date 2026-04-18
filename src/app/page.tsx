@@ -141,15 +141,15 @@ export default function Home() {
       </section>
 
       {/* FOOTER */}
-      <footer id="contact" className="py-20 text-center bg-slate-950 text-white">
-          <div className="text-4xl font-black italic text-orange-600 mb-6 tracking-tighter uppercase">AhVan Tour</div>
-          <div className="flex justify-center gap-8 mb-8 opacity-50">
-             <Instagram className="hover:text-orange-500 cursor-pointer" size={20} />
-             <Send className="hover:text-orange-500 cursor-pointer" size={20} />
-             <Facebook className="hover:text-orange-500 cursor-pointer" size={20} />
-          </div>
-          <p className="text-slate-500 text-xs uppercase tracking-[0.3em]">Quality matters. Since 2026.</p>
-      </footer>
+<footer id="contact" className="py-20 text-center bg-slate-950 text-white scroll-mt-20">
+    <div className="text-4xl font-black italic text-orange-600 mb-6 tracking-tighter uppercase">AhVan Tour</div>
+    <div className="flex justify-center gap-8 mb-8 opacity-50 text-white">
+       <Instagram size={20} className="hover:text-orange-500 cursor-pointer transition-colors" /> 
+       <Send size={20} className="hover:text-orange-500 cursor-pointer transition-colors" /> 
+       <Facebook size={20} className="hover:text-orange-500 cursor-pointer transition-colors" />
+    </div>
+    <p className="text-slate-500 text-xs uppercase tracking-[0.3em]">Quality matters. Since 2026.</p>
+</footer>
 
     </main>
   );
