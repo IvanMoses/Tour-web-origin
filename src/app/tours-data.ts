@@ -5,7 +5,7 @@ export const CONTACTS = {
 export const LANGUAGES: any = {
   en: { 
     name: "EN", 
-    brand: "AhVan Tour",
+    brand: "Primal Tour",
     heroTitle: "Hurghada is Waiting", 
     heroSub: "Best excursions from direct organizers",
     toursTitle: "Popular Excursions", 
