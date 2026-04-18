@@ -3,13 +3,13 @@ export const CONTACTS = {
 };
 
 export const LANGUAGES: any = {
-  ru: { 
-    name: "RU", brand: "AhVan Tour", heroTitle: "Хургада ждет тебя", heroSub: "Лучшие экскурсии от прямых организаторов",
-    toursTitle: "Популярные экскурсии", btn: "Заказать", waHello: "Здравствуйте! Хочу забронировать тур: " 
-  },
   en: { 
     name: "EN", brand: "AhVan Tour", heroTitle: "Hurghada is Waiting", heroSub: "Best excursions from direct organizers",
     toursTitle: "Popular Excursions", btn: "Book Now", waHello: "Hello! I want to book a tour: " 
+  },
+  ru: { 
+    name: "RU", brand: "AhVan Tour", heroTitle: "Хургада ждет тебя", heroSub: "Лучшие экскурсии от прямых организаторов",
+    toursTitle: "Популярные экскурсии", btn: "Заказать", waHello: "Здравствуйте! Хочу забронировать тур: " 
   },
   de: { 
     name: "DE", brand: "AhVan Tour", heroTitle: "Hurghada wartet", heroSub: "Beste Ausflüge von direkten Organisatoren",
