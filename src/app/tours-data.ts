@@ -5,7 +5,7 @@ export const CONTACTS = {
 export const LANGUAGES: any = {
   en: { 
     name: "EN", 
-    brand: "The Blue Wave Tour",
+    brand: "AhWan Tour",
     heroTitle: "Hurghada is Waiting", 
     heroSub: "Best excursions from direct organizers",
     toursTitle: "Popular Excursions", 
@@ -14,17 +14,17 @@ export const LANGUAGES: any = {
   },
   ru: { 
     name: "RU", 
-    brand: "Blue Wave Tour",
+    brand: "AhWan Tour",
     heroTitle: "Хургада ждет тебя", 
     heroSub: "Лучшие экскурсии от прямых организаторов",
     toursTitle: "Популярные экскурсии", 
     btn: "Заказать", 
     waHello: "Здравствуйте! Хочу забронировать тур в AhVan Tour: " 
   },
-  de: { name: "DE", brand: "Blue Wave Tour", heroTitle: "Hurghada Wartet", heroSub: "Beste Ausflüge", toursTitle: "Beliebte Touren", btn: "Buchen", waHello: "Hallo! Ich möchte buchen: " },
-  pl: { name: "PL", brand: "Blue Wave Tour", heroTitle: "Hurghada Czeka", heroSub: "Najlepsze wycieczki", toursTitle: "Popularne wycieczki", btn: "Rezerwuj", waHello: "Dzień dobry! Chcę zarezerwować: " },
-  fr: { name: "FR", brand: "Blue Wave Tour", heroTitle: "Hurghada vous Attend", heroSub: "Meilleures excursions", toursTitle: "Excursions Populaires", btn: "Réserver", waHello: "Bonjour! Je veux réserver: " },
-  ro: { name: "RO", brand: "Blue Wave Tour", heroTitle: "Hurghada te Așteaptă", heroSub: "Cele mai bune excursii", toursTitle: "Excursii Populare", btn: "Rezervă", waHello: "Bună! Vreau să rezerv: " }
+  de: { name: "DE", brand: "AhWan Tour", heroTitle: "Hurghada Wartet", heroSub: "Beste Ausflüge", toursTitle: "Beliebte Touren", btn: "Buchen", waHello: "Hallo! Ich möchte buchen: " },
+  pl: { name: "PL", brand: "AhWan Tour", heroTitle: "Hurghada Czeka", heroSub: "Najlepsze wycieczki", toursTitle: "Popularne wycieczki", btn: "Rezerwuj", waHello: "Dzień dobry! Chcę zarezerwować: " },
+  fr: { name: "FR", brand: "AhWan Tour", heroTitle: "Hurghada vous Attend", heroSub: "Meilleures excursions", toursTitle: "Excursions Populaires", btn: "Réserver", waHello: "Bonjour! Je veux réserver: " },
+  ro: { name: "RO", brand: "AhWan Tour", heroTitle: "Hurghada te Așteaptă", heroSub: "Cele mai bune excursii", toursTitle: "Excursii Populare", btn: "Rezervă", waHello: "Bună! Vreau să rezerv: " }
 };
 
 // Генератор заглушек для галереи (чтобы не раздувать код, но ты можешь вписать свои ссылки)
