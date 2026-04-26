@@ -8,7 +8,7 @@ export default function Home() {
   const [activeAlbum, setActiveAlbum] = useState<any>(null); 
   const t = LANGUAGES[lang];
 
-  // Динамическое меню из LANGUAGES или локальный объект
+  // Динамическое меню
   const menu = {
     ru: { home: "Главная", trips: "Экскурсии", transfer: "Трансфер", gallery: "Галерея", contact: "Контакты" },
     en: { home: "Home", trips: "Trips", transfer: "Transfer", gallery: "Gallery", contact: "Contacts" },
@@ -16,28 +16,54 @@ export default function Home() {
     pl: { home: "Główna", trips: "Wycieczki", transfer: "Transfer", gallery: "Galeria", contact: "Kontakt" },
     fr: { home: "Accueil", trips: "Excursions", transfer: "Transfert", gallery: "Galerie", contact: "Contacts" },
     ro: { home: "Acasă", trips: "Tururi", transfer: "Transfer", gallery: "Galerie", contact: "Contact" }
-  }[lang];
+  }[lang] || { home: "Home", trips: "Trips", transfer: "Transfer", gallery: "Gallery", contact: "Contacts" };
 
   return (
     <main className="min-h-screen bg-white text-slate-900 font-sans antialiased">
       
-      {/* MODAL GALLERY */}
+      {/* MODAL GALLERY & DESCRIPTION */}
       {activeAlbum && (
         <div className="fixed inset-0 z-[200] bg-slate-950/95 backdrop-blur-xl flex items-center justify-center p-4">
-          <button onClick={() => setActiveAlbum(null)} className="absolute top-6 right-6 text-white hover:text-orange-500 transition-colors">
+          <button 
+            onClick={() => setActiveAlbum(null)} 
+            className="absolute top-6 right-6 text-white hover:text-orange-500 transition-colors z-[210]"
+          >
             <X size={40} />
           </button>
+          
           <div className="max-w-6xl w-full h-full overflow-y-auto p-4 custom-scrollbar">
-            {/* Исправлено: берем имя тура на текущем языке */}
-            <h2 className="text-white text-3xl font-black uppercase italic mb-8 mt-10">
+            {/* Заголовок тура */}
+            <h2 className="text-white text-4xl md:text-6xl font-black uppercase italic mb-10 mt-16 tracking-tighter">
               {activeAlbum.names[lang]}
             </h2>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 pb-20">
+            
+            {/* Сетка фотографий */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
               {activeAlbum.gallery?.map((img: string, idx: number) => (
-                <div key={idx} className="aspect-square overflow-hidden rounded-xl bg-slate-800 shadow-2xl">
-                  <img src={img} className="w-full h-full object-cover" alt="" />
+                <div key={idx} className="aspect-square overflow-hidden rounded-2xl bg-slate-800 shadow-2xl border border-white/5">
+                  <img src={img} className="w-full h-full object-cover" alt="" loading="lazy" />
                 </div>
               ))}
+            </div>
+
+            {/* БЛОК ОПИСАНИЯ ПОД ФОТО */}
+            <div className="max-w-4xl bg-white/5 rounded-3xl p-8 md:p-12 mb-20 border border-white/10 backdrop-blur-sm">
+              <h3 className="text-orange-500 font-black uppercase tracking-[0.3em] text-sm mb-6">
+                {lang === 'ru' ? 'О программе экскурсии' : 'About the program'}
+              </h3>
+              <p className="text-white text-xl md:text-2xl leading-relaxed font-medium opacity-90">
+                {activeAlbum.desc[lang]}
+              </p>
+              
+              <div className="mt-10 flex flex-wrap gap-4">
+                <a 
+                  href={`https://wa.me/${CONTACTS.whatsapp}?text=${encodeURIComponent(t.waHello + activeAlbum.names[lang])}`} 
+                  target="_blank" 
+                  className="bg-orange-600 text-white px-8 py-4 rounded-xl font-black text-xs uppercase tracking-[0.2em] shadow-xl hover:bg-orange-500 transition-all"
+                >
+                  {t.btn} — ${activeAlbum.price}
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -55,7 +81,11 @@ export default function Home() {
           </div>
           <div className="flex gap-1">
             {Object.keys(LANGUAGES).map((l) => (
-              <button key={l} onClick={() => setLang(l)} className={`text-[10px] font-bold px-3 py-2 rounded-full border transition-all ${lang === l ? 'bg-orange-600 text-white border-orange-600' : 'text-slate-500 border-slate-200 hover:border-orange-300'}`}>
+              <button 
+                key={l} 
+                onClick={() => setLang(l)} 
+                className={`text-[10px] font-bold px-3 py-2 rounded-full border transition-all ${lang === l ? 'bg-orange-600 text-white border-orange-600' : 'text-slate-500 border-slate-200 hover:border-orange-300'}`}
+              >
                 {LANGUAGES[l].name}
               </button>
             ))}
@@ -88,21 +118,33 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {TOURS.map((tour: any) => (
             <div key={tour.id} className="group bg-white border border-slate-100 rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500">
-              <div className="h-72 w-full relative overflow-hidden cursor-pointer" onClick={() => setActiveAlbum(tour)}>
+              <div 
+                className="h-72 w-full relative overflow-hidden cursor-pointer" 
+                onClick={() => setActiveAlbum(tour)}
+              >
                 <img src={tour.image} className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" alt="" />
                 <div className="absolute top-5 right-5 z-20 bg-orange-600 text-white px-5 py-2 rounded-full font-black text-xs shadow-xl tracking-widest">${tour.price}</div>
+                <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                   <div className="bg-white/20 backdrop-blur-md text-white px-6 py-2 rounded-full text-xs font-bold uppercase tracking-widest border border-white/30">View Gallery</div>
+                </div>
               </div>
               <div className="p-8 text-slate-900">
                 <h3 className="text-2xl font-black uppercase italic mb-4 tracking-tight">{tour.names[lang]}</h3>
                 <p className="text-slate-500 text-sm leading-relaxed mb-8 h-12 line-clamp-2">{tour.desc[lang]}</p>
-                <a href={`https://wa.me/${CONTACTS.whatsapp}?text=${encodeURIComponent(t.waHello + tour.names[lang])}`} target="_blank" className="block w-full bg-slate-900 text-white text-center py-4 rounded-xl font-bold text-[11px] uppercase tracking-[0.3em] hover:bg-orange-600 transition-all shadow-lg">{t.btn}</a>
+                <a 
+                  href={`https://wa.me/${CONTACTS.whatsapp}?text=${encodeURIComponent(t.waHello + tour.names[lang])}`} 
+                  target="_blank" 
+                  className="block w-full bg-slate-900 text-white text-center py-4 rounded-xl font-bold text-[11px] uppercase tracking-[0.3em] hover:bg-orange-600 transition-all shadow-lg"
+                >
+                  {t.btn}
+                </a>
               </div>
             </div>
           ))}
         </div>
       </section>
 
-      {/* TRANSFER SECTION - ТЕПЕРЬ ПОЛНОСТЬЮ ДИНАМИЧНЫЙ */}
+      {/* TRANSFER SECTION */}
       <section id="transfer" className="py-24 bg-slate-50 scroll-mt-20">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
