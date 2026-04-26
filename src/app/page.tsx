@@ -10,13 +10,13 @@ export default function Home() {
 
   // Динамическое меню из LANGUAGES или локальный объект
   const menu = {
-    ru: { home: "Главная", trips: "Экскурсии", transfer: "Трансфер", contact: "Контакты" },
-    en: { home: "Home", trips: "Trips", transfer: "Transfer", contact: "Contacts" },
-    de: { home: "Startseite", trips: "Touren", transfer: "Transfer", contact: "Kontakte" },
-    pl: { home: "Główna", trips: "Wycieczki", transfer: "Transfer", contact: "Kontakt" },
-    fr: { home: "Accueil", trips: "Excursions", transfer: "Transfert", contact: "Contacts" },
-    ro: { home: "Acasă", trips: "Tururi", transfer: "Transfer", contact: "Contact" }
-  }[lang] || { home: "Home", trips: "Trips", transfer: "Transfer", contact: "Contacts" };
+    ru: { home: "Главная", trips: "Экскурсии", transfer: "Трансфер", gallery: "Галерея", contact: "Контакты" },
+    en: { home: "Home", trips: "Trips", transfer: "Transfer", gallery: "Gallery", contact: "Contacts" },
+    de: { home: "Startseite", trips: "Touren", transfer: "Transfer", gallery: "Galerie", contact: "Kontakte" },
+    pl: { home: "Główna", trips: "Wycieczki", transfer: "Transfer", gallery: "Galeria", contact: "Kontakt" },
+    fr: { home: "Accueil", trips: "Excursions", transfer: "Transfert", gallery: "Galerie", contact: "Contacts" },
+    ro: { home: "Acasă", trips: "Tururi", transfer: "Transfer", gallery: "Galerie", contact: "Contact" }
+  }[lang];
 
   return (
     <main className="min-h-screen bg-white text-slate-900 font-sans antialiased">
