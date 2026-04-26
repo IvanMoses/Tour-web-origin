@@ -8,14 +8,15 @@ export default function Home() {
   const [activeAlbum, setActiveAlbum] = useState<any>(null); 
   const t = LANGUAGES[lang];
 
+  // Динамическое меню из LANGUAGES или локальный объект
   const menu = {
-    ru: { home: "Главная", trips: "Экскурсии", transfer: "Трансфер", gallery: "Галерея", contact: "Контакты" },
-    en: { home: "Home", trips: "Trips", transfer: "Transfer", gallery: "Gallery", contact: "Contacts" },
-    de: { home: "Startseite", trips: "Touren", transfer: "Transfer", gallery: "Galerie", contact: "Kontakte" },
-    pl: { home: "Główna", trips: "Wycieczki", transfer: "Transfer", gallery: "Galeria", contact: "Kontakt" },
-    fr: { home: "Accueil", trips: "Excursions", transfer: "Transfert", gallery: "Galerie", contact: "Contacts" },
-    ro: { home: "Acasă", trips: "Tururi", transfer: "Transfer", gallery: "Galerie", contact: "Contact" }
-  }[lang] || { home: "Home", trips: "Trips", transfer: "Transfer", gallery: "Gallery", contact: "Contacts" };
+    ru: { home: "Главная", trips: "Экскурсии", transfer: "Трансфер", contact: "Контакты" },
+    en: { home: "Home", trips: "Trips", transfer: "Transfer", contact: "Contacts" },
+    de: { home: "Startseite", trips: "Touren", transfer: "Transfer", contact: "Kontakte" },
+    pl: { home: "Główna", trips: "Wycieczki", transfer: "Transfer", contact: "Kontakt" },
+    fr: { home: "Accueil", trips: "Excursions", transfer: "Transfert", contact: "Contacts" },
+    ro: { home: "Acasă", trips: "Tururi", transfer: "Transfer", contact: "Contact" }
+  }[lang] || { home: "Home", trips: "Trips", transfer: "Transfer", contact: "Contacts" };
 
   return (
     <main className="min-h-screen bg-white text-slate-900 font-sans antialiased">
@@ -27,10 +28,13 @@ export default function Home() {
             <X size={40} />
           </button>
           <div className="max-w-6xl w-full h-full overflow-y-auto p-4 custom-scrollbar">
-            <h2 className="text-white text-3xl font-black uppercase italic mb-8 mt-10">{activeAlbum.names[lang]}</h2>
+            {/* Исправлено: берем имя тура на текущем языке */}
+            <h2 className="text-white text-3xl font-black uppercase italic mb-8 mt-10">
+              {activeAlbum.names[lang]}
+            </h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 pb-20">
               {activeAlbum.gallery?.map((img: string, idx: number) => (
-                <div key={idx} className="aspect-square overflow-hidden rounded-xl bg-slate-800">
+                <div key={idx} className="aspect-square overflow-hidden rounded-xl bg-slate-800 shadow-2xl">
                   <img src={img} className="w-full h-full object-cover" alt="" />
                 </div>
               ))}
@@ -51,7 +55,9 @@ export default function Home() {
           </div>
           <div className="flex gap-1">
             {Object.keys(LANGUAGES).map((l) => (
-              <button key={l} onClick={() => setLang(l)} className={`text-[10px] font-bold px-3 py-2 rounded-full border transition-all ${lang === l ? 'bg-orange-600 text-white border-orange-600' : 'text-slate-500 border-slate-200 hover:border-orange-300'}`}>{LANGUAGES[l].name}</button>
+              <button key={l} onClick={() => setLang(l)} className={`text-[10px] font-bold px-3 py-2 rounded-full border transition-all ${lang === l ? 'bg-orange-600 text-white border-orange-600' : 'text-slate-500 border-slate-200 hover:border-orange-300'}`}>
+                {LANGUAGES[l].name}
+              </button>
             ))}
           </div>
       </nav>
@@ -76,14 +82,14 @@ export default function Home() {
       {/* TRIPS SECTION */}
       <section id="trips" className="max-w-7xl mx-auto py-24 px-6 scroll-mt-24">
         <div className="text-center mb-16">
-          <h2 className="text-5xl md:text-7xl font-black uppercase italic tracking-tighter mb-4 text-slate-900">All Excursions</h2>
+          <h2 className="text-5xl md:text-7xl font-black uppercase italic tracking-tighter mb-4 text-slate-900">{t.toursTitle}</h2>
           <p className="text-slate-400 uppercase tracking-widest font-bold text-sm italic">Choose your perfect adventure</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {TOURS.map((tour: any) => (
             <div key={tour.id} className="group bg-white border border-slate-100 rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500">
-              <div className="h-72 w-full relative overflow-hidden" onClick={() => setActiveAlbum(tour)}>
-                <img src={tour.image} className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 cursor-pointer" alt="" />
+              <div className="h-72 w-full relative overflow-hidden cursor-pointer" onClick={() => setActiveAlbum(tour)}>
+                <img src={tour.image} className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" alt="" />
                 <div className="absolute top-5 right-5 z-20 bg-orange-600 text-white px-5 py-2 rounded-full font-black text-xs shadow-xl tracking-widest">${tour.price}</div>
               </div>
               <div className="p-8 text-slate-900">
@@ -96,22 +102,24 @@ export default function Home() {
         </div>
       </section>
 
-      {/* TRANSFER SECTION */}
+      {/* TRANSFER SECTION - ТЕПЕРЬ ПОЛНОСТЬЮ ДИНАМИЧНЫЙ */}
       <section id="transfer" className="py-24 bg-slate-50 scroll-mt-20">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <div className="inline-block px-4 py-1 rounded-full bg-orange-100 text-orange-600 text-xs font-black uppercase tracking-widest mb-6">Premium Service</div>
-              <h2 className="text-5xl md:text-6xl font-black uppercase italic tracking-tighter mb-8 leading-none text-slate-900">Comfortable <span className="text-orange-600">Transfer</span></h2>
+              <h2 className="text-5xl md:text-6xl font-black uppercase italic tracking-tighter mb-8 leading-none text-slate-900">
+                {t.transTitle} <span className="text-orange-600">{t.transName}</span>
+              </h2>
               <p className="text-slate-600 text-lg leading-relaxed mb-8">
-                Мы обеспечим ваш комфорт с первых минут пребывания в Египте. Встретим вас в аэропорту, поможем с багажом и доставим в любую точку страны на современных автомобилях.
+                {t.transDesc}
               </p>
               <div className="grid grid-cols-2 gap-6 mb-10">
                  <div className="flex items-center gap-3 font-black uppercase text-[10px] text-slate-700 tracking-wider"><Plane className="text-orange-600" size={18}/> Airport Meeting</div>
                  <div className="flex items-center gap-3 font-black uppercase text-[10px] text-slate-700 tracking-wider"><MapPin className="text-orange-600" size={18}/> All Egypt</div>
                  <div className="flex items-center gap-3 font-black uppercase text-[10px] text-slate-700 tracking-wider"><Car className="text-orange-600" size={18}/> New Cars</div>
               </div>
-              <a href={`https://wa.me/${CONTACTS.whatsapp}?text=Hello! I want to book a transfer.`} target="_blank" className="bg-slate-900 text-white px-10 py-4 rounded-xl font-black text-xs uppercase tracking-[0.2em] shadow-xl hover:bg-orange-600 transition-all inline-block">Book Now</a>
+              <a href={`https://wa.me/${CONTACTS.whatsapp}?text=${encodeURIComponent("Hello! I want to book a transfer.")}`} target="_blank" className="bg-slate-900 text-white px-10 py-4 rounded-xl font-black text-xs uppercase tracking-[0.2em] shadow-xl hover:bg-orange-600 transition-all inline-block">{t.btn}</a>
             </div>
             <div className="grid grid-cols-2 gap-4">
               <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?q=80&w=1000" className="rounded-3xl shadow-xl aspect-[3/4] object-cover" alt=""/>
@@ -128,9 +136,9 @@ export default function Home() {
       <footer id="contact" className="py-20 text-center bg-slate-950 text-white scroll-mt-20">
           <div className="text-4xl font-black italic text-orange-600 mb-6 tracking-tighter uppercase">AhVan Tour</div>
           <div className="flex justify-center gap-8 mb-8 opacity-50">
-             <Instagram className="hover:text-orange-500 cursor-pointer transition-colors" size={20} />
-             <Send className="hover:text-orange-500 cursor-pointer transition-colors" size={20} />
-             <Facebook className="hover:text-orange-500 cursor-pointer transition-colors" size={20} />
+              <Instagram className="hover:text-orange-500 cursor-pointer transition-colors" size={20} />
+              <Send className="hover:text-orange-500 cursor-pointer transition-colors" size={20} />
+              <Facebook className="hover:text-orange-500 cursor-pointer transition-colors" size={20} />
           </div>
           <p className="text-slate-500 text-[10px] uppercase tracking-[0.4em] font-bold">Quality matters. Since 2026.</p>
       </footer>
