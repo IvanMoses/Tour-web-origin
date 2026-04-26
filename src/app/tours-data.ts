@@ -1,5 +1,5 @@
 export const CONTACTS = {
-  whatsapp: "201556464007", // Номер без + для надежной работы ссылок
+  whatsapp: "201556464007", // Номер без + для корректной работы API
   instagram: "ahvantour",
   telegram: "ahvantour"
 };
@@ -37,9 +37,9 @@ export const LANGUAGES: any = {
     toursTitle: "Beliebte Touren", 
     btn: "Buchen", 
     waHello: "Hallo! Ich möchte buchen: ",
-    transTitle: "Bequemer",
+    transTitle: "Komfortabler",
     transName: "Transfer",
-    transDesc: "Wir sorgen für Ihren Komfort ab den ersten Minuten in Ägypten. Wir holen Sie am Flughafen ab, helfen mit dem Gepäck und bringen Sie in modernen Autos überall ins Land."
+    transDesc: "Wir sorgen für Ihren Komfort ab den ersten Minuten in Ägypten. Wir holen Sie am Flughafen ab, helfen beim Gepäck und bringen Sie in modernen Autos überall hin."
   },
   pl: { 
     name: "PL", 
@@ -49,9 +49,9 @@ export const LANGUAGES: any = {
     toursTitle: "Popularne wycieczki", 
     btn: "Rezerwuj", 
     waHello: "Dzień dobry! Chcę zarezerwować: ",
-    transTitle: "Komfortowy",
+    transTitle: "Wygodny",
     transName: "Transfer",
-    transDesc: "Zapewniamy komfort od pierwszych minut pobytu w Egipcie. Spotkamy się na lotnisku, pomożemy z bagażem i dowieziemy Cię w dowolne miejsce w kraju nowoczesnymi samochodami."
+    transDesc: "Zapewniamy komfort od pierwszych minut w Egipcie. Odbierzemy Cię z lotniska, pomożemy z bagażem i dowieziemy w dowolne miejsce w kraju nowoczesnymi samochodami."
   },
   fr: { 
     name: "FR", 
@@ -63,7 +63,7 @@ export const LANGUAGES: any = {
     waHello: "Bonjour! Je veux réserver: ",
     transTitle: "Confortable",
     transName: "Transfert",
-    transDesc: "Nous assurons votre confort dès les premières minutes en Égypte. Nous vous accueillerons à l'aéroport, vous aiderons avec vos bagages et vous transporterons partout dans le pays dans des voitures modernes."
+    transDesc: "Nous assurons votre confort dès les premières minutes en Égypte. Nous vous accueillerons à l'aéroport, vous aiderons avec vos bagages et vous transporterons partout."
   },
   ro: { 
     name: "RO", 
@@ -73,23 +73,11 @@ export const LANGUAGES: any = {
     toursTitle: "Excursii Populare", 
     btn: "Rezervă", 
     waHello: "Bună! Vreau să rezerv: ",
-    transTitle: "Transfer",
-    transName: "Confortabil",
-    transDesc: "Vă asigurăm confortul încă din primele minute în Egipt. Vă vom întâmpina la aeroport, vă vom ajuta cu bagajele și vă vom transporta oriunde în țară cu mașini moderne."
+    transTitle: "Confortabil",
+    transName: "Transfer",
+    transDesc: "Vă asigurăm confortul încă din primele minute în Egipt. Vă vom întâmpina la aeroport, vă vom ajuta cu bagajele și vă vom transporta oriunde în țară."
   }
 };
-
-// Генератор заглушек для галереи (чтобы не раздувать код, но ты можешь вписать свои ссылки)
-const getDummyGallery = (topic: string) => [
-  `https://images.unsplash.com/photo-${topic}-1?auto=format&fit=crop&q=60&w=500`,
-  `https://images.unsplash.com/photo-${topic}-2?auto=format&fit=crop&q=60&w=500`,
-  `https://images.unsplash.com/photo-${topic}-3?auto=format&fit=crop&q=60&w=500`,
-  `https://images.unsplash.com/photo-${topic}-4?auto=format&fit=crop&q=60&w=500`,
-  `https://images.unsplash.com/photo-${topic}-5?auto=format&fit=crop&q=60&w=500`,
-  `https://images.unsplash.com/photo-${topic}-6?auto=format&fit=crop&q=60&w=500`,
-  `https://images.unsplash.com/photo-${topic}-7?auto=format&fit=crop&q=60&w=500`,
-  `https://images.unsplash.com/photo-${topic}-8?auto=format&fit=crop&q=60&w=500`,
-];
 
 export const TOURS: any = [
   {
