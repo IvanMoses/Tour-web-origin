@@ -80,18 +80,61 @@ export const LANGUAGES: any = {
 };
 
 export const TOURS: any = [
-  {
+  
+    {
     id: 1,
     image: "https://dynamic-media.tacdn.com/media/photo-o/2e/f1/e0/e0/caption.jpg?w=1400&h=1000&s=1",
     price: 25,
-    names: { ru: "Оранжевый остров", en: "Orange Bay Island", de: "Insel Orange Bay", pl: "Pomarańczowa Zatoka", fr: "Île d'Orange Bay", ro: "Insula Orange Bay" },
+    names: { 
+      ru: "Оранжевый остров", 
+      en: "Orange Bay Island", 
+      de: "Insel Orange Bay", 
+      pl: "Pomarańczowa Zatoka", 
+      fr: "Île d'Orange Bay", 
+      ro: "Insula Orange Bay" 
+    },
     desc: { 
-      de: `Begeben Sie sich auf eine unvergessliche ganztägige Kreuzfahrt zur traumhaften Orange Bay-Insel bei Hurghada. Beginnen Sie den Tag mit einem komfortablen Hoteltransfer zum Hafen und steigen Sie an Bord einer modernen Yacht mit Sonnenliegen, schattigen Sitzbereichen, sanitären Einrichtungen und Schnorchelausrüstung. Насладитесь обедом и отдыхом на пляже.`,
-      ru: `Отправьтесь в незабываемый круиз на целый день на сказочный остров Оранж-Бэй. В программу входят две остановки для снорклинга, обед на яхте (шведский стол) и отдых на знаменитом пляже с белым песком и качелями в воде.`,
-      en: `Embark on an unforgettable full-day cruise to Orange Bay Island. Includes two snorkeling stops, a buffet lunch on board, and time to relax on the beach with its iconic wooden swings.`,
-      pl: `Wybierz się na niezapomniany całodniowy rejs na wyspę Orange Bay. Ciesz się snorkelingiem, pyszny lunch na pokładzie i relaksem na rajskiej plaży.`,
-      fr: `Embarquez pour une croisière d'une journée à Orange Bay. Profitez du snorkeling, d'un déjeuner buffet et de la plage paradisiaque.`,
-      ro: `Porniți într-o croazieră de o zi pe insula Orange Bay. Include snorkeling, prânz bufet și relaxare pe plaja cu nisip alb.`
+      de: `Begeben Sie sich auf eine unvergessliche ganztägige Kreuzfahrt zur traumhaften Orange Bay-Insel bei Hurghada. Beginnen Sie den Tag mit einem komfortablen Hoteltransfer zum Hafen und steigen Sie an Bord einer modernen Yacht mit Sonnenliegen, schattigen Sitzbereichen, sanitären Einrichtungen und Schnorchelausrüstung.
+
+Auf dem Weg legen Sie zwei Schnorchelstopps ein, bei denen Sie mit professionellen Guides lebendige Korallenriffe und eine faszinierende Unterwasserwelt entdecken. Anschließend erreichen Sie die paradiesische Orange Bay – mit flachem, türkisfarbenem Wasser, weichem weißen Sand und den ikonischen Holzschaukeln im Meer.
+
+Genießen Sie ein frisch zubereitetes Mittagsbuffet an Bord mit lokalen Köstlichkeiten, Softdrinks und frischem Obst. Danach erwartet Sie Action beim Bananenboot oder Sofa-Boot (wetterabhängig). Die Rückfahrt zur Marina erfolgt gemütlich – mit vielen neuen Erinnerungen im Gepäck.
+
+Diese Tour ist die perfekte Mischung aus Entspannung, Abenteuer und natürlicher Schönheit – ideal für Familien, Paare und Alleinreisende.`,
+
+      ru: `Отправьтесь в незабываемый круиз на целый день на сказочный остров Оранж-Бэй недалеко от Хургады. Начните день с комфортабельного трансфера из отеля в порт и поднимитесь на борт современной яхты с шезлонгами, затененными зонами отдыха и снаряжением для снорклинга.
+
+По пути вы сделаете две остановки для снорклинга, где вместе с профессиональными гидами откроете для себя яркие коралловые рифы и завораживающий подводный мир. Затем вы доберетесь до райского залива Оранж-Бэй с мелководной бирюзовой водой, мягким белым песком и знаменитыми деревянными качелями прямо в море.
+
+Насладитесь свежеприготовленным обедом (шведский стол) на борту с местными деликатесами, прохладительными напитками и свежими фруктами. После этого вас ждет катание на банане или диване (в зависимости от погоды). Обратный путь в марину пройдет в спокойной атмосфере с массой новых впечатлений.
+
+Этот тур — идеальное сочетание отдыха, приключений и природной красоты, подходящее для семей, пар и одиночных путешественников.`,
+
+      en: `Embark on an unforgettable full-day cruise to the dreamlike Orange Bay Island near Hurghada. Start your day with a comfortable hotel transfer to the harbor and board a modern yacht equipped with sun loungers, shaded seating areas, and snorkeling gear.
+
+On the way, you will make two snorkeling stops where professional guides will help you discover vibrant coral reefs and a fascinating underwater world. Then you will reach the paradisiacal Orange Bay – with shallow turquoise water, soft white sand, and the iconic wooden swings in the sea.
+
+Enjoy a freshly prepared buffet lunch on board with local delicacies, soft drinks, and fresh fruit. Afterwards, action awaits on the banana boat or sofa boat (weather permitting). The return journey to the marina is a relaxed one, filled with new memories.
+
+This tour is the perfect blend of relaxation, adventure, and natural beauty – ideal for families, couples, and solo travelers.`,
+
+      pl: `Wybierz się w niezapomniany całodniowy rejs na rajską wyspę Orange Bay w pobliżu Hurghady. Rozpocznij dzień od komfortowego transferu z hotelu do portu i wejdź na pokład nowoczesnego jachtu z leżakami, zacienionymi miejscami do siedzenia i sprzętem do snorkelingu.
+
+Po drodze zatrzymasz się dwa razy na snorkeling, gdzie z profesjonalnymi przewodnikami odkryjesz tętniące życiem rafy koralowe. Następnie dotrzesz do niebiańskiej zatoki Orange Bay – z płytką turkusową wodą, miękkim białym piaskiem i kultowymi drewnianymi huśtawkami w morzu.
+
+Ciesz się świeżo przygotowanym lunchem w formie bufetu na pokładzie z lokalnymi przysmakami i owocami. Następnie czeka Cię zabawa na bananie lub pontonie (zależnie od pogody). Spokojny powrót do portu zwieńczy ten pełen wrażeń dzień.`,
+
+      fr: `Embarquez pour une croisière inoubliable d'une journée vers l'île paradisiaque d'Orange Bay, près d'Hurghada. Commencez la journée par un transfert confortable de votre hôtel au port et montez à bord d'un yacht moderne avec bains de soleil et équipement de plongée.
+
+En chemin, vous ferez deux arrêts de snorkeling pour découvrir des récifs coralliens vibrants. Ensuite, vous atteindrez la magnifique Orange Bay – avec ses eaux turquoise peu profondes, son sable blanc et ses balançoires emblématiques dans la mer.
+
+Profitez d'un déjeuner buffet fraîchement préparé à bord. Ensuite, place à l'action avec le bateau-banane ou le sofa-boat. Le retour à la marina se fait en douceur, la tête pleine de souvenirs.`,
+
+      ro: `Porniți într-o croazieră de neuitat de o zi întreagă către insula de vis Orange Bay, lângă Hurghada. Începeți ziua cu un transfer confortabil de la hotel la port și urcați la bordul unui iaht modern, dotat cu șezlonguri și echipament de snorkeling.
+
+Pe drum, veți face două opriri pentru snorkeling, unde veți descoperi recife de corali vibrante. Apoi veți ajunge în paradisiaca Orange Bay – cu apă turcoaz puțin adâncă, nisip alb fin și faimoasele leagăne din lemn din mare.
+
+Bucurați-vă de un prânz bufet proaspăt preparat la bord. După aceea, vă așteaptă distracția pe banana boat sau sofa boat. Întoarcerea la marină este relaxantă, cu multe amintiri noi în bagaj.`
     },
     gallery: [
       "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2e/65/6f/c7/caption.jpg?w=1400&h=800&s=1",
@@ -200,28 +243,79 @@ export const TOURS: any = [
       "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/24/29/87/79/dolphin-house.jpg?w=1400&h=-1&s=1"
     ]
   },
-  {
+
+   {
     id: 6,
     image: "https://as1.ftcdn.net/v2/jpg/02/79/09/84/1000_F_279098467_wy75eVNsfvhmqULOxzoFvGsjJwtSLyx8.jpg",
     price: 80,
-    names: { ru: "Каир и Пирамиды", en: "Cairo & Pyramids", de: "Kairo & Pyramiden", pl: "Kair i Piramidy", fr: "Le Caire et les Pyramides", ro: "Cairo și Piramidele" },
+    names: { 
+      ru: "Каир и Пирамиды", 
+      en: "Cairo & Pyramids", 
+      de: "Kairo & Pyramiden", 
+      pl: "Kair i Piramidy", 
+      fr: "Le Caire et les Pyramides", 
+      ro: "Cairo și Piramidele" 
+    },
     desc: { 
-      de: `Besuchen Sie die ikonischen Pyramiden von Gizeh, die Sphinx und das Ägyptische Museum.`,
-      ru: `Великие Пирамиды Гизы, величественный Сфинкс и Египетский музей в Каире. Весь день в сопровождении гида-историка.`,
-      en: `The Great Pyramids of Giza, the majestic Sphinx, and the Egyptian Museum in Cairo. Full day with an expert guide.`,
-      pl: `Wielkie Piramidy w Gizie, Sfinks i Muzeum Egipskie w Kairze. Cały dzień z przewodnikiem egiptologiem.`,
-      fr: `Les Grandes Pyramides de Gizeh, le Sphinx et le Musée égyptien du Caire. Une journée complète avec un guide.`,
-      ro: `Marile Piramide din Giza, Sfinxul și Muzeul Egiptean din Cairo. O zi plină cu ghid egiptolog.`
+      de: `Starten Sie Ihren Tag früh mit einer Abholung von Ihrem Hotel in Hurghada in einem komfortablen Van. Fahren Sie nach Kairo, was etwa 5-6 Stunden dauert. Genießen Sie die Landschaft entlang des Weges und machen Sie Pausen nach Bedarf. Kaufen Sie die Eintrittskarten direkt am Eingang von Pyramiden und Ägyptische Museum.
+
+Bei Ihrer Ankunft in Kairo werden Sie von einem erfahrenen Ägyptologen begrüßt, der Sie den ganzen Tag über begleitet. Beginnen Sie Ihre Besichtigungstour mit den ikonischen Pyramiden von Gizeh – der Großen Pyramide von Cheops, der Pyramide von Chephren und der Pyramide von Mykerinos. Erfahren Sie mehr über die Geschichte und Bedeutung dieser antiken Wunder. Sie haben die Möglichkeit, Fotos zu machen und die Umgebung zu erkunden. Bewundern Sie die beeindruckende Große Sphinx, die den Eingang zu den Pyramiden bewacht. Erkunden Sie den nahegelegenen Taltempel, der für die Mumifizierung der Pharaonen genutzt wurde. Sie können das Ägyptische Museum besuchen, das eine beeindruckende Sammlung antiker Artefakte, darunter die Schätze von Tutanchamun, beherbergt. Eintrittskarten können auch vor Ort erworben werden.
+
+Genießen Sie ein köstliches Mittagessen in einem lokalen Restaurant in Kairo.
+
+Nach einem erlebnisreichen Tag fahren Sie zurück nach Hurghada. Ankunft in Ihrem Hotel in Hurghada am späten Abend, wo Ihre Tour endet.
+
+Sie können uns auch über die Schaltfläche „Anfrage senden“ kontaktieren, um das ermäßigte Angebot sowie die Geschenke direkt von uns zu erhalten.`,
+      
+      ru: `Начните свой день рано утром с трансфера из отеля в Хургаде на комфортабельном минивэне. Поездка в Каир занимает около 5-6 часов. Наслаждайтесь пейзажами по пути, остановки делаются по мере необходимости. Билеты в Пирамиды и Египетский музей приобретаются непосредственно на входе.
+
+По прибытии в Каир вас встретит опытный египтолог, который будет сопровождать вас в течение всего дня. Начните экскурсию с культовых пирамид Гизы — Великой пирамиды Хеопса, пирамид Хефрена и Микерина. Узнайте об истории и значении этих древних чудес. У вас будет возможность сделать фотографии и исследовать окрестности. Полюбуйтесь впечатляющим Большим Сфинксом, охраняющим вход в пирамиды. Исследуйте близлежащий Долинный храм, который использовался для мумификации фараонов. Вы также посетите Египетский музей, в котором хранится потрясающая коллекция древних артефактов, включая сокровища Тутанхамона.
+
+Насладитесь вкусным обедом в местном ресторане в Каире.
+
+После насыщенного дня вы отправитесь обратно в Хургаду. Возвращение в отель поздно вечером.
+
+Вы также можете связаться с нами через кнопку заказа, чтобы получить специальное предложение и подарки напрямую от нас.`,
+
+      en: `Start your day early with a pickup from your hotel in Hurghada in a comfortable van. The drive to Cairo takes about 5-6 hours. Enjoy the scenery along the way and take breaks as needed. Entrance tickets for the Pyramids and the Egyptian Museum can be purchased directly at the entrance.
+
+Upon arrival in Cairo, you will be greeted by an experienced Egyptologist who will accompany you throughout the day. Begin your tour with the iconic Pyramids of Gizeh – the Great Pyramid of Cheops, the Pyramid of Chephren, and the Pyramid of Mykerinos. Learn about the history and significance of these ancient wonders. You will have the opportunity to take photos and explore the surroundings. Admire the impressive Great Sphinx guarding the entrance to the pyramids. Explore the nearby Valley Temple, used for the mummification of pharaohs. You can visit the Egyptian Museum, which houses an impressive collection of ancient artifacts, including the treasures of Tutankhamun.
+
+Enjoy a delicious lunch at a local restaurant in Cairo.
+
+After an eventful day, drive back to Hurghada. Arrival at your hotel in Hurghada in the late evening, where your tour ends.
+
+You can also contact us via the booking button to receive a discounted offer and gifts directly from us.`,
+
+      pl: `Zacznij dzień wcześnie rano od odbioru z hotelu w Hurghadzie komfortowym vanem. Podróż do Kairu trwa około 5-6 godzin. Ciesz się widokami po drodze i korzystaj z przerw w razie potrzeby. Bilety wstępu do Piramid i Muzeum Egipskiego można kupić bezpośrednio przy wejściu.
+
+Po przyjeździe do Kairu powita Cię doświadczony egiptolog, który będzie Ci towarzyszył przez cały dzień. Rozpocznij zwiedzanie od kultowych piramid w Gizie – Wielkiej Piramidy Cheopsa, piramidy Chefrena i Mykerinosa. Poznaj historię i znaczenie tych starożytnych cudów. Będziesz mieć możliwość zrobienia zdjęć i zwiedzenia okolicy. Podziwiaj imponującego Wielkiego Sfinksa strzegącego wejścia do piramid. Odwiedź pobliską Świątynię Dolinną i Muzeum Egipskie z bogatą kolekcją artefaktów, w tym skarbami Tutenchamona.
+
+Zjedz pyszny lunch w lokalnej restauracji w Kairze.
+
+Po pełnym wrażeń dniu wróć do Hurghady. Przyjazd do hotelu późnym wieczorem.`,
+
+      fr: `Commencez votre journée tôt avec une prise en charge à votre hôtel à Hurghada dans un van confortable. Le trajet vers le Caire dure environ 5-6 heures. Profitez du paysage en cours de route. Les billets pour les pyramides et le musée égyptien s'achètent directement à l'entrée.
+
+À votre arrivée au Caire, vous serez accueilli par un égyptologue expérimenté. Commencez votre visite par les emblématiques pyramides de Gizeh – Khéops, Khéphren et Mykérinos. Apprenez l'histoire de ces merveilles antiques. Admirez le Grand Sphinx et explorez le temple de la vallée. Visitez le musée égyptien qui abrite les trésors de Toutankhamon.
+
+Profitez d'un délicieux déjeuner dans un restaurant local au Caire. Retour à Hurghada en fin de soirée.`,
+
+      ro: `Începeți ziua devreme cu o preluare de la hotelul dvs. din Hurghada într-un van confortabil. Drumul spre Cairo durează aproximativ 5-6 ore. Biletele pentru Piramide și Muzeul Egiptean pot fi achiziționate direct de la intrare.
+
+La sosirea în Cairo, veți fi întâmpinat de un egiptolog cu experiență. Începeți turul cu piramidele din Giza – Keops, Kefren și Mykerinos. Admirați Marele Sfinx și explorați Templul din Vale. Vizitați Muzeul Egiptean care găzduiește comorile lui Tutankhamon.
+
+Bucurați-vă de un prânz delicios într-un restaurant local din Cairo. Întoarcere în Hurghada târziu în cursul serii.`
     },
     gallery: [
       "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/7e/7d/2c/pyramids-of-giza.jpg?w=1600&h=-1&s=1",
       "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/7e/e9/36/pyramids-of-giza.jpg?w=2000&h=-1&s=1",
-      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/07/24/0e/e5/the-cairo-museum.jpg?w=1400&h=-1&s=1",
-      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/05/6d/8d/46/pyramids-of-giza.jpg?w=1400&h=-1&s=1",
-      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/04/00/39/3c/egyptian-museum.jpg?w=1100&h=-1&s=1",
-      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/03/90/fc/fc/the-sphinx.jpg?w=1100&h=-1&s=1",
-      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/0c/3a/0c/caption.jpg?w=1400&h=-1&s=1",
-      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/2a/39/78/caption.jpg?w=600&h=-1&s=1"
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/05/30/1b/d2/pyramiden-von-gizeh.jpg?w=2000&h=-1&s=1",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/05/2b/9d/61/caption.jpg?w=1100&h=-1&s=1",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/05/19/09/14/pyramids-of-giza.jpg?w=2000&h=-1&s=1",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/04/48/46/2b/piramides-de-gize.jpg?w=2000&h=-1&s=1",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/03/f4/bf/10/pyramids-of-giza.jpg?w=1000&h=-1&s=1",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/03/4f/9c/21/pyramids-of-giza.jpg?w=2000&h=-1&s=1"
     ]
   },
   {
