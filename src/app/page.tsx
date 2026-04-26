@@ -61,7 +61,7 @@ export default function Home() {
         id="home" 
         className="relative h-[85vh] flex items-center justify-center text-center overflow-hidden bg-slate-900"
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1506929647638-498fe3003c02?q=80&w=2500')`,
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://i2.wp.com/see.news/images/2024/03/-1711659992-0.jpg?resize=750,500&ssl=1')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
