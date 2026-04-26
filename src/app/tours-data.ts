@@ -165,12 +165,70 @@ export const TOURS: any = [
       "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/24/29/87/79/dolphin-house.jpg?w=1400&h=-1&s=1"
     ]
   },
-  {
+  
+    {
     id: 6,
     image: "https://as1.ftcdn.net/v2/jpg/02/79/09/84/1000_F_279098467_wy75eVNsfvhmqULOxzoFvGsjJwtSLyx8.jpg",
     price: 80,
-    names: { ru: "Каир и Пирамиды", en: "Cairo & Pyramids", de: "Kairo & Pyramiden", pl: "Kair i Piramidy", fr: "Le Caire et les Pyramides", ro: "Cairo și Piramidele" },
-    desc: { ru: "Пирамиды Гизы и Египетский музей.", en: "Giza Pyramids and Egyptian Museum.", de: "Gizeh-Pyramiden.", pl: "Piramidy w Gizie.", fr: "Pyramides de Gizeh.", ro: "Piramidele din Giza." },
+    names: { 
+      ru: "Каир и Пирамиды", 
+      en: "Cairo & Pyramids", 
+      de: "Kairo & Pyramiden", 
+      pl: "Kair i Piramidy", 
+      fr: "Le Caire et les Pyramides", 
+      ro: "Cairo și Piramidele" 
+    },
+    desc: { 
+      de: `Starten Sie Ihren Tag früh mit einer Abholung von Ihrem Hotel in Hurghada in einem komfortablen Van. Fahren Sie nach Kairo, was etwa 5-6 Stunden dauert. Genießen Sie die Landschaft entlang des Weges und machen Sie Pausen nach Bedarf. Kaufen Sie die Eintrittskarten direkt am Eingang von Pyramiden und Ägyptische Museum.
+
+Bei Ihrer Ankunft in Kairo werden Sie von einem erfahrenen Ägyptologen begrüßt, der Sie den ganzen Tag über begleitet. Beginnen Sie Ihre Besichtigungstour mit den ikonischen Pyramiden von Gizeh – der Großen Pyramide von Cheops, der Pyramide von Chephren und der Pyramide von Mykerinos. Erfahren Sie mehr über die Geschichte und Bedeutung dieser antiken Wunder. Sie haben die Möglichkeit, Fotos zu machen und die Umgebung zu erkunden. Bewundern Sie die beeindruckende Große Sphinx, die den Eingang zu den Pyramiden bewacht. Erkunden Sie den nahegelegenen Taltempel, der für die Mumifizierung der Pharaonen genutzt wurde. Sie können das Ägyptische Museum besuchen, das eine beeindruckende Sammlung antiker Artefakte, darunter die Schätze von Tutanchamun, beherbergt. Eintrittskarten können auch vor Ort erworben werden.
+
+Genießen Sie ein köstliches Mittagessen in einem lokalen Restaurant in Kairo.
+
+Nach einem erlebnisreichen Tag fahren Sie zurück nach Hurghada. Ankunft in Ihrem Hotel in Hurghada am späten Abend, wo Ihre Tour endet.
+
+Sie können uns auch über die Schaltfläche „Anfrage senden“ kontaktieren, um das ermäßigte Angebot sowie die Geschenke direkt von uns zu erhalten.`,
+      
+      ru: `Начните свой день рано утром с трансфера из отеля в Хургаде на комфортабельном минивэне. Поездка в Каир занимает около 5-6 часов. Наслаждайтесь пейзажами по пути, остановки делаются по мере необходимости. Билеты в Пирамиды и Египетский музей приобретаются непосредственно на входе.
+
+По прибытии в Каир вас встретит опытный египтолог, который будет сопровождать вас в течение всего дня. Начните экскурсию с культовых пирамид Гизы — Великой пирамиды Хеопса, пирамид Хефрена и Микерина. Узнайте об истории и значении этих древних чудес. У вас будет возможность сделать фотографии и исследовать окрестности. Полюбуйтесь впечатляющим Большим Сфинксом, охраняющим вход в пирамиды. Исследуйте близлежащий Долинный храм, который использовался для мумификации фараонов. Вы также посетите Египетский музей, в котором хранится потрясающая коллекция древних артефактов, включая сокровища Тутанхамона.
+
+Насладитесь вкусным обедом в местном ресторане в Каире.
+
+После насыщенного дня вы отправитесь обратно в Хургаду. Возвращение в отель поздно вечером.
+
+Вы также можете связаться с нами через кнопку заказа, чтобы получить специальное предложение и подарки напрямую от нас.`,
+
+      en: `Start your day early with a pickup from your hotel in Hurghada in a comfortable van. The drive to Cairo takes about 5-6 hours. Enjoy the scenery along the way and take breaks as needed. Entrance tickets for the Pyramids and the Egyptian Museum can be purchased directly at the entrance.
+
+Upon arrival in Cairo, you will be greeted by an experienced Egyptologist who will accompany you throughout the day. Begin your tour with the iconic Pyramids of Gizeh – the Great Pyramid of Cheops, the Pyramid of Chephren, and the Pyramid of Mykerinos. Learn about the history and significance of these ancient wonders. You will have the opportunity to take photos and explore the surroundings. Admire the impressive Great Sphinx guarding the entrance to the pyramids. Explore the nearby Valley Temple, used for the mummification of pharaohs. You can visit the Egyptian Museum, which houses an impressive collection of ancient artifacts, including the treasures of Tutankhamun.
+
+Enjoy a delicious lunch at a local restaurant in Cairo.
+
+After an eventful day, drive back to Hurghada. Arrival at your hotel in Hurghada in the late evening, where your tour ends.
+
+You can also contact us via the booking button to receive a discounted offer and gifts directly from us.`,
+
+      pl: `Zacznij dzień wcześnie rano od odbioru z hotelu w Hurghadzie komfortowym vanem. Podróż do Kairu trwa około 5-6 godzin. Ciesz się widokami po drodze i korzystaj z przerw w razie potrzeby. Bilety wstępu do Piramid i Muzeum Egipskiego można kupić bezpośrednio przy wejściu.
+
+Po przyjeździe do Kairu powita Cię doświadczony egiptolog, który będzie Ci towarzyszył przez cały dzień. Rozpocznij zwiedzanie od kultowych piramid w Gizie – Wielkiej Piramidy Cheopsa, piramidy Chefrena i Mykerinosa. Poznaj historię i znaczenie tych starożytnych cudów. Będziesz mieć możliwość zrobienia zdjęć i zwiedzenia okolicy. Podziwiaj imponującego Wielkiego Sfinksa strzegącego wejścia do piramid. Odwiedź pobliską Świątynię Dolinną i Muzeum Egipskie z bogatą kolekcją artefaktów, w tym skarbami Tutenchamona.
+
+Zjedz pyszny lunch w lokalnej restauracji w Kairze.
+
+Po pełnym wrażeń dniu wróć do Hurghady. Przyjazd do hotelu późnym wieczorem.`,
+
+      fr: `Commencez votre journée tôt avec une prise en charge à votre hôtel à Hurghada dans un van confortable. Le trajet vers le Caire dure environ 5-6 heures. Profitez du paysage en cours de route. Les billets pour les pyramides et le musée égyptien s'achètent directement à l'entrée.
+
+À votre arrivée au Caire, vous serez accueilli par un égyptologue expérimenté. Commencez votre visite par les emblématiques pyramides de Gizeh – Khéops, Khéphren et Mykérinos. Apprenez l'histoire de ces merveilles antiques. Admirez le Grand Sphinx et explorez le temple de la vallée. Visitez le musée égyptien qui abrite les trésors de Toutankhamon.
+
+Profitez d'un délicieux déjeuner dans un restaurant local au Caire. Retour à Hurghada en fin de soirée.`,
+
+      ro: `Începeți ziua devreme cu o preluare de la hotelul dvs. din Hurghada într-un van confortabil. Drumul spre Cairo durează aproximativ 5-6 ore. Biletele pentru Piramide și Muzeul Egiptean pot fi achiziționate direct de la intrare.
+
+La sosirea în Cairo, veți fi întâmpinat de un egiptolog cu experiență. Începeți turul cu piramidele din Giza – Keops, Kefren și Mykerinos. Admirați Marele Sfinx și explorați Templul din Vale. Vizitați Muzeul Egiptean care găzduiește comorile lui Tutankhamon.
+
+Bucurați-vă de un prânz delicios într-un restaurant local din Cairo. Întoarcere în Hurghada târziu în cursul serii.`
+    },
     gallery: [
       "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/7e/7d/2c/pyramids-of-giza.jpg?w=1600&h=-1&s=1",
       "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/7e/e9/36/pyramids-of-giza.jpg?w=2000&h=-1&s=1",
