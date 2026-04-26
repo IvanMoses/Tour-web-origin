@@ -1,5 +1,7 @@
 export const CONTACTS = {
-  whatsapp: "+201556464007", // Замени на свой номер без +
+  whatsapp: "201556464007", // Номер без + для надежной работы ссылок
+  instagram: "ahvantour",
+  telegram: "ahvantour"
 };
 
 export const LANGUAGES: any = {
@@ -10,7 +12,10 @@ export const LANGUAGES: any = {
     heroSub: "Best excursions from direct organizers",
     toursTitle: "Popular Excursions", 
     btn: "Book Now", 
-    waHello: "Hello! I want to book a tour with AhVan Tour: " 
+    waHello: "Hello! I want to book a tour with AhVan Tour: ",
+    transTitle: "Comfortable",
+    transName: "Transfer",
+    transDesc: "We ensure your comfort from the first minutes in Egypt. We will meet you at the airport, help with luggage, and deliver you anywhere in the country in modern cars."
   },
   ru: { 
     name: "RU", 
@@ -19,12 +24,59 @@ export const LANGUAGES: any = {
     heroSub: "Лучшие экскурсии от прямых организаторов",
     toursTitle: "Популярные экскурсии", 
     btn: "Заказать", 
-    waHello: "Здравствуйте! Хочу забронировать тур в AhVan Tour: " 
+    waHello: "Здравствуйте! Хочу забронировать тур в AhVan Tour: ",
+    transTitle: "Комфортный",
+    transName: "Трансфер",
+    transDesc: "Мы обеспечим ваш комфорт с первых минут пребывания в Египте. Встретим вас в аэропорту, поможем с багажом и доставим в любую точку страны на современных автомобилях."
   },
-  de: { name: "DE", brand: "AhWan Tour", heroTitle: "Hurghada Wartet", heroSub: "Beste Ausflüge", toursTitle: "Beliebte Touren", btn: "Buchen", waHello: "Hallo! Ich möchte buchen: " },
-  pl: { name: "PL", brand: "AhWan Tour", heroTitle: "Hurghada Czeka", heroSub: "Najlepsze wycieczki", toursTitle: "Popularne wycieczki", btn: "Rezerwuj", waHello: "Dzień dobry! Chcę zarezerwować: " },
-  fr: { name: "FR", brand: "AhWan Tour", heroTitle: "Hurghada vous Attend", heroSub: "Meilleures excursions", toursTitle: "Excursions Populaires", btn: "Réserver", waHello: "Bonjour! Je veux réserver: " },
-  ro: { name: "RO", brand: "AhWan Tour", heroTitle: "Hurghada te Așteaptă", heroSub: "Cele mai bune excursii", toursTitle: "Excursii Populare", btn: "Rezervă", waHello: "Bună! Vreau să rezerv: " }
+  de: { 
+    name: "DE", 
+    brand: "AhWan Tour", 
+    heroTitle: "Hurghada Wartet", 
+    heroSub: "Beste Ausflüge", 
+    toursTitle: "Beliebte Touren", 
+    btn: "Buchen", 
+    waHello: "Hallo! Ich möchte buchen: ",
+    transTitle: "Bequemer",
+    transName: "Transfer",
+    transDesc: "Wir sorgen für Ihren Komfort ab den ersten Minuten in Ägypten. Wir holen Sie am Flughafen ab, helfen mit dem Gepäck und bringen Sie in modernen Autos überall ins Land."
+  },
+  pl: { 
+    name: "PL", 
+    brand: "AhWan Tour", 
+    heroTitle: "Hurghada Czeka", 
+    heroSub: "Najlepsze wycieczki", 
+    toursTitle: "Popularne wycieczki", 
+    btn: "Rezerwuj", 
+    waHello: "Dzień dobry! Chcę zarezerwować: ",
+    transTitle: "Komfortowy",
+    transName: "Transfer",
+    transDesc: "Zapewniamy komfort od pierwszych minut pobytu w Egipcie. Spotkamy się na lotnisku, pomożemy z bagażem i dowieziemy Cię w dowolne miejsce w kraju nowoczesnymi samochodami."
+  },
+  fr: { 
+    name: "FR", 
+    brand: "AhWan Tour", 
+    heroTitle: "Hurghada vous Attend", 
+    heroSub: "Meilleures excursions", 
+    toursTitle: "Excursions Populaires", 
+    btn: "Réserver", 
+    waHello: "Bonjour! Je veux réserver: ",
+    transTitle: "Confortable",
+    transName: "Transfert",
+    transDesc: "Nous assurons votre confort dès les premières minutes en Égypte. Nous vous accueillerons à l'aéroport, vous aiderons avec vos bagages et vous transporterons partout dans le pays dans des voitures modernes."
+  },
+  ro: { 
+    name: "RO", 
+    brand: "AhWan Tour", 
+    heroTitle: "Hurghada te Așteaptă", 
+    heroSub: "Cele mai bune excursii", 
+    toursTitle: "Excursii Populare", 
+    btn: "Rezervă", 
+    waHello: "Bună! Vreau să rezerv: ",
+    transTitle: "Transfer",
+    transName: "Confortabil",
+    transDesc: "Vă asigurăm confortul încă din primele minute în Egipt. Vă vom întâmpina la aeroport, vă vom ajuta cu bagajele și vă vom transporta oriunde în țară cu mașini moderne."
+  }
 };
 
 // Генератор заглушек для галереи (чтобы не раздувать код, но ты можешь вписать свои ссылки)
