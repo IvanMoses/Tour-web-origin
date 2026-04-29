@@ -2,9 +2,9 @@ export const CONTACTS = {
   phone: "+20 15 56464007", // Твой номер для звонков
   whatsapp: "+20 15 56464007", // Номер без + для ссылки
   telegram: "https://t.me/yourname",
-  instagram: "https://instagram.com/yourname",
-  tiktok: "https://tiktok.com/@yourname",
-  facebook: "https://facebook.com/yourpage",
+  instagram: "https://www.instagram.com/ahvan_tour?igsh=dHFodzBvNWExZDVm&utm_source=qr",
+  tiktok: "https://www.tiktok.com/@ahvan_tour?_r=1&_t=ZG-95wWh9IpB3I",
+  facebook: "https://www.facebook.com/share/1Dz4DsTX1G/?mibextid=wwXIfr",
 };
 
 export const LANGUAGES: any = {
