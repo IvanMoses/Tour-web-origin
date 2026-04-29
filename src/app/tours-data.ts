@@ -80,18 +80,61 @@ export const LANGUAGES: any = {
 };
 
 export const TOURS: any = [
-  {
+  
+    {
     id: 1,
     image: "https://dynamic-media.tacdn.com/media/photo-o/2e/f1/e0/e0/caption.jpg?w=1400&h=1000&s=1",
     price: 25,
-    names: { ru: "Оранжевый остров", en: "Orange Bay Island", de: "Insel Orange Bay", pl: "Pomarańczowa Zatoka", fr: "Île d'Orange Bay", ro: "Insula Orange Bay" },
+    names: { 
+      ru: "Оранжевый остров", 
+      en: "Orange Bay Island", 
+      de: "Insel Orange Bay", 
+      pl: "Pomarańczowa Zatoka", 
+      fr: "Île d'Orange Bay", 
+      ro: "Insula Orange Bay" 
+    },
     desc: { 
-      de: `Ganztägige Kreuzfahrt zur Orange Bay Insel bei Hurghada. Inklusive Transfer, Schnorcheln an Korallenriffen, Mittagessen an Bord und Entspannung am Strand mit den berühmten Holzschaukeln.`,
-      ru: `Отправьтесь в незабываемый круиз на целый день на сказочный остров Оранж-Бэй. В программу входят две остановки для снорклинга, обед на яхте (шведский стол) и отдых на знаменитом пляже.`,
-      en: `Full-day cruise to Orange Bay Island. Includes snorkeling stops, buffet lunch on board, and relaxation on the beach with its iconic wooden swings.`,
-      pl: `Całodniowy rejs na wyspę Orange Bay. Snorkeling, pyszny lunch na pokładzie i relaks na rajskiej plaży.`,
-      fr: `Croisière d'une journée à Orange Bay. Snorkeling, déjeuner buffet et détente sur la plage paradisiaque.`,
-      ro: `Croazieră de o zi pe insula Orange Bay. Include snorkeling, prânz bufet și relaxare pe plaja cu nisip alb.`
+      de: `Begeben Sie sich auf eine unvergessliche ganztägige Kreuzfahrt zur traumhaften Orange Bay-Insel bei Hurghada. Beginnen Sie den Tag mit einem komfortablen Hoteltransfer zum Hafen und steigen Sie an Bord einer modernen Yacht mit Sonnenliegen, schattigen Sitzbereichen, sanitären Einrichtungen und Schnorchelausrüstung.
+
+Auf dem Weg legen Sie zwei Schnorchelstopps ein, bei denen Sie mit professionellen Guides lebendige Korallenriffe und eine faszinierende Unterwasserwelt entdecken. Anschließend erreichen Sie die paradiesische Orange Bay – mit flachem, türkisfarbenem Wasser, weichem weißen Sand und den ikonischen Holzschaukeln im Meer.
+
+Genießen Sie ein frisch zubereitetes Mittagsbuffet an Bord mit lokalen Köstlichkeiten, Softdrinks und frischem Obst. Danach erwartet Sie Action beim Bananenboot oder Sofa-Boot (wetterabhängig). Die Rückfahrt zur Marina erfolgt gemütlich – mit vielen neuen Erinnerungen im Gepäck.
+
+Diese Tour ist die perfekte Mischung aus Entspannung, Abenteuer und natürlicher Schönheit – ideal für Familien, Paare und Alleinreisende.`,
+
+      ru: `Отправьтесь в незабываемый круиз на целый день на сказочный остров Оранж-Бэй недалеко от Хургады. Начните день с комфортабельного трансфера из отеля в порт и поднимитесь на борт современной яхты с шезлонгами, затененными зонами отдыха и снаряжением для снорклинга.
+
+По пути вы сделаете две остановки для снорклинга, где вместе с профессиональными гидами откроете для себя яркие коралловые рифы и завораживающий подводный мир. Затем вы доберетесь до райского залива Оранж-Бэй с мелководной бирюзовой водой, мягким белым песком и знаменитыми деревянными качелями прямо в море.
+
+Насладитесь свежеприготовленным обедом (шведский стол) на борту с местными деликатесами, прохладительными напитками и свежими фруктами. После этого вас ждет катание на банане или диване (в зависимости от погоды). Обратный путь в марину пройдет в спокойной атмосфере с массой новых впечатлений.
+
+Этот тур — идеальное сочетание отдыха, приключений и природной красоты, подходящее для семей, пар и одиночных путешественников.`,
+
+      en: `Embark on an unforgettable full-day cruise to the dreamlike Orange Bay Island near Hurghada. Start your day with a comfortable hotel transfer to the harbor and board a modern yacht equipped with sun loungers, shaded seating areas, and snorkeling gear.
+
+On the way, you will make two snorkeling stops where professional guides will help you discover vibrant coral reefs and a fascinating underwater world. Then you will reach the paradisiacal Orange Bay – with shallow turquoise water, soft white sand, and the iconic wooden swings in the sea.
+
+Enjoy a freshly prepared buffet lunch on board with local delicacies, soft drinks, and fresh fruit. Afterwards, action awaits on the banana boat or sofa boat (weather permitting). The return journey to the marina is a relaxed one, filled with new memories.
+
+This tour is the perfect blend of relaxation, adventure, and natural beauty – ideal for families, couples, and solo travelers.`,
+
+      pl: `Wybierz się w niezapomniany całodniowy rejs na rajską wyspę Orange Bay w pobliżu Hurghady. Rozpocznij dzień od komfortowego transferu z hotelu do portu i wejdź na pokład nowoczesnego jachtu z leżakami, zacienionymi miejscami do siedzenia i sprzętem do snorkelingu.
+
+Po drodze zatrzymasz się dwa razy na snorkeling, gdzie z profesjonalnymi przewodnikami odkryjesz tętniące życiem rafy koralowe. Następnie dotrzesz do niebiańskiej zatoki Orange Bay – z płytką turkusową wodą, miękkim białym piaskiem i kultowymi drewnianymi huśtawkami w morzu.
+
+Ciesz się świeżo przygotowanym lunchem w formie bufetu na pokładzie z lokalnymi przysmakami i owocami. Następnie czeka Cię zabawa na bananie lub pontonie (zależnie od pogody). Spokojny powrót do portu zwieńczy ten pełen wrażeń dzień.`,
+
+      fr: `Embarquez pour une croisière inoubliable d'une journée vers l'île paradisiaque d'Orange Bay, près d'Hurghada. Commencez la journée par un transfert confortable de votre hôtel au port et montez à bord d'un yacht moderne avec bains de soleil et équipement de plongée.
+
+En chemin, vous ferez deux arrêts de snorkeling pour découvrir des récifs coralliens vibrants. Ensuite, vous atteindrez la magnifique Orange Bay – avec ses eaux turquoise peu profondes, son sable blanc et ses balançoires emblématiques dans la mer.
+
+Profitez d'un déjeuner buffet fraîchement préparé à bord. Ensuite, place à l'action avec le bateau-banane ou le sofa-boat. Le retour à la marina se fait en douceur, la tête pleine de souvenirs.`,
+
+      ro: `Porniți într-o croazieră de neuitat de o zi întreagă către insula de vis Orange Bay, lângă Hurghada. Începeți ziua cu un transfer confortabil de la hotel la port și urcați la bordul unui iaht modern, dotat cu șezlonguri și echipament de snorkeling.
+
+Pe drum, veți face două opriri pentru snorkeling, unde veți descoperi recife de corali vibrante. Apoi veți ajunge în paradisiaca Orange Bay – cu apă turcoaz puțin adâncă, nisip alb fin și faimoasele leagăne din lemn din mare.
+
+Bucurați-vă de un prânz bufet proaspăt preparat la bord. După aceea, vă așteaptă distracția pe banana boat sau sofa boat. Întoarcerea la marină este relaxantă, cu multe amintiri noi în bagaj.`
     },
     gallery: [
       "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2e/65/6f/c7/caption.jpg?w=1400&h=800&s=1",
@@ -104,18 +147,72 @@ export const TOURS: any = [
       "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/95/d8/c4/lindo.jpg?w=1100&h=-1&s=1"
     ]
   },
-  {
+ {
     id: 2,
     image: "https://thumbs.dreamstime.com/b/off-road-vehicles-driving-sahara-sand-desert-23312292.jpg?w=992",
     price: 20,
-    names: { ru: "Супер Сафари", en: "Super Safari", de: "Jeep Safari Ausflug", pl: "Super Safari", fr: "Super Safari", ro: "Super Safari" },
+    names: { 
+      ru: "Супер Сафари", 
+      en: "Super Safari", 
+      de: "Jeep Safari Ausflug", 
+      pl: "Super Safari", 
+      fr: "Super Safari", 
+      ro: "Super Safari" 
+    },
     desc: { 
-      de: `Wüstensafari mit Quads, Jeeps und Buggys. Besuch eines Beduinendorfes, Kamelreiten, Barbecue-Abendessen und eine orientalische Show bei Sonnenuntergang.`,
-      ru: `Почувствуйте драйв пустыни! Квадроциклы, багги, поездка на джипах в деревню бедуинов, катание на верблюдах, ужин-барбекю и яркое восточное шоу на закате.`,
-      en: `Experience the desert thrill! Quads, buggies, jeep trip to a Bedouin village, camel riding, BBQ dinner, and a vibrant oriental show at sunset.`,
-      pl: `Poczuj dreszcz pustyni! Quady, buggy, wyprawa jeepem do wioski Beduinów, kolacja BBQ i show o zachodzie słońca.`,
-      fr: `Vivez l'adrénaline du désert ! Quads, buggys, village bédouin, dîner barbecue et spectacle oriental.`,
-      ro: `Adrenalina în deșert! Quad-uri, buggy, sat beduin, cină BBQ și spectacol oriental la apus.`
+      de: `Nach der Abholung fahren wir in die weite der ägyptischen Wüste. Unsere Fahrer und Guides sind sehr sicher und kennen sich bestens aus.
+
+Quadfahrt und Buggy: Nach einem kurzen Test düsen wir mit dem Quad durch den Wüstensand vorbei an Dünen. Danach erleben Sie Ihr Selbstfahrabenteuer mit den Dünenbuggys.
+
+Beduinen Dorf: Nach dem Fahrspaß steigen wir in den Jeep um и fahren zum Beduinendorf. Hier scheint die Zeit vor Jahrhunderten stehen geblieben zu sein. Erleben Sie, wie die Beduinen ohne Luxus, aber zufrieden leben, und genießen Sie einen traditionellen Beduinen-Tee in außergewöhnlicher Atmosphäre.
+
+Abendessen und Orientalische Show: Bei orientalischer Musik, Bauchtanz und einem wunderschönen Sonnenuntergang genießen wir ein geschmackvolles Abendessen (BBQ). Wer möchte, kann sich selbst beim Bauchtanz ausprobieren. 
+
+Anschließend bringen wir Sie im Jeep zurück zu Ihrem Hotel. Ein Erlebnis für die ganze Familie!`,
+
+      ru: `После трансфера мы отправимся вглубь египетской пустыни. Наши опытные гиды и водители обеспечат вашу безопасность и комфорт.
+
+Квадроциклы и Багги: После короткого инструктажа мы промчимся на квадроциклах по песчаным дюнам. Затем вас ждет приключение на багги — почувствуйте драйв пустыни!
+
+Деревня бедуинов: После активной части мы пересядем в джипы и отправимся в деревню бедуинов. Здесь время будто остановилось много веков назад. Вы увидите, как живут эти люди, сохраняя древние традиции, и насладитесь аутентичным бедуинским чаем.
+
+Ужин и Шоу: На закате нас ждет восточное шоу, танец живота и вкусный ужин-барбекю под открытым небом. Желающие смогут сами попробовать себя в восточных танцах.
+
+В завершение вечера джипы доставят вас обратно в отель. Это идеальное путешествие для всей семьи!`,
+
+      en: `After pickup, we drive deep into the Egyptian desert. Our professional drivers and guides ensure a safe and exciting journey.
+
+Quad Bike and Buggy: After a short test drive, we zoom across the desert sands on quads. Next, enjoy the thrill of driving your own dune buggy.
+
+Bedouin Village: After the high-speed fun, we switch to jeeps and head to a Bedouin village. Here, time seems to have stood still for centuries. Experience how Bedouins live happily without modern luxury and enjoy a traditional Bedouin tea.
+
+Dinner and Oriental Show: As the sun sets, we enjoy a delicious BBQ dinner accompanied by oriental music and a belly dancing show (you're welcome to join in!). 
+
+The jeeps will then take you back to your hotel. This Super Safari is perfect for the whole family!`,
+
+      pl: `Po odbiorze z hotelu wyruszymy w głąb egipskiej pustyni. Nasi doświadczeni kierowcy i przewodnicy zapewnią bezpieczną i pełną wrażeń wyprawę.
+
+Quady i Buggy: Po krótkim instruktażu pomkniemy quadami przez wydmy. Następnie czeka Cię przygoda za kierownicą buggy.
+
+Wioska Beduinów: Po części rajdowej przesiądziemy się do jeepów i udamy się do wioski Beduinów. Zobaczysz, jak żyją ci ludzie bez współczesnych luksusów i skosztujesz tradycyjnej herbaty.
+
+Kolacja i Show: Przy orientalnej muzyce i pokazie tańca brzucha zjesz pyszną kolację BBQ, podziwiając zachód słońca. Na koniec odwieziemy Cię jeepem do hotelu.`,
+
+      fr: `Après la prise en charge, nous partons dans l'immensité du désert égyptien. Nos guides experts assurent une sécurité totale.
+
+Quad et Buggy : Après un court essai, nous fonçons en quad à travers les dunes. Ensuite, vivez l'aventure au volant d'un buggy.
+
+Village Bédouin : Nous changeons de véhicule pour monter dans un Jeep direction le village bédouin. Découvrez leur mode de vie ancestral et savourez un thé traditionnel.
+
+Dîner et Spectacle : Profitez d'un dîner barbecue avec musique orientale et danse du ventre sous le coucher du soleil. Un moment magique pour toute la famille !`,
+
+      ro: `După preluare, plecăm în imensitatea deșertului egiptean. Ghizii noștri sunt profesioniști și cunosc deșertul la perfecție.
+
+Quad și Buggy: După un scurt test, pornim cu quad-ul peste dune. Apoi, urmează aventura la volanul unui buggy.
+
+Satul Beduinilor: Schimbăm vehiculul și mergem cu Jeep-ul spre satul beduinilor. Descoperiți stilul lor de viață tradițional și savurați un ceai autentic.
+
+Cină și Spectacol Oriental: Savurați o cină BBQ cu muzică orientală și dansuri tradiționale în timpul apusului. Jeep-ul vă va duce înapoi la hotel la finalul serii.`
     },
     gallery: [
       "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/0e/9c/25/b9.jpg",
@@ -156,14 +253,58 @@ export const TOURS: any = [
     id: 4,
     image: "https://media.istockphoto.com/id/1360323358/photo/scuba-divers-couple-near-beautiful-coral-reef-surrounded-with-shoal-of-coral-fish-and-three.jpg?s=2048x2048&w=is&k=20&c=VqzcWcAPNbzeEUMBLehWqe1OEUqSqODdq8FkdY8ne2E=",
     price: 45,
-    names: { ru: "Дайвинг", en: "Diving", de: "Tauchen", pl: "Nurkowanie", fr: "Plongée", ro: "Scufundări" },
+    names: { 
+      ru: "Дайвинг", 
+      en: "Diving", 
+      de: "Tauchen", 
+      pl: "Nurkowanie", 
+      fr: "Plongée", 
+      ro: "Scufundări" 
+    },
     desc: { 
-      de: `Zwei Tauchgänge an den besten Plätzen des Roten Meeres. Inklusive Ausrüstung, professionelle Instruktoren und Mittagessen.`,
-      ru: `Погрузитесь в красоту Красного моря! Две остановки для дайвинга, профессиональные инструкторы, полное снаряжение и вкусный обед на борту.`,
-      en: `Discover the underwater world with two impressive dives. Includes equipment, buffet lunch, and certified instructors.`,
-      pl: `Odkryj podwodny świat podczas dwóch nurkowań. Sprzęt, lunch i opieka instruktorów w cenie.`,
-      fr: `Découvrez le monde sous-marin avec deux plongées. Équipement et déjeuner inclus.`,
-      ro: `Descoperiți lumea subacvatică cu două scufundări. Echipament și prânz inclus.`
+      de: `Beginnen Sie Ihren Tag mit der Abholung von Ihrem Hotel und einer entspannten Bootsfahrt zu den schönsten Tauchplätzen im Roten Meer.
+
+Nach der Ankunft begrüßt Sie das erfahrene Team an Bord und bereitet Sie auf Ihr Tauchabenteuer vor. Unter der Anleitung zertifizierter Tauchlehrer entdecken Sie die faszinierende Unterwasserwelt bei zwei beeindruckenden Tauchgängen an den besten Spots des Roten Meeres.
+
+Zwischen den Tauchgängen haben Sie die Möglichkeit zu entspannen, die Sonne zu genießen oder bei Schnorchelstopps die bunte Unterwasserwelt zu erkunden.
+
+Ein leckeres Mittagsbuffet sowie unbegrenzt alkoholfreie Getränke und Heißgetränke stehen Ihnen während der gesamten Fahrt zur Verfügung. Auf dem Boot finden Sie außerdem Duschen und komfortable Sanitäranlagen.
+
+Nach einem erlebnisreichen Tag mit Tauchen, Schnorcheln und Entspannung bringt Sie das Boot zurück zum Hafen, von wo aus Sie mit dem Transfer bequem in Ihr Hotel zurückkehren.`,
+
+      ru: `Начните свой день с трансфера из отеля и расслабляющей прогулки на лодке к самым красивым местам для дайвинга в Красном море.
+
+По прибытии опытная команда поприветствует вас на борту и подготовит к приключению. Под руководством сертифицированных инструкторов вы откроете для себя завораживающий подводный мир во время двух впечатляющих погружений в лучших локациях Красного моря.
+
+Между погружениями у вас будет возможность отдохнуть, насладиться солнцем или заняться снорклингом, исследуя красочные рифы.
+
+В течение всей поездки вам будет доступен вкусный обед (шведский стол), а также безлимитные прохладительные и горячие напитки. На лодке также есть душевые и комфортные туалеты.
+
+После насыщенного дня погружений, снорклинга и отдыха лодка доставит вас обратно в порт, откуда комфортабельный трансфер отвезет вас в отель.`,
+
+      en: `Start your day with a hotel pickup and a relaxing boat trip to the most beautiful dive sites in the Red Sea.
+
+Upon arrival, the experienced team welcomes you on board and prepares you for your diving adventure. Under the guidance of certified instructors, you will discover the fascinating underwater world during two impressive dives at the best spots in the Red Sea.
+
+Between dives, you will have the opportunity to relax, soak up the sun, or explore the colorful underwater world during snorkeling stops.
+
+A delicious lunch buffet as well as unlimited soft drinks and hot beverages are available throughout the trip. The boat also features showers and comfortable sanitary facilities.
+
+After an eventful day of diving, snorkeling, and relaxation, the boat will take you back to the harbor, from where you will return comfortably to your hotel.`,
+
+      pl: `Zacznij dzień od odbioru z hotelu i relaksującego rejsu do najpiękniejszych miejsc nurkowych na Morzu Czerwonym.
+
+Po przybyciu doświadczony zespół powita Cię na pokładzie i przygotuje do przygody. Pod okiem certyfikowanych instruktorów odkryjesz fascynujący podwodny świat podczas dwóch imponujących nurkowań w najlepszych punktach Morza Czerwonego.
+
+Między nurkowaniami możesz odpocząć, cieszyć się słońcem lub uprawiać snorkeling. Pyszny lunch w formie bufetu oraz nielimitowane napoje są dostępne przez całą wycieczkę. Na łodzi znajdują się prysznice i zaplecze sanitarne. Po dniu pełnym wrażeń odwieziemy Cię prosto do hotelu.`,
+
+      fr: `Commencez votre journée par une prise en charge à votre hôtel et une croisière relaxante vers les plus beaux sites de plongée de la mer Rouge.
+
+Sous la direction d'instructeurs certifiés, vous découvrirez le monde sous-marin lors de deux plongées impressionnantes. Entre les plongées, détendez-vous au soleil ou faites du snorkeling. Un délicieux buffet et des boissons à volonté sont à votre disposition. Le bateau est équipé de douches et de sanitaires confortables. Retour à l'hôtel en fin de journée.`,
+
+      ro: `Începeți ziua cu preluarea de la hotel și o plimbare relaxantă cu barca către cele mai frumoase locuri de scufundări din Marea Roșie.
+
+Sub îndrumarea instructorilor certificați, veți descoperi lumea subacvatică fascinantă în timpul a două scufundări impresionante. Între scufundări, aveți ocazia să vă relaxați la soare sau să faceți snorkeling. Un bufet delicios de prânz și băuturi nelimitate sunt disponibile pe tot parcursul călătoriei. Barca dispune de dușuri și facilități sanitare. La final, transferul vă va duce confortabil înapoi la hotel.`
     },
     gallery: [
       "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/07/a5/5e/43.jpg",
@@ -176,18 +317,57 @@ export const TOURS: any = [
       "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/08/3b/23/fa.jpg"
     ]
   },
-  {
+
+ {
     id: 5,
     image: "https://media.istockphoto.com/id/1303043820/photo/mother-and-calf-dolphin-swimming-by.jpg?s=2048x2048&w=is&k=20&c=ROwzQl41EC0WuC93Fu2Ur2aWl5J9o1qcOeJKf1lqQ-c=",
     price: 35,
-    names: { ru: "Дом Дельфинов", en: "Dolphin House", de: "Delfinhaus", pl: "Dom Delfinów", fr: "Maison des Dauphins", ro: "Casa Delfinilor" },
+    names: { 
+      ru: "Дом Дельфинов", 
+      en: "Dolphin House", 
+      de: "Delfinhaus", 
+      pl: "Dom Delfinów", 
+      fr: "Maison des Dauphins", 
+      ro: "Casa Delfinilor" 
+    },
     desc: { 
-      de: `Bootstour zu den natürlichen Lebensräumen der Delfine. Schnorcheln an Korallenriffen и Entspannung auf dem Deck.`,
-      ru: `Уникальная возможность увидеть дельфинов в открытом море! Прогулка на яхте, две остановки для снорклинга на ярких рифах и вкусный обед.`,
-      en: `A unique chance to see dolphins in the open sea! Boat trip, two snorkeling stops on vibrant reefs, and a delicious lunch.`,
-      pl: `Wyjątkowa okazja, aby zobaczyć delfiny! Rejs, snorkeling na rafach i pyszny lunch.`,
-      fr: `Une chance unique de voir des dauphins ! Sortie en bateau, snorkeling et déjeuner inclus.`,
-      ro: `O șansă unică de a vedea delfinii! Excursie cu barca, snorkeling și prânz inclus.`
+      de: `Begleiten Sie uns zu einem unvergesslichen Delfinbeobachtungs-Abenteuer auf dem kristallklaren Wasser des Roten Meeres! Diese ganztägige Bootstour ab Hurghada vereint Entspannung, Naturerlebnis und Action.
+
+Zunächst fahren wir zu bekannten Hotspots, an denen Delfine oft in freier Wildbahn gesichtet werden – mit etwas Glück schwimmen sie sogar direkt am Boot vorbei! Danach haben Sie die Möglichkeit, an zwei spektakulären Schnorchelplätzen die farbenfrohe Unterwasserwelt mit Korallen und exotischen Fischen zu erkunden.
+
+An Bord können Sie sich auf dem Sonnendeck entspannen, die Aussicht genießen und sich von Musik begleiten lassen. Zwischendurch servieren wir ein frisch zubereitetes Buffet-Mittagessen, begleitet von alkoholfreien Getränken zur Erfrischung.
+
+Ein erfahrener Guide sowie professionelle Schnorchelinstruktoren sorgen für Ihre Sicherheit und begleiten Sie während der gesamten Tour – ideal für Familien, Naturfreunde und alle, die die Magie des Roten Meeres erleben möchten!`,
+
+      ru: `Присоединяйтесь к нам в незабываемом приключении по наблюдению за дельфинами в кристально чистых водах Красного моря! Эта прогулка на целый день из Хургады сочетает в себе отдых, знакомство с природой и активный досуг.
+
+Сначала мы отправимся в известные места, где дельфинов часто можно увидеть в их естественной среде обитания — при удаче они проплывают прямо рядом с лодкой! После этого у вас будет возможность исследовать красочный подводный мир с кораллами и экзотическими рыбками на двух впечатляющих остановках для снорклинга.
+
+На борту вы сможете отдохнуть на солнечной палубе, наслаждаясь видами и музыкой. В перерыве мы подадим свежеприготовленный обед (шведский стол) и прохладительные напитки.
+
+Опытный гид и профессиональные инструкторы по снорклингу обеспечат вашу безопасность и будут сопровождать вас на протяжении всего тура. Это идеальный выбор для семей, любителей природы и всех, кто хочет ощутить магию Красного моря!`,
+
+      en: `Join us for an unforgettable dolphin watching adventure on the crystal-clear waters of the Red Sea! This full-day boat trip from Hurghada combines relaxation, nature, and action.
+
+First, we head to well-known hotspots where dolphins are often spotted in the wild – with a bit of luck, they might even swim right past the boat! Afterwards, you will have the opportunity to explore the colorful underwater world with corals and exotic fish at two spectacular snorkeling spots.
+
+On board, you can relax on the sun deck, enjoy the views, and listen to music. In between, we serve a freshly prepared buffet lunch accompanied by soft drinks for refreshment.
+
+An experienced guide and professional snorkeling instructors ensure your safety and accompany you throughout the tour – ideal for families, nature lovers, and anyone who wants to experience the magic of the Red Sea!`,
+
+      pl: `Dołącz do nas podczas niezapomnianej przygody z delfinami na krystalicznie czystych wodach Morza Czerwonego! Ta całodniowa wycieczka łodzią z Hurghady łączy relaks, kontakt z naturą i zabawę.
+
+Najpierw udamy się do znanych miejsc, gdzie delfiny często można spotkać na wolności – przy odrobinie szczęścia przepłyną tuż obok łodzi! Następnie będziesz mieć okazję odkryć kolorowy podwodny świat koralowców i egzotycznych ryb w dwóch spektakularnych miejscach do snorkelingu.
+
+Na pokładzie możesz odpocząć na tarasie słonecznym, ciesząc się widokami i muzyką. W międzyczasie serwujemy świeżo przygotowany lunch w formie bufetu oraz napoje orzeźwiające. To idealna wyprawa dla rodzin i miłośników przyrody!`,
+
+      fr: `Rejoignez-nous pour une aventure inoubliable d'observation des dauphins dans les eaux cristallines de la mer Rouge ! Cette excursion d'une journée au départ d'Hurghada allie détente, nature et action.
+
+Nous nous rendrons d'abord dans des lieux privilégiés où les dauphins sont souvent aperçus en liberté. Ensuite, vous pourrez explorer le monde sous-marin coloré lors de deux arrêts de snorkeling spectaculaires. Profitez d'un déjeuner buffet frais à bord et détendez-vous sur le pont supérieur. Un guide expérimenté assurera votre sécurité tout au long de la journée.`,
+
+      ro: `Alăturați-vă nouă pentru o aventură de neuitat de observare a delfinilor în apele cristaline ale Mării Roșii! Această excursie de o zi cu barca din Hurghada combină relaxarea, natura și distracția.
+
+Mergem în locuri cunoscute unde delfinii sunt văzuți des în sălbăticie. Apoi, veți avea ocazia să explorați lumea subacvatică plină de culoare la două locuri spectaculoase de snorkeling. Savurați un prânz bufet proaspăt și relaxați-vă pe punte. Un ghid experimentat vă va însoți pe tot parcursul turului – ideal pentru familii și iubitori de natură!`
     },
     gallery: [
       "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/06/73/37/ea.jpg",
@@ -200,42 +380,122 @@ export const TOURS: any = [
       "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/24/29/87/79/dolphin-house.jpg?w=1400&h=-1&s=1"
     ]
   },
-  {
+    {
     id: 6,
     image: "https://as1.ftcdn.net/v2/jpg/02/79/09/84/1000_F_279098467_wy75eVNsfvhmqULOxzoFvGsjJwtSLyx8.jpg",
     price: 80,
-    names: { ru: "Каир и Пирамиды", en: "Cairo & Pyramids", de: "Kairo & Pyramiden", pl: "Kair i Piramidy", fr: "Le Caire et les Pyramides", ro: "Cairo și Piramidele" },
+    names: { 
+      ru: "Каир и Пирамиды", 
+      en: "Cairo & Pyramids", 
+      de: "Kairo & Pyramiden", 
+      pl: "Kair i Piramidy", 
+      fr: "Le Caire et les Pyramides", 
+      ro: "Cairo și Piramidele" 
+    },
     desc: { 
-      de: `Besuchen Sie die Pyramiden von Gizeh, die Sphinx und das Ägyptische Museum in Kairo. Ein ganzer Tag voller Geschichte.`,
-      ru: `Великие Пирамиды Гизы, величественный Сфинкс и Египетский музей в Каире. Весь день в сопровождении гида-историка.`,
-      en: `The Great Pyramids of Giza, the majestic Sphinx, and the Egyptian Museum in Cairo. Full day with an expert guide.`,
-      pl: `Wielkie Piramidy w Gizie, Sfinks i Muzeum Egipskie w Kairze. Cały dzień z egiptologiem.`,
-      fr: `Les Grandes Pyramides de Gizeh, le Sphinx et le Musée égyptien du Caire.`,
-      ro: `Marile Piramide din Giza, Sfinxul și Muzeul Egiptean din Cairo.`
+      de: `Starten Sie Ihren Tag früh mit einer Abholung von Ihrem Hotel in Hurghada in einem komfortablen Van. Fahren Sie nach Kairo, was etwa 5-6 Stunden dauert. Genießen Sie die Landschaft entlang des Weges und machen Sie Pausen nach Bedarf. Kaufen Sie die Eintrittskarten direkt am Eingang von Pyramiden und Ägyptische Museum.
+
+Bei Ihrer Ankunft in Kairo werden Sie von einem erfahrenen Ägyptologen begrüßt, der Sie den ganzen Tag über begleitet. Beginnen Sie Ihre Besichtigungstour mit den ikonischen Pyramiden von Gizeh – der Großen Pyramide von Cheops, der Pyramide von Chephren und der Pyramide von Mykerinos. Erfahren Sie mehr über die Geschichte und Bedeutung dieser antiken Wunder. Sie haben die Möglichkeit, Fotos zu machen und die Umgebung zu erkunden. Bewundern Sie die beeindruckende Große Sphinx, die den Eingang zu den Pyramiden bewacht. Erkunden Sie den nahegelegenen Taltempel, der für die Mumifizierung der Pharaonen genutzt wurde. Sie können das Ägyptische Museum besuchen, das eine beeindruckende Sammlung antiker Artefakte, darunter die Schätze von Tutanchamun, beherbergt. Eintrittskarten können auch vor Ort erworben werden.
+
+Genießen Sie ein köstliches Mittagessen in einem lokalen Restaurant in Kairo.
+
+Nach einem erlebnisreichen Tag fahren Sie zurück nach Hurghada. Ankunft in Ihrem Hotel in Hurghada am späten Abend, wo Ihre Tour endet.
+
+Sie können uns auch über die Schaltfläche „Anfrage senden“ kontaktieren, um das ermäßigte Angebot sowie die Geschenke direkt von uns zu erhalten.`,
+      
+      ru: `Начните свой день рано утром с трансфера из отеля в Хургаде на комфортабельном минивэне. Поездка в Каир занимает около 5-6 часов. Наслаждайтесь пейзажами по пути, остановки делаются по мере необходимости. Билеты в Пирамиды и Египетский музей приобретаются непосредственно на входе.
+
+По прибытии в Каир вас встретит опытный египтолог, который будет сопровождать вас в течение всего дня. Начните экскурсию с культовых пирамид Гизы — Великой пирамиды Хеопса, пирамид Хефрена и Микерина. Узнайте об истории и значении этих древних чудес. У вас будет возможность сделать фотографии и исследовать окрестности. Полюбуйтесь впечатляющим Большим Сфинксом, охраняющим вход в пирамиды. Исследуйте близлежащий Долинный храм, который использовался для мумификации фараонов. Вы также посетите Египетский музей, в котором хранится потрясающая коллекция древних артефактов, включая сокровища Тутанхамона.
+
+Насладитесь вкусным обедом в местном ресторане в Каире.
+
+После насыщенного дня вы отправитесь обратно в Хургаду. Возвращение в отель поздно вечером.
+
+Вы также можете связаться с нами через кнопку заказа, чтобы получить специальное предложение и подарки напрямую от нас.`,
+
+      en: `Start your day early with a pickup from your hotel in Hurghada in a comfortable van. The drive to Cairo takes about 5-6 hours. Enjoy the scenery along the way and take breaks as needed. Entrance tickets for the Pyramids and the Egyptian Museum can be purchased directly at the entrance.
+
+Upon arrival in Cairo, you will be greeted by an experienced Egyptologist who will accompany you throughout the day. Begin your tour with the iconic Pyramids of Gizeh – the Great Pyramid of Cheops, the Pyramid of Chephren, and the Pyramid of Mykerinos. Learn about the history and significance of these ancient wonders. You will have the opportunity to take photos and explore the surroundings. Admire the impressive Great Sphinx guarding the entrance to the pyramids. Explore the nearby Valley Temple, used for the mummification of pharaohs. You can visit the Egyptian Museum, which houses an impressive collection of ancient artifacts, including the treasures of Tutankhamun.
+
+Enjoy a delicious lunch at a local restaurant in Cairo.
+
+After an eventful day, drive back to Hurghada. Arrival at your hotel in Hurghada in the late evening, where your tour ends.
+
+You can also contact us via the booking button to receive a discounted offer and gifts directly from us.`,
+
+      pl: `Zacznij dzień wcześnie rano od odbioru z hotelu w Hurghadzie komfortowym vanem. Podróż do Kairu trwa około 5-6 godzin. Ciesz się widokami po drodze i korzystaj z przerw w razie potrzeby. Bilety wstępu do Piramid i Muzeum Egipskiego można kupić bezpośrednio przy wejściu.
+
+Po przyjeździe do Kairu powita Cię doświadczony egiptolog, który będzie Ci towarzyszył przez cały dzień. Rozpocznij zwiedzanie od kultowych piramid w Gizie – Wielkiej Piramidy Cheopsa, piramidy Chefrena i Mykerinosa. Poznaj historię i znaczenie tych starożytnych cudów. Będziesz mieć możliwość zrobienia zdjęć i zwiedzenia okolicy. Podziwiaj imponującego Wielkiego Sfinksa strzegącego wejścia do piramid. Odwiedź pobliską Świątynię Dolinną i Muzeum Egipskie z bogatą kolekcją artefaktów, w tym skarbami Tutenchamona.
+
+Zjedz pyszny lunch w lokalnej restauracji w Kairze.
+
+Po pełnym wrażeń dniu wróć do Hurghady. Przyjazd do hotelu późnym wieczorem.`,
+
+      fr: `Commencez votre journée tôt avec une prise en charge à votre hôtel à Hurghada dans un van confortable. Le trajet vers le Caire dure environ 5-6 heures. Profitez du paysage en cours de route. Les billets pour les pyramides et le musée égyptien s'achètent directement à l'entrée.
+
+À votre arrivée au Caire, vous serez accueilli par un égyptologue expérimenté. Commencez votre visite par les emblématiques pyramides de Gizeh – Khéops, Khéphren et Mykérinos. Apprenez l'histoire de ces merveilles antiques. Admirez le Grand Sphinx et explorez le temple de la vallée. Visitez le musée égyptien qui abrite les trésors de Toutankhamon.
+
+Profitez d'un délicieux déjeuner dans un restaurant local au Caire. Retour à Hurghada en fin de soirée.`,
+
+      ro: `Începeți ziua devreme cu o preluare de la hotelul dvs. din Hurghada într-un van confortabil. Drumul spre Cairo durează aproximativ 5-6 ore. Biletele pentru Piramide și Muzeul Egiptean pot fi achiziționate direct de la intrare.
+
+La sosirea în Cairo, veți fi întâmpinat de un egiptolog cu experiență. Începeți turul cu piramidele din Giza – Keops, Kefren și Mykerinos. Admirați Marele Sfinx și explorați Templul din Vale. Vizitați Muzeul Egiptean care găzduiește comorile lui Tutankhamon.
+
+Bucurați-vă de un prânz delicios într-un restaurant local din Cairo. Întoarcere în Hurghada târziu în cursul serii.`
     },
     gallery: [
       "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/7e/7d/2c/pyramids-of-giza.jpg?w=1600&h=-1&s=1",
       "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/7e/e9/36/pyramids-of-giza.jpg?w=2000&h=-1&s=1",
-      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/07/24/0e/e5/the-cairo-museum.jpg?w=1400&h=-1&s=1",
-      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/05/6d/8d/46/pyramids-of-giza.jpg?w=1400&h=-1&s=1",
-      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/04/00/39/3c/egyptian-museum.jpg?w=1100&h=-1&s=1",
-      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/03/90/fc/fc/the-sphinx.jpg?w=1100&h=-1&s=1",
-      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/0c/3a/0c/caption.jpg?w=1400&h=-1&s=1",
-      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/2a/39/78/caption.jpg?w=600&h=-1&s=1"
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/05/30/1b/d2/pyramiden-von-gizeh.jpg?w=2000&h=-1&s=1",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/05/2b/9d/61/caption.jpg?w=1100&h=-1&s=1",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/05/19/09/14/pyramids-of-giza.jpg?w=2000&h=-1&s=1",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/04/48/46/2b/piramides-de-gize.jpg?w=2000&h=-1&s=1",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/03/f4/bf/10/pyramids-of-giza.jpg?w=1000&h=-1&s=1",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/03/4f/9c/21/pyramids-of-giza.jpg?w=2000&h=-1&s=1"
     ]
   },
-  {
+ {
     id: 8,
     image: "https://freebirdtravel.net/ImageBank/sea%20trip/-ImageBank-sea-trip-5833-jpg_856x450_5833.jpg",
     price: 25,
-    names: { ru: "Парасейлинг", en: "Parasailing", de: "Parasailing", pl: "Parasailing", fr: "Parachute ascensionnel", ro: "Parasailing" },
+    names: { 
+      ru: "Парасейлинг", 
+      en: "Parasailing", 
+      de: "Parasailing & Meerblick", 
+      pl: "Parasailing", 
+      fr: "Parachute ascensionnel", 
+      ro: "Parasailing" 
+    },
     desc: { 
-      de: `Fliegen Sie mit dem Fallschirm über das Rote Meer und genießen Sie den Panoramablick auf Hurghada. Sicher und aufregend.`,
-      ru: `Полет на парашюте над морем на высоте 30-40 метров. Ощутите невероятную свободу и насладитесь панорамным видом.`,
-      en: `Fly 30-40 meters above the sea. Feel incredible freedom and enjoy panoramic views of the coast.`,
-      pl: `Lot spadochronem nad morzem. Poczuj wolność i podziwiaj panoramę wybrzeża.`,
-      fr: `Vol en parachute au-dessus de la mer. Vivez une liberté incroyable.`,
-      ro: `Zbor cu parașuta deasupra mării. Simțiți libertatea și bucurați-vă de priveliște.`
+      de: `Erleben Sie ein unvergessliches Abenteuer über dem Roten Meer! Genießen Sie die perfekte Mischung aus Nervenkitzel und atemberaubender Aussicht.
+
+Ihre Tour beginnt mit einer bequemen Abholung vom Hotel. Für Adrenalinliebhaber ist Parasailing das absolute Highlight – fliegen Sie alleine oder zu zweit 30–40 Meter über dem Meer und genießen Sie für 4 bis 7 Minuten einen atemberaubenden Blick über die Küste von Hurghada. Vorkenntnisse sind nicht erforderlich, unsere professionelle Crew kümmert sich um alles.
+
+Zusätzlich haben Sie die Möglichkeit, die Unterwasserwelt zu entdecken. Halten Sie die schönsten Momente mit Fotos fest und lassen Sie den Tag mit einem entspannten Rücktransfer zum Hotel ausklingen. Diese Tour ist ideal für alle, die das Rote Meer aus einer ganz neuen Perspektive erleben möchten!`,
+
+      ru: `Испытайте незабываемое приключение над Красным морем! Парасейлинг — это идеальное сочетание адреналина и захватывающих видов.
+
+Ваш тур начинается с удобного трансфера из отеля. Вы подниметесь на парашюте в одиночку или вдвоем на высоту 30–40 метров над уровнем моря. Полет длится от 4 до 7 минут, в течение которых перед вами откроется потрясающая панорама побережья Хургады. Никаких специальных навыков не требуется — наша профессиональная команда обеспечит полную безопасность.
+
+Запечатлейте эти моменты на фото и наслаждайтесь чувством свободы. После приземления и морской прогулки вас ждет комфортный обратный трансфер в отель. Это идеальный выбор для тех, кто хочет увидеть красоту Египта с высоты птичьего полета!`,
+
+      en: `Experience an unforgettable adventure above the Red Sea! Parasailing is the perfect mix of thrill and breathtaking views.
+
+Your tour begins with a convenient hotel pickup. For adrenaline lovers, flying 30–40 meters above the sea alone or in a pair is the ultimate highlight. Enjoy the stunning view over the Red Sea coast for 4 to 7 minutes. No previous experience is required — our professional crew handles everything.
+
+Capture the most beautiful moments with photos and end the day with a relaxed transfer back to your hotel. This tour is ideal for anyone who wants to experience the Red Sea from a completely new perspective!`,
+
+      pl: `Przeżyj niezapomnianą przygodę nad Morzem Czerwonym! Parasailing to idealne połączenie dreszczyku emocji i zapierających dech w piersiach widoków.
+
+Twoja wycieczka zaczyna się od wygodnego odbioru z hotelu. Leć sam lub w parze 30–40 metrów nad morzem i ciesz się niesamowitą panoramą wybrzeża Hurghady przez 4 do 7 minut. Nie jest wymagane żadne doświadczenie – nasza profesjonalna ekipa zadba o wszystko. Uwiecznij te chwile na zdjęciach i ciesz się wolnością!`,
+
+      fr: `Vivez une aventure inoubliable au-dessus de la mer Rouge ! Le parachute ascensionnel est le mélange parfait de sensations fortes et de vues imprenables.
+
+Pour les amateurs d'adrénaline, volez seul ou à deux à 30–40 mètres au-dessus de l'eau pendant 4 à 7 minutes. Aucune expérience préalable n'est nécessaire — notre équipe professionnelle s'occupe de tout. Capturez les plus beaux moments et terminez la journée par un transfert relaxant à votre hôtel.`,
+
+      ro: `Experimentați o aventură de neuitat deasupra Marii Roșii! Parasailing-ul este amestecul perfect de adrenalină și priveliști uluitoare.
+
+Zborul singur sau în pereche la 30–40 de metri deasupra mării timp de 4 până l-a 7 minute este punctul culminant al zilei. Nu este necesară experiență anterioară — echipajul nostru profesionist se ocupă de toate. Surprindeți cele mai frumoase momente în fotografii și bucurați-vă de un transfer relaxat înapoi la hotel.`
     },
     gallery: [
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbBtKgMB0hp7IN7RMGuTYighurrr0iGp08xQ&s",
@@ -247,5 +507,5 @@ export const TOURS: any = [
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx9rQvjyF_XniRKAt30mBZnzWVfP1GAnFfwQ&s",
       "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/30/15/06/b2/caption.jpg?w=500&h=400&s=1"
     ]
-  }
+  },
 ];

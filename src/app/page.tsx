@@ -51,8 +51,8 @@ export default function Home() {
               <h3 className="text-orange-500 font-black uppercase tracking-[0.3em] text-sm mb-6">
                 {lang === 'ru' ? 'О программе экскурсии' : 'About the program'}
               </h3>
-              <p className="text-white text-xl md:text-2xl leading-relaxed font-medium opacity-90">
-                {activeAlbum.desc[lang]}
+              <p className="text-white text-xl md:text-2xl leading-relaxed font-medium opacity-90 whitespace-pre-line">
+               {activeAlbum.desc[lang]}
               </p>
               
               <div className="mt-10 flex flex-wrap gap-4">
