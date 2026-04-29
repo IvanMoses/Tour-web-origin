@@ -456,29 +456,33 @@ Bucurați-vă de un prânz delicios într-un restaurant local din Cairo. Întoar
   },
   {
   id: 7, // Уникальный ID
-  image: "https://images.unsplash.com/photo-1544551763-8dd44758c2dd?q=80&w=1000", 
+  image: "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/08/0b/7c/cd.jpg", 
   price: 25,
   names: {
-    ru: "Морская прогулка и Снорклинг",
-    en: "Sea Trip & Snorkeling",
-    de: "Schnorchelausflug",
-    pl: "Wycieczka snurkowa",
-    fr: "Sortie Snorkeling",
-    ro: "Tur de snorkeling"
+    ru: "Скоростной катер (Speed Boat)",
+    en: "Private Speed Boat",
+    de: "Privates Schnellboot",
+    pl: "Prywatna motorówka",
+    fr: "Bateau rapide privé",
+    ro: "Barcă rapidă privată"
   },
   desc: {
-    ru: "Классический день в Красном море для любителей подводного мира. Мы отправимся к двум самым красочным коралловым рифам, где вы сможете увидеть мурен, рыб-клоунов и, если повезет, морских черепах. Никакой суеты островов — только вы и море.\n\nВ программе:\n• 2 остановки для снорклинга на разных рифах\n• Обед (шведский стол) и напитки на борту\n• Оборудование для плавания включено\n• Рыбалка на обратном пути (по желанию)",
-    en: "A classic day in the Red Sea for underwater world lovers. We will visit two of the most colorful coral reefs, where you can see moray eels, clownfish, and sometimes sea turtles. Just you and the sea.\n\nProgram includes:\n• 2 snorkeling stops at different reefs\n• Buffet lunch and drinks on board\n• Full snorkeling gear included\n• Fishing on the way back",
-    de: "Ein klassischer Tag im Roten Meer. 2 Schnorchelstopps an den besten Riffen, Mittagessen und Getränke inklusive.",
-    pl: "Klasyczny dzień na Morzu Czerwonym. 2 przystanki na snurkowanie, lunch i napoje w cenie.",
-    fr: "Une journée classique en Mer Rouge. 2 arrêts snorkeling, déjeuner et boissons inclus.",
-    ro: "O zi clasică în Marea Roșie. 2 opriri pentru snorkeling, prânz și băuturi incluse."
+    ru: "Индивидуальная прогулка на скоростном катере — это свобода и адреналин. Никаких толп и жестких графиков. Вы сами выбираете маршрут: необитаемые острова, лучшие рифы для снорклинга или поиск дельфинов. Идеально для пар, семей или небольших компаний.\n\nПреимущества:\n• Полная приватность (только ваша компания)\n• Скорость: добираемся до локаций в 3 раза быстрее яхт\n• Гибкое время выезда\n• Снорклинг в самых чистых местах",
+    en: "A private speed boat trip means freedom and adrenaline. No crowds, no fixed schedules. You choose your own route: uninhabited islands, the best snorkeling reefs, or dolphin watching. Perfect for couples, families, or small groups.\n\nAdvantages:\n• Full privacy (only your group)\n• Speed: reach locations 3 times faster than yachts\n• Flexible departure time\n• Snorkeling in the most pristine spots",
+    de: "Eine private Schnellbootfahrt bedeutet Freiheit und Adrenalin. Keine Menschenmassen, kein fester Zeitplan. Sie wählen Ihre eigene Route.\n\nVorteile:\n• Komplette Privatsphäre\n• 3-mal schneller als Yachten\n• Flexible Zeiten",
+    pl: "Prywatna motorówka to wolność i adrenalina. Żadnych tłumów, żadnych sztywnych grafików. Sam wybierasz trasę: bezludne wyspy lub najlepsze rafy.\n\nZalety:\n• Pełna prywatność\n• Szybkość: docieramy na miejsce 3 razy szybciej niż jachty\n• Elastyczne godziny",
+    fr: "Une sortie privée en bateau rapide, c'est la liberté. Pas de foule, pas d'horaires fixes. Vous choisissez votre propre itinéraire.\n\nAvantages:\n• Intimité totale\n• Vitesse: 3 fois plus rapide que les yachts\n• Horaires flexibles",
+    ro: "O excursie privată cu barca rapidă înseamnă libertate și adrenalină. Fără aglomerație, fără programe fixe. Îți alegi propriul traseu.\n\nAvantaje:\n• Privativitate deplină\n• Viteză: ajungi la locații de 3 ori mai repede decât iahturile\n• Program flexibil"
   },
   gallery: [
-    "https://images.unsplash.com/photo-1583212292454-1fe6229603b7?q=80&w=1000", // Рифы
-    "https://images.unsplash.com/photo-1599946347371-68eb71b16afc?q=80&w=1000", // Подводный мир
-    "https://images.unsplash.com/photo-1566417713940-fe7c737a9ef2?q=80&w=1000", // Обед на яхте
-    "https://images.unsplash.com/photo-1459679749180-f8378fc973a5?q=80&w=1000"  // Яхта в море
+    "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/08/0b/7e/aa.jpg", // Рифы
+    "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/08/0b/91/0f.jpg", // Подводный мир
+    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/31/32/7b/28/caption.jpg?w=1100&h=-1&s=1", // Обед на яхте
+    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/31/31/48/07/caption.jpg?w=1100&h=-1&s=1",  // Яхта в море
+    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/31/31/48/0e/caption.jpg?w=1100&h=-1&s=1",
+    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/31/31/48/0c/caption.jpg?w=1100&h=-1&s=1",
+    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/31/31/48/0b/caption.jpg?w=1100&h=-1&s=1",
+    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/31/31/48/06/caption.jpg?w=1100&h=-1&s=1"
   ]
 },
     {
