@@ -62,7 +62,7 @@ export default function Home() {
 
 The person responsible within the meaning of the data protection laws, in particular the EU General Data Protection Regulation (GDPR), is:
 
-Basem Hakim
+Ahmed Gamil
 
 Your data subject rights
 
