@@ -58,8 +58,61 @@ export default function Home() {
             </div>
             <div className="p-8 overflow-y-auto text-sm text-slate-600 space-y-6 leading-relaxed custom-scrollbar text-left">
               <p className="font-bold border-l-4 border-orange-600 pl-4">Verantwortlich: Ahmed (Ahvan Tour)</p>
-              <p>Wir verarbeiten Daten ausschließlich zur Abwicklung von Buchungen über WhatsApp. Es erfolgt keine Weitergabe an Dritte.</p>
-              <p>Sie haben jederzeit das Recht auf Auskunft über Ihre bei uns gespeicherten Daten sowie deren Löschung.</p>
+              <p>Data Protection
+
+The person responsible within the meaning of the data protection laws, in particular the EU General Data Protection Regulation (GDPR), is:
+
+Basem Hakim
+
+Your data subject rights
+
+You can exercise the following rights at any time using the contact details provided for our data protection officer:
+
+Information about your data stored by us and their processing (Article 15 GDPR),
+Correction of incorrect personal data (Article 16 GDPR),
+Deletion of your data stored by us (Article 17 GDPR),
+Restriction of data processing if we are not yet allowed to delete your data due to legal obligations (Article 18 GDPR),
+Objection to the processing of your data by us (Article 21 GDPR) and
+Data transferability if you have consented to data processing or have concluded a contract with us (Article 20 GDPR).
+If you have given us your consent, you can revoke this at any time with effect for the future.
+
+You can contact a supervisory authority at any time with a complaint, e.g. B. to the competent supervisory authority of the federal state of your place of residence or to the authority responsible for us as the responsible body.
+
+Collection of general information when visiting our website
+
+Type and purpose of processing:
+
+If you access our website, ie if you do not register or otherwise submit information, information of a general nature is automatically recorded. This information (server log files) includes, for example, the type of web browser, the operating system used, the domain name of your Internet service provider, your IP address and the like.
+
+In particular, they are processed for the following purposes:
+
+Ensuring a problem-free connection to the website,
+ensuring smooth use of our website,
+Evaluation of system security and stability as well
+to optimize our website.
+We do not use your data to draw conclusions about your person. Information of this type is statistically evaluated by us, if necessary anonymously, in order to optimize our website and the technology behind it.
+
+Legal basis and legitimate interest:
+
+The processing takes place in accordance with Article 6 Paragraph 1 Letter f GDPR on the basis of our legitimate interest in improving the stability and functionality of our website.
+
+Recipient:
+
+Recipients of the data may be technical service providers who act as processors for the operation and maintenance of our website.
+
+Storage duration:
+
+The data will be deleted as soon as they are no longer required for the purpose of collection. This is generally the case for the data used to provide the website when the respective session has ended.
+
+If the data is stored in log files, this is the case after 14 days at the latest. Storage beyond this is possible. In this case, the IP addresses of the users are anonymized so that it is no longer possible to assign the calling client.
+
+Provision prescribed or required:
+
+The provision of the aforementioned personal data is neither required by law nor by contract. Without the IP address, however, the service and functionality of our website cannot be guaranteed. In addition, individual services may not be available or may be restricted. For this reason, an objection is excluded.
+
+Cookies
+
+Like many other websites, we also use so-called “cookies”. Cookies are small text files that are stored on your end device (laptop, tablet, smartphone, etc.) when you visit our website.</p>
             </div>
             <div className="p-6 bg-slate-50 border-t">
               <button onClick={() => setIsPrivacyOpen(false)} className="w-full bg-slate-900 text-white py-4 rounded-2xl font-black uppercase tracking-widest text-xs">Schließen / Close</button>
