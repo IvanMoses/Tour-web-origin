@@ -66,12 +66,12 @@ export default function Home() {
 
       {/* NAVIGATION */}
       <nav className="bg-white/95 backdrop-blur-lg border-b sticky top-0 z-50 px-6 h-20 flex justify-between items-center shadow-sm">
-          {/* LOGO ONLY */}
-          <a href="#home" className="flex items-center h-full group transition-transform hover:scale-105 active:scale-95">
+          {/* LOGO ONLY (УВЕЛИЧЕННЫЙ И ВЫТЯНУТЫЙ ЗА СЧЕТ ОТСТУПОВ) */}
+          <a href="#home" className="flex items-center h-full group transition-transform hover:scale-105 active:scale-95 px-6">
             <img 
               src="/logo.svg" 
               alt="AhVan Tour" 
-              className="h-16 w-auto object-contain py-1" 
+              className="h-20 w-auto object-contain py-1" // Увеличили высоту до 20, ширина w-auto
             />
           </a>
 
