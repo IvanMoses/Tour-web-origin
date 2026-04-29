@@ -247,31 +247,67 @@ export default function Home() {
         </div>
       </section>
 
-      {/* TRANSFER */}
+     {/* --- TRANSFER SECTION (Обновленная сетка с car5.jpeg) --- */}
       <section id="transfer" className="py-24 bg-slate-50 scroll-mt-20">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            
+            {/* Текстовый блок */}
             <div className="text-left">
-              <h2 className="text-5xl md:text-6xl font-black uppercase italic tracking-tighter mb-8 text-slate-900 leading-none">
+              <div className="inline-block px-4 py-1 rounded-full bg-orange-100 text-orange-600 text-[10px] font-black uppercase tracking-widest mb-6">
+                Premium Fleet
+              </div>
+              <h2 className="text-5xl md:text-6xl font-black uppercase italic tracking-tighter mb-8 leading-none text-slate-900">
                 {t.transTitle} <span className="text-orange-600">{t.transName}</span>
               </h2>
-              <p className="text-slate-600 text-lg mb-8">{t.transDesc}</p>
-              <a href={`https://wa.me/${CONTACTS.whatsapp.replace(/\+/g, '')}?text=Hello! I want to book a transfer.`} target="_blank" className="bg-slate-900 text-white px-10 py-5 rounded-2xl font-black text-xs uppercase tracking-widest shadow-xl hover:bg-orange-600 transition-all inline-block">{t.btn}</a>
+              <p className="text-slate-600 text-lg leading-relaxed mb-8">
+                {t.transDesc}
+              </p>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
+                 <div className="flex items-center gap-3 font-black uppercase text-[10px] text-slate-700 tracking-wider italic">
+                   <Plane className="text-orange-600" size={18}/> Airport Meeting 24/7
+                 </div>
+                 <div className="flex items-center gap-3 font-black uppercase text-[10px] text-slate-700 tracking-wider italic">
+                   <Car className="text-orange-600" size={18}/> Modern & Clean Cars
+                 </div>
+              </div>
+
+              <a href={`https://wa.me/${CONTACTS.whatsapp.replace(/\+/g, '')}?text=Hello! I want to book a transfer.`} 
+                 target="_blank" 
+                 className="bg-slate-900 text-white px-10 py-5 rounded-2xl font-black text-xs uppercase tracking-[0.2em] shadow-xl hover:bg-orange-600 transition-all inline-block">
+                {t.btn}
+              </a>
             </div>
-            <div className="grid grid-cols-2 gap-4">
-                <img src="/images/transfer/car1.jpeg" className="rounded-[2.5rem] shadow-xl aspect-[3/4] object-cover border-4 border-white" alt="" />
+
+            {/* ГАЛЕРЕЯ МАШИН (Добавлена 5-я машина) */}
+            <div className="space-y-4">
+              {/* Верхний ряд: 2 больших фото */}
+              <div className="grid grid-cols-2 gap-4">
+                <img src="/images/transfer/car1.jpeg" className="rounded-[2.5rem] shadow-xl aspect-[3/4] object-cover border-4 border-white hover:scale-[1.02] transition-transform duration-500" alt="Transfer Car 1" />
                 <div className="space-y-4">
-                  <img src="/images/transfer/car2.jpeg" className="rounded-[2.5rem] shadow-xl aspect-square object-cover border-4 border-white" alt="" />
-                  <div className="bg-orange-600 rounded-[2.5rem] p-8 text-white font-black italic uppercase text-lg leading-tight">Fast. Safe. <br />Direct Prices.</div>
+                  <img src="/images/transfer/car2.jpeg" className="rounded-[2.5rem] shadow-xl aspect-square object-cover border-4 border-white hover:scale-[1.02] transition-transform duration-500" alt="Transfer Car 2" />
+                  <div className="bg-orange-600 rounded-[2.5rem] p-8 text-white font-black italic uppercase text-xl leading-tight shadow-lg">
+                    Fast. Safe. <br />Direct Prices.
+                  </div>
                 </div>
+              </div>
+              
+              {/* Нижний ряд: 3 фото (включая car5) */}
+              <div className="grid grid-cols-3 gap-4">
+                <img src="/images/transfer/car3.jpeg" className="rounded-2xl shadow-md aspect-square object-cover border-2 border-white hover:scale-105 transition-transform duration-500" alt="Car 3" />
+                <img src="/images/transfer/car4.jpeg" className="rounded-2xl shadow-md aspect-square object-cover border-2 border-white hover:scale-105 transition-transform duration-500" alt="Car 4" />
+                <img src="/images/transfer/car5.jpeg" className="rounded-2xl shadow-md aspect-square object-cover border-2 border-white hover:scale-105 transition-transform duration-500" alt="Car 5" />
+              </div>
             </div>
+
           </div>
         </div>
       </section>
 
       {/* FOOTER */}
       <footer id="contact" className="py-24 bg-slate-950 text-white flex flex-col items-center">
-          <img src="/ahvan.svg" alt="Logo" className="h-16 w-auto mb-8 opacity-80" />
+          <img src="/logo.svg" alt="Logo" className="h-16 w-auto mb-8 opacity-80" />
           <a href={`tel:${CONTACTS.phone}`} className="text-2xl font-bold mb-12 tracking-widest hover:text-orange-500 transition-colors">{CONTACTS.phone}</a>
           
           <div className="grid grid-cols-3 md:grid-cols-5 gap-8 mb-16 opacity-80">
