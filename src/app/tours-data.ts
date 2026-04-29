@@ -454,7 +454,33 @@ Bucurați-vă de un prânz delicios într-un restaurant local din Cairo. Întoar
       "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/03/4f/9c/21/pyramids-of-giza.jpg?w=2000&h=-1&s=1"
     ]
   },
- 
+  {
+  id: 7, // Уникальный ID
+  image: "https://images.unsplash.com/photo-1544551763-8dd44758c2dd?q=80&w=1000", 
+  price: 25,
+  names: {
+    ru: "Морская прогулка и Снорклинг",
+    en: "Sea Trip & Snorkeling",
+    de: "Schnorchelausflug",
+    pl: "Wycieczka snurkowa",
+    fr: "Sortie Snorkeling",
+    ro: "Tur de snorkeling"
+  },
+  desc: {
+    ru: "Классический день в Красном море для любителей подводного мира. Мы отправимся к двум самым красочным коралловым рифам, где вы сможете увидеть мурен, рыб-клоунов и, если повезет, морских черепах. Никакой суеты островов — только вы и море.\n\nВ программе:\n• 2 остановки для снорклинга на разных рифах\n• Обед (шведский стол) и напитки на борту\n• Оборудование для плавания включено\n• Рыбалка на обратном пути (по желанию)",
+    en: "A classic day in the Red Sea for underwater world lovers. We will visit two of the most colorful coral reefs, where you can see moray eels, clownfish, and sometimes sea turtles. Just you and the sea.\n\nProgram includes:\n• 2 snorkeling stops at different reefs\n• Buffet lunch and drinks on board\n• Full snorkeling gear included\n• Fishing on the way back",
+    de: "Ein klassischer Tag im Roten Meer. 2 Schnorchelstopps an den besten Riffen, Mittagessen und Getränke inklusive.",
+    pl: "Klasyczny dzień na Morzu Czerwonym. 2 przystanki na snurkowanie, lunch i napoje w cenie.",
+    fr: "Une journée classique en Mer Rouge. 2 arrêts snorkeling, déjeuner et boissons inclus.",
+    ro: "O zi clasică în Marea Roșie. 2 opriri pentru snorkeling, prânz și băuturi incluse."
+  },
+  gallery: [
+    "https://images.unsplash.com/photo-1583212292454-1fe6229603b7?q=80&w=1000", // Рифы
+    "https://images.unsplash.com/photo-1599946347371-68eb71b16afc?q=80&w=1000", // Подводный мир
+    "https://images.unsplash.com/photo-1566417713940-fe7c737a9ef2?q=80&w=1000", // Обед на яхте
+    "https://images.unsplash.com/photo-1459679749180-f8378fc973a5?q=80&w=1000"  // Яхта в море
+  ]
+},
     {
   id: 8, // Проверь ID, чтобы не дублировался
   image: "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/r/32/72/5d/d2/caption.jpg", // Главное фото
