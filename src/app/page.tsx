@@ -34,7 +34,6 @@ export default function Home() {
             onClick={() => setActiveAlbum(null)} 
             className="absolute top-6 right-6 text-white hover:text-orange-500 transition-colors z-[210]"
           >
-            <X size={40} />
           </button>
           
           <div className="max-w-6xl w-full h-full overflow-y-auto p-4 custom-scrollbar">
@@ -338,10 +337,6 @@ export default function Home() {
                 <span className="text-[9px] uppercase font-bold tracking-widest opacity-50">Facebook</span>
               </a>
 
-              <a href="#" className="flex flex-col items-center gap-2 group">
-                <X className="group-hover:text-orange-500 transition-colors" size={24} />
-                <span className="text-[9px] uppercase font-bold tracking-widest opacity-50">Twitter</span>
-              </a>
             </div>
 
             <div className="h-px w-20 bg-orange-600/30 mb-8"></div>
