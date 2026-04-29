@@ -204,7 +204,7 @@ export default function Home() {
             
             <div className="relative flex justify-center items-center">
               <div className="relative z-10 w-full aspect-square max-w-[500px] bg-white rounded-[3.5rem] shadow-2xl border-8 border-slate-50 flex items-center justify-center p-12 overflow-hidden group">
-                <img src="/ahvan.svg" className="w-full h-auto transition-transform duration-700 group-hover:scale-105" alt="Ahvan Tour Logo" />
+                <img src="/logo.svg" className="w-full h-auto transition-transform duration-700 group-hover:scale-105" alt="Ahvan Tour Logo" />
                 <div className="absolute inset-0 bg-gradient-to-br from-orange-50 to-transparent -z-10 opacity-40"></div>
               </div>
               <div className="absolute -bottom-6 -right-6 bg-orange-600 text-white p-8 rounded-3xl shadow-xl hidden md:block z-20">
