@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin", "cyrillic"] });
 
 // Метаданные теперь более универсальные
 export const metadata: Metadata = {
-  title: "AhWan Tour | Excursions in Hurghada & Egypt",
+  title: "AhVan Tour | Excursions in Hurghada & Egypt",
   description: "Book unforgettable excursions in Hurghada: Safari, Luxor, Sea trips and Transfers across Egypt.",
   verification: {
     google: "9w3HX9ey_aM2pcTfarS5YDekH32AfguhSDF66YJhIhY",

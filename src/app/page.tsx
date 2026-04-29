@@ -1,12 +1,19 @@
 'use client';
 import { useState } from 'react';
-import { Instagram, Send, Facebook, X, Car, Plane, MapPin, Images } from 'lucide-react';
+// Добавляем Menu и X в список импортов из lucide-react
+import { Instagram, Send, Facebook, X, Car, Plane, MapPin, Images, Menu } from 'lucide-react';
 import { TOURS, CONTACTS, LANGUAGES } from './tours-data';
 
 export default function Home() {
   const [lang, setLang] = useState('en'); 
   const [activeAlbum, setActiveAlbum] = useState<any>(null); 
+  
+  // ДОБАВЬ ЭТУ СТРОКУ: она отвечает за то, открыто меню или нет
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   const t = LANGUAGES[lang];
+
+  // ... дальше твой остальной код (menu, return и т.д.)
 
   const menu = {
     ru: { home: "Главная", trips: "Экскурсии", gallery: "Галерея", transfer: "Трансфер", contact: "Контакты" },
@@ -64,47 +71,72 @@ export default function Home() {
         </div>
       )}
 
-      {/* NAVIGATION */}
-      <nav className="bg-white/95 backdrop-blur-lg border-b sticky top-0 z-50 px-6 h-20 flex justify-between items-center shadow-sm">
-          {/* LOGO ONLY (УВЕЛИЧЕННЫЙ И ВЫТЯНУТЫЙ ЗА СЧЕТ ОТСТУПОВ) */}
-          <a href="#home" className="flex items-center h-full group transition-transform hover:scale-105 active:scale-95 px-6">
-            <img 
-              src="/logo.svg" 
-              alt="AhVan Tour" 
-              className="h-20 w-auto object-contain py-1" // Увеличили высоту до 20, ширина w-auto
-            />
-          </a>
+      const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-          {/* DESKTOP MENU */}
-          <div className="hidden lg:flex gap-9 items-center">
-            {Object.entries(menu).map(([key, label]) => (
-              <a 
-                key={key} 
-                href={`#${key}`} 
-                className="text-[11px] uppercase font-black tracking-[0.25em] text-slate-600 hover:text-orange-600 transition-colors italic"
-              >
-                {label}
-              </a>
-            ))}
-          </div>
+  // ... внутри return:
 
-          {/* LANGUAGE PICKER */}
-          <div className="flex gap-1">
+  {/* NAVIGATION */}
+  <nav className="bg-white/95 backdrop-blur-lg border-b sticky top-0 z-[100] px-4 md:px-6 h-20 flex justify-between items-center shadow-sm">
+      
+      {/* LOGO - Сделали больше и ярче */}
+      <a href="#home" className="flex items-center h-full group transition-transform active:scale-95">
+        <div className="bg-white p-1.5 rounded-xl shadow-sm border border-slate-100 group-hover:shadow-md transition-all">
+          <img 
+            src="/logo.svg" 
+            alt="AhVan Tour" 
+            className="h-12 md:h-14 w-auto object-contain" 
+          />
+        </div>
+      </a>
+
+      {/* DESKTOP MENU (hidden on mobile) */}
+      <div className="hidden lg:flex gap-9 items-center">
+        {Object.entries(menu).map(([key, label]) => (
+          <a key={key} href={`#${key}`} className="text-[11px] uppercase font-black tracking-[0.25em] text-slate-600 hover:text-orange-600 transition-colors italic">{label}</a>
+        ))}
+        {/* Языки на десктопе в ряд */}
+        <div className="flex gap-1 ml-4 border-l pl-6">
+          {Object.keys(LANGUAGES).map((l) => (
+            <button key={l} onClick={() => setLang(l)} className={`text-[10px] font-bold px-2 py-1 rounded-md border ${lang === l ? 'bg-orange-600 text-white' : 'text-slate-400'}`}>{LANGUAGES[l].name}</button>
+          ))}
+        </div>
+      </div>
+
+      {/* MOBILE HAMBURGER BUTTON */}
+      <button 
+        className="lg:hidden p-2 text-slate-900 hover:bg-slate-100 rounded-xl transition-colors"
+        onClick={() => setIsMenuOpen(!isMenuOpen)}
+      >
+        <Menu size={32} />
+      </button>
+
+      {/* MOBILE MENU OVERLAY */}
+      {isMenuOpen && (
+        <div className="absolute top-20 left-0 w-full bg-white border-b shadow-2xl lg:hidden flex flex-col p-6 gap-6 animate-in slide-in-from-top duration-300">
+          {Object.entries(menu).map(([key, label]) => (
+            <a 
+              key={key} 
+              href={`#${key}`} 
+              onClick={() => setIsMenuOpen(false)}
+              className="text-lg uppercase font-black tracking-widest text-slate-900 border-b pb-2"
+            >
+              {label}
+            </a>
+          ))}
+          <div className="flex flex-wrap gap-2 pt-4">
             {Object.keys(LANGUAGES).map((l) => (
               <button 
                 key={l} 
-                onClick={() => setLang(l)} 
-                className={`text-[10px] font-bold px-3 py-2 rounded-full border transition-all ${
-                  lang === l 
-                    ? 'bg-orange-600 text-white border-orange-600 shadow-md' 
-                    : 'text-slate-500 border-slate-200 hover:border-orange-300 bg-white'
-                }`}
+                onClick={() => { setLang(l); setIsMenuOpen(false); }} 
+                className={`flex-1 min-w-[60px] text-xs font-bold py-3 rounded-xl border ${lang === l ? 'bg-orange-600 text-white border-orange-600' : 'bg-slate-50 text-slate-500'}`}
               >
                 {LANGUAGES[l].name}
               </button>
             ))}
           </div>
-      </nav>
+        </div>
+      )}
+  </nav>
 
       {/* HERO */}
       <section id="home" className="relative h-[85vh] flex items-center justify-center text-center overflow-hidden bg-slate-900" style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://i2.wp.com/see.news/images/2024/03/-1711659992-0.jpg?resize=750,500&ssl=1')`, backgroundSize: 'cover', backgroundPosition: 'center' }}>

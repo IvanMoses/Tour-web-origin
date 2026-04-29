@@ -38,7 +38,7 @@ export const LANGUAGES: any = {
     heroTitle: "Hurghada Wartet", 
     heroSub: "Beste Ausflüge direkt vom Veranstalter", 
     toursTitle: "Beliebte Touren", 
-    btn: "Buchen", 
+    btn: "Jetzt Buchen", 
     waHello: "Hallo! Ich möchte buchen: ",
     transTitle: "Bequemer",
     transName: "Transfer",
