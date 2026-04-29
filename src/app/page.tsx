@@ -125,67 +125,78 @@ export default function Home() {
         </div>
       )}
 
-      {/* NAVIGATION */}
+     {/* --- NAVIGATION --- */}
       <nav className="bg-white/95 backdrop-blur-lg border-b sticky top-0 z-[100] px-4 h-20 flex justify-between items-center shadow-sm">
-        <a href="#home" className="flex items-center h-full">
-           <img src="/logo.svg" alt="Logo" className="h-10 md:h-14 w-auto object-contain" />
+        {/* Логотип + Надпись (Видны всегда) */}
+        <a href="#home" className="flex items-center gap-2 md:gap-3 h-full shrink-0 group">
+          <img 
+            src="/ahvan.svg" 
+            alt="Logo" 
+            className="h-9 md:h-14 w-auto object-contain transition-transform group-hover:scale-110" 
+          />
+          <div className="flex flex-col md:flex-row md:gap-2 leading-none">
+            <span className="text-xl md:text-3xl font-black uppercase italic tracking-tighter text-slate-900">
+              Ahvan
+            </span>
+            <span className="text-xl md:text-3xl font-black uppercase italic tracking-tighter text-orange-600">
+              Tour
+            </span>
+          </div>
         </a>
+
+        {/* Меню для десктопа (скрыто на мобильных) */}
         <div className="hidden lg:flex gap-7 items-center ml-auto mr-8">
           {Object.entries(menu).map(([key, label]: any) => (
-            <a key={key} href={`#${key}`} className="text-[10px] uppercase font-black tracking-[0.2em] text-slate-600 hover:text-orange-600 transition-colors italic">{label}</a>
+            <a key={key} href={`#${key}`} className="text-[10px] uppercase font-black tracking-[0.2em] text-slate-600 hover:text-orange-600 transition-colors italic">
+              {label}
+            </a>
           ))}
           <div className="flex gap-1 ml-4 border-l pl-6">
             {Object.keys(LANGUAGES).map((l) => (
-              <button key={l} onClick={() => setLang(l)} className={`text-[10px] font-bold px-2 py-1 rounded-md border ${lang === l ? 'bg-orange-600 text-white border-orange-600' : 'text-slate-400 border-transparent'}`}>{LANGUAGES[l].name}</button>
+              <button 
+                key={l} 
+                onClick={() => setLang(l)} 
+                className={`text-[10px] font-bold px-2 py-1 rounded-md border ${lang === l ? 'bg-orange-600 text-white border-orange-600' : 'text-slate-400 border-transparent'}`}
+              >
+                {LANGUAGES[l].name}
+              </button>
             ))}
           </div>
         </div>
-        <button className="lg:hidden p-2 text-slate-900" onClick={() => setIsMenuOpen(!isMenuOpen)}><Menu size={28} /></button>
 
-        {/* MOBILE MENU */}
+        {/* Кнопка Бургера для мобильных */}
+        <button className="lg:hidden p-2 text-slate-900 ml-auto" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+          <Menu size={28} />
+        </button>
+
+        {/* Выпадающее мобильное меню */}
         {isMenuOpen && (
           <div className="absolute top-20 left-0 w-full bg-white border-b shadow-2xl lg:hidden flex flex-col p-6 gap-4 animate-in slide-in-from-top z-[150]">
             {Object.entries(menu).map(([key, label]: any) => (
-              <a key={key} href={`#${key}`} onClick={() => setIsMenuOpen(false)} className="text-lg uppercase font-black tracking-widest text-slate-900 border-b pb-2 italic">{label}</a>
+              <a key={key} href={`#${key}`} onClick={() => setIsMenuOpen(false)} className="text-lg uppercase font-black tracking-widest text-slate-900 border-b pb-2 italic">
+                {label}
+              </a>
             ))}
-            <button onClick={() => { setIsPrivacyOpen(true); setIsMenuOpen(false); }} className="text-sm text-left uppercase font-black tracking-widest text-orange-600 border-b pb-2 italic">Data Protection</button>
+            <button 
+              onClick={() => { setIsPrivacyOpen(true); setIsMenuOpen(false); }} 
+              className="text-sm text-left uppercase font-black tracking-widest text-orange-600 border-b pb-2 italic"
+            >
+              Data Protection
+            </button>
             <div className="flex flex-wrap gap-2 pt-2">
               {Object.keys(LANGUAGES).map((l) => (
-                <button key={l} onClick={() => { setLang(l); setIsMenuOpen(false); }} className={`flex-1 min-w-[60px] text-xs font-bold py-3 rounded-xl border ${lang === l ? 'bg-orange-600 text-white' : 'bg-slate-50 text-slate-500'}`}>{LANGUAGES[l].name}</button>
+                <button 
+                  key={l} 
+                  onClick={() => { setLang(l); setIsMenuOpen(false); }} 
+                  className={`flex-1 min-w-[60px] text-xs font-bold py-3 rounded-xl border ${lang === l ? 'bg-orange-600 text-white' : 'bg-slate-50 text-slate-500'}`}
+                >
+                  {LANGUAGES[l].name}
+                </button>
               ))}
             </div>
           </div>
         )}
       </nav>
-
-      {/* HERO */}
-      <section id="home" className="relative h-[80vh] flex items-center justify-center text-center overflow-hidden bg-slate-900" style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('https://i2.wp.com/see.news/images/2024/03/-1711659992-0.jpg?resize=750,500&ssl=1')`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
-          <div className="relative z-10 px-6 max-w-5xl mx-auto text-white">
-            <div className="h-1.5 w-24 bg-orange-600 mx-auto mb-10 rounded-full"></div>
-            <h1 className="text-6xl md:text-9xl font-black uppercase italic tracking-tighter mb-6 leading-none">{t.heroTitle}</h1>
-            <p className="text-orange-500 font-black uppercase tracking-[0.4em] text-sm md:text-lg bg-black/20 backdrop-blur-sm px-6 py-2 rounded-full inline-block">{t.heroSub}</p>
-          </div>
-      </section>
-
-      {/* TRIPS */}
-      <section id="trips" className="max-w-7xl mx-auto py-24 px-6 scroll-mt-24">
-        <h2 className="text-5xl md:text-7xl font-black uppercase italic tracking-tighter mb-16 text-center">{t.toursTitle}</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-          {TOURS.map((tour: any) => (
-            <div key={tour.id} className="group bg-white border border-slate-100 rounded-[2.5rem] overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500">
-              <div className="h-80 w-full relative overflow-hidden cursor-pointer" onClick={() => setActiveAlbum(tour)}>
-                <img src={tour.image} className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" alt="" />
-                <div className="absolute top-5 right-5 z-20 bg-orange-600 text-white px-5 py-2 rounded-full font-black text-xs">${tour.price}</div>
-              </div>
-              <div className="p-8">
-                <h3 className="text-2xl font-black uppercase italic mb-4 tracking-tight">{tour.names[lang]}</h3>
-                <p className="text-slate-500 text-sm mb-8 h-12 line-clamp-2">{tour.desc[lang]}</p>
-                <a href={`https://wa.me/${CONTACTS.whatsapp.replace(/\+/g, '')}?text=${encodeURIComponent(t.waHello + tour.names[lang])}`} target="_blank" className="block w-full bg-slate-900 text-white text-center py-4 rounded-2xl font-bold text-[11px] uppercase tracking-[0.3em] hover:bg-orange-600 shadow-lg">{t.btn}</a>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
 
       {/* ABOUT US (ИСПРАВЛЕННЫЙ ПЕРЕВОД) */}
       <section id="about" className="py-24 bg-slate-50 scroll-mt-20 overflow-hidden">
