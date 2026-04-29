@@ -194,7 +194,7 @@ export default function Home() {
               <div className="grid grid-cols-2 gap-4">
                 {/* Главное большое фото (вертикальное) */}
                 <img 
-                  src="/images/transfer/car1.jpg" 
+                  src="/images/transfer/car1.jpeg" 
                   className="rounded-3xl shadow-xl aspect-[3/4] object-cover border border-slate-100" 
                   alt="Our Transfer Car 1"
                 />
@@ -202,7 +202,7 @@ export default function Home() {
                 <div className="space-y-4">
                   {/* Второе фото (квадратное) */}
                   <img 
-                    src="/images/transfer/car2.jpg" 
+                    src="/images/transfer/car2.jpeg" 
                     className="rounded-3xl shadow-xl aspect-square object-cover border border-slate-100" 
                     alt="Our Transfer Car 2"
                   />
@@ -216,17 +216,17 @@ export default function Home() {
               {/* Нижний ряд из оставшихся 3-х фото */}
               <div className="grid grid-cols-3 gap-4">
                 <img 
-                  src="/images/transfer/car3.jpg" 
+                  src="/images/transfer/car3.jpeg" 
                   className="rounded-2xl shadow-md aspect-square object-cover border border-slate-100 hover:scale-105 transition-transform" 
                   alt="Our Transfer Car 3"
                 />
                 <img 
-                  src="/images/transfer/car4.jpg" 
+                  src="/images/transfer/car4.jpeg" 
                   className="rounded-2xl shadow-md aspect-square object-cover border border-slate-100 hover:scale-105 transition-transform" 
                   alt="Our Transfer Car 4"
                 />
-                <img 
-                  src="/images/transfer/car5.jpg" 
+                <img
+                  src="/images/transfer/car5.jpeg" 
                   className="rounded-2xl shadow-md aspect-square object-cover border border-slate-100 hover:scale-105 transition-transform" 
                   alt="Our Transfer Car 5"
                 />
