@@ -66,20 +66,49 @@ export default function Home() {
 
       {/* NAVIGATION */}
       <nav className="bg-white/95 backdrop-blur-lg border-b sticky top-0 z-50 px-6 h-20 flex justify-between items-center shadow-sm">
-          <div className="font-black text-orange-600 italic uppercase text-2xl">
-            AhVan <span className="text-slate-400 text-[11px] not-italic tracking-[0.4em] block font-bold">Tour</span>
-          </div>
+          {/* LOGO GROUP */}
+          <a href="#home" className="flex items-center gap-3 group transition-transform hover:scale-105 active:scale-95">
+            <div className="relative w-12 h-12 flex items-center justify-center">
+              <img 
+                src="/logo.svg" 
+                alt="AhVan Tour" 
+                className="w-full h-full object-contain"
+              />
+            </div>
+            <div className="flex flex-col justify-center">
+              <span className="font-black text-orange-600 italic text-xl leading-none uppercase tracking-tighter">
+                AhVan
+              </span>
+              <span className="text-slate-400 text-[9px] tracking-[0.4em] font-bold uppercase leading-none mt-1">
+                Tour
+              </span>
+            </div>
+          </a>
+
+          {/* DESKTOP MENU */}
           <div className="hidden lg:flex gap-9 items-center">
             {Object.entries(menu).map(([key, label]) => (
-              <a key={key} href={`#${key}`} className="text-[11px] uppercase font-black tracking-[0.25em] text-slate-600 hover:text-orange-600 transition-colors italic">{label}</a>
+              <a 
+                key={key} 
+                href={`#${key}`} 
+                className="text-[11px] uppercase font-black tracking-[0.25em] text-slate-600 hover:text-orange-600 transition-colors italic"
+              >
+                {label}
+              </a>
             ))}
           </div>
+
+          {/* LANGUAGE PICKER */}
           <div className="flex gap-1">
             {Object.keys(LANGUAGES).map((l) => (
               <button 
                 key={l} 
                 onClick={() => setLang(l)} 
-                className={`text-[10px] font-bold px-3 py-2 rounded-full border transition-all ${lang === l ? 'bg-orange-600 text-white border-orange-600' : 'text-slate-500 border-slate-200 hover:border-orange-300'}`}
+                className={`text-[10px] font-bold px-3 py-2 rounded-full border transition-all ${
+                  lang === l 
+                    ? 'bg-orange-600 text-white border-orange-600 shadow-md' 
+                    : 'text-slate-500 border-slate-200 hover:border-orange-300 bg-white'
+                }`}
               >
                 {LANGUAGES[l].name}
               </button>
