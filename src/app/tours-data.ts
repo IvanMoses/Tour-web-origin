@@ -454,7 +454,35 @@ Bucurați-vă de un prânz delicios într-un restaurant local din Cairo. Întoar
       "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/03/4f/9c/21/pyramids-of-giza.jpg?w=2000&h=-1&s=1"
     ]
   },
- {
+ 
+    {
+  id: 8, // Проверь ID, чтобы не дублировался
+  image: "/images/tours/submarine-main.jpg", // Главное фото
+  price: 45,
+  names: {
+    ru: "Подводная лодка (Submarine)",
+    en: "Sindbad Submarine",
+    de: "Sindbad U-Boot",
+    pl: "Łódź podwodna",
+    fr: "Sous-marin Sindbad",
+    ro: "Submarin Sindbad"
+  },
+  desc: {
+    ru: "Уникальная возможность погрузиться на глубину до 22 метров, не намочив ног. Через огромные панорамные иллюминаторы вы увидите жизнь Красного моря: коралловые сады, скатов и сотни экзотических рыб. Идеально подходит для семей с детьми и тех, кто не занимается дайвингом.\n\nВ программу входит:\n• Трансфер из отеля и обратно\n• Погружение на 45-50 минут\n• Сопровождение гида\n• Остановка для фото на палубе",
+    en: "A unique opportunity to dive to a depth of 22 meters without getting wet. Through huge panoramic portholes, you will see the life of the Red Sea: coral gardens, rays, and hundreds of exotic fish. Ideal for families with children and non-divers.\n\nProgram includes:\n• Hotel pickup and drop-off\n• 45-50 minute dive\n• Guide assistance\n• Photo stop on the deck",
+    de: "Eine einzigartige Gelegenheit, bis zu 22 Meter tief zu tauchen, ohne nass zu werden. Durch riesige Panorama-Bullaugen sehen Sie das Leben im Roten Meer: Korallengärten, Rochen und Hunderte exotische Fische.\n\nDas Programm beinhaltet:\n• Hoteltransfer\n• 45-50 Minuten Tauchgang\n• Reiseleitung",
+    pl: "Wyjątkowa okazja do nurkowania na głębokość 22 metrów bez zamoczenia stóp. Przez ogromne panoramiczne iluminatory zobaczysz życie Morza Czerwonego: ogrody koralowe, płaszczki i setki egzotycznych ryb.\n\nProgram obejmuje:\n• Transfer z hotelu\n• 45-50 minut nurkowania\n• Opieka przewodnika",
+    fr: "Une occasion unique de plonger à 22 mètres de profondeur sans se mouiller. À travers d'immenses hublots panoramiques, vous verrez la vie de la Mer Rouge.\n\nLe programme comprend:\n• Transfert de l'hôtel\n• Plongée de 45-50 minutes\n• Guide",
+    ro: "O oportunitate unică de a te scufunda la o adâncime de 22 de metri fără să te uzi. Prin hublouri panoramice uriașe, vei vedea viața Mării Roșii.\n\nProgramul include:\n• Transfer de la hotel\n• Scufundare de 45-50 minute\n• Ghid"
+  },
+  gallery: [
+    "https://images.unsplash.com/photo-1583212292454-1fe6229603b7?q=80&w=1000",
+    "https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=1000",
+    "https://images.unsplash.com/photo-1682687220063-4742bd7fd538?q=80&w=1000",
+    "https://images.unsplash.com/photo-1518467166778-b88f373ffec7?q=80&w=1000"
+  ]
+},
+{
     id: 8,
     image: "https://freebirdtravel.net/ImageBank/sea%20trip/-ImageBank-sea-trip-5833-jpg_856x450_5833.jpg",
     price: 25,
