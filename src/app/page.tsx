@@ -24,29 +24,29 @@ export default function Home() {
       slogan: "Ahvan Tour — это доверие, опыт и исключительный сервис.",
       contactInvite: "Свяжитесь со мной для получения дополнительной информации или бронирования.",
       badge: "Опыт с 2006",
-      privacyTitle: "Data Protection",
+      privacyTitle: "Защита данных",
       privacyBody: (
         <div className="space-y-6 text-slate-600 text-left">
-          <p>The person responsible within the meaning of the data protection laws, in particular the EU General Data Protection Regulation (GDPR), is: <strong>Ahmed Gamil</strong></p>
+          <p>Лицом, ответственным в смысле законов о защите данных, в частности Общего регламента ЕС по защите данных (GDPR), является: <strong>Ahmed Gamil</strong></p>
           <section>
-            <h4 className="font-bold text-slate-900 border-b pb-1 mb-2 text-base">Your data subject rights</h4>
-            <p>You can exercise the following rights at any time:</p>
+            <h4 className="font-bold text-slate-900 border-b pb-1 mb-2 text-base">Ваши права субъекта данных</h4>
+            <p>Вы можете в любое время воспользоваться следующими правами:</p>
             <ul className="list-disc pl-5 space-y-1 mt-2 text-xs">
-              <li>Information about your data stored by us (Art. 15 GDPR)</li>
-              <li>Correction of incorrect personal data (Art. 16 GDPR)</li>
-              <li>Deletion of your data stored by us (Art. 17 GDPR)</li>
-              <li>Restriction of data processing (Art. 18 GDPR)</li>
-              <li>Objection to the processing of your data (Art. 21 GDPR)</li>
-              <li>Data transferability (Art. 20 GDPR)</li>
+              <li>Информация о ваших данных, хранящихся у нас (ст. 15 GDPR)</li>
+              <li>Исправление неверных персональных данных (ст. 16 GDPR)</li>
+              <li>Удаление ваших данных, хранящихся у нас (ст. 17 GDPR)</li>
+              <li>Ограничение обработки данных (ст. 18 GDPR)</li>
+              <li>Возражение против обработки ваших данных (ст. 21 GDPR)</li>
+              <li>Переносимость данных (ст. 20 GDPR)</li>
             </ul>
           </section>
           <section>
-            <h4 className="font-bold text-slate-900 border-b pb-1 mb-2 text-base">General Information</h4>
-            <p>When you access our website, information of a general nature (server log files) is automatically recorded. This includes your IP address, browser type, and operating system. This is processed to ensure connection stability and system security based on Art. 6 (1) (f) GDPR.</p>
+            <h4 className="font-bold text-slate-900 border-b pb-1 mb-2 text-base">Общая информация</h4>
+            <p>При доступе к нашему веб-сайту автоматически записывается информация общего характера (лог-файлы сервера). Это включает ваш IP-адрес, тип браузера и операционную систему. Это обрабатывается для обеспечения стабильности соединения и безопасности системы на основании ст. 6 (1) (f) GDPR.</p>
           </section>
           <section>
-            <h4 className="font-bold text-slate-900 border-b pb-1 mb-2 text-base">Cookies</h4>
-            <p>Like many other websites, we also use "cookies". These are small text files stored on your device to improve the user experience.</p>
+            <h4 className="font-bold text-slate-900 border-b pb-1 mb-2 text-base">Файлы cookies</h4>
+            <p>Как и многие другие веб-сайты, мы также используем «cookies». Это небольшие текстовые файлы, хранящиеся на вашем устройстве для улучшения пользовательского опыта.</p>
           </section>
         </div>
       ),
@@ -104,29 +104,29 @@ export default function Home() {
       slogan: "Ahvan Tour steht für Vertrauen, Erfahrung und außergewöhnlichen Service.",
       contactInvite: "Kontaktieren Sie mich gerne für weitere Informationen oder Buchungen.",
       badge: "Seit 2006",
-      privacyTitle: "Datenschutz (GDPR)",
+      privacyTitle: "Datenschutzerklärung",
       privacyBody: (
         <div className="space-y-6 text-slate-600 text-left">
-          <p>The person responsible within the meaning of the data protection laws, in particular the EU General Data Protection Regulation (GDPR), is: <strong>Ahmed Gamil</strong></p>
+          <p>Verantwortlicher im Sinne der Datenschutzgesetze, insbesondere der EU-Datenschutz-Grundverordnung (DSGVO), ist: <strong>Ahmed Gamil</strong></p>
           <section>
-            <h4 className="font-bold text-slate-900 border-b pb-1 mb-2 text-base">Your data subject rights</h4>
-            <p>You can exercise the following rights at any time:</p>
+            <h4 className="font-bold text-slate-900 border-b pb-1 mb-2 text-base">Ihre Betroffenenrechte</h4>
+            <p>Unter den angegebenen Kontaktdaten können Sie jederzeit folgende Rechte ausüben:</p>
             <ul className="list-disc pl-5 space-y-1 mt-2 text-xs">
-              <li>Information about your data stored by us (Art. 15 GDPR)</li>
-              <li>Correction of incorrect personal data (Art. 16 GDPR)</li>
-              <li>Deletion of your data stored by us (Art. 17 GDPR)</li>
-              <li>Restriction of data processing (Art. 18 GDPR)</li>
-              <li>Objection to the processing of your data (Art. 21 GDPR)</li>
-              <li>Data transferability (Art. 20 GDPR)</li>
+              <li>Auskunft über Ihre bei uns gespeicherten Daten (Art. 15 DSGVO)</li>
+              <li>Berichtigung unrichtiger personenbezogener Daten (Art. 16 DSGVO)</li>
+              <li>Löschung Ihrer bei uns gespeicherten Daten (Art. 17 DSGVO)</li>
+              <li>Einschränkung der Datenverarbeitung (Art. 18 DSGVO)</li>
+              <li>Widerspruch gegen die Verarbeitung Ihrer Daten (Art. 21 DSGVO)</li>
+              <li>Datenübertragbarkeit (Art. 20 DSGVO)</li>
             </ul>
           </section>
           <section>
-            <h4 className="font-bold text-slate-900 border-b pb-1 mb-2 text-base">General Information</h4>
-            <p>When you access our website, information of a general nature (server log files) is automatically recorded. This includes your IP address, browser type, and operating system. This is processed to ensure connection stability and system security based on Art. 6 (1) (f) GDPR.</p>
+            <h4 className="font-bold text-slate-900 border-b pb-1 mb-2 text-base">Allgemeine Informationen</h4>
+            <p>Beim Zugriff auf unsere Website werden automatisch Informationen allgemeiner Natur (Server-Logfiles) erfasst. Diese umfassen IP-Adresse, Browsertyp und Betriebssystem. Dies dient der Gewährleistung eines reibungslosen Verbindungsaufbaus gemäß Art. 6 Abs. 1 lit. f DSGVO.</p>
           </section>
           <section>
             <h4 className="font-bold text-slate-900 border-b pb-1 mb-2 text-base">Cookies</h4>
-            <p>Like many other websites, we also use "cookies". These are small text files stored on your device to improve the user experience.</p>
+            <p>Wie viele andere Webseiten verwenden wir auch so genannte „Cookies“. Das sind kleine Textdateien, die auf Ihrem Endgerät gespeichert werden, um die Nutzung der Website zu verbessern.</p>
           </section>
         </div>
       ),
@@ -144,29 +144,29 @@ export default function Home() {
       slogan: "Ahvan Tour to zaufanie, doświadczenie i wyjątkowa obsługa.",
       contactInvite: "Zapraszam do kontaktu w celu uzyskania informacji lub rezerwacji.",
       badge: "Od 2006",
-      privacyTitle: "Data Protection",
+      privacyTitle: "Ochrona danych",
       privacyBody: (
         <div className="space-y-6 text-slate-600 text-left">
-          <p>The person responsible within the meaning of the data protection laws, in particular the EU General Data Protection Regulation (GDPR), is: <strong>Ahmed Gamil</strong></p>
+          <p>Osobą odpowiedzialną w rozumieniu przepisów o ochronie danych, w szczególności ogólnego rozporządzenia UE o ochronie danych (RODO), jest: <strong>Ahmed Gamil</strong></p>
           <section>
-            <h4 className="font-bold text-slate-900 border-b pb-1 mb-2 text-base">Your data subject rights</h4>
-            <p>You can exercise the following rights at any time:</p>
+            <h4 className="font-bold text-slate-900 border-b pb-1 mb-2 text-base">Twoje prawa jako osoby, której dane dotyczą</h4>
+            <p>W każdej chwili możesz skorzystać z następujących praw:</p>
             <ul className="list-disc pl-5 space-y-1 mt-2 text-xs">
-              <li>Information about your data stored by us (Art. 15 GDPR)</li>
-              <li>Correction of incorrect personal data (Art. 16 GDPR)</li>
-              <li>Deletion of your data stored by us (Art. 17 GDPR)</li>
-              <li>Restriction of data processing (Art. 18 GDPR)</li>
-              <li>Objection to the processing of your data (Art. 21 GDPR)</li>
-              <li>Data transferability (Art. 20 GDPR)</li>
+              <li>Informacja o Twoich danych przechowywanych u nas (art. 15 RODO)</li>
+              <li>Sprostowanie nieprawidłowych danych osobowych (art. 16 RODO)</li>
+              <li>Usunięcie Twoich danych przechowywanych u nas (art. 17 RODO)</li>
+              <li>Ograniczenie przetwarzania danych (art. 18 RODO)</li>
+              <li>Sprzeciw wobec przetwarzania Twoich danych (art. 21 RODO)</li>
+              <li>Przenoszenie danych (art. 20 RODO)</li>
             </ul>
           </section>
           <section>
-            <h4 className="font-bold text-slate-900 border-b pb-1 mb-2 text-base">General Information</h4>
-            <p>When you access our website, information of a general nature (server log files) is automatically recorded. This includes your IP address, browser type, and operating system. This is processed to ensure connection stability and system security based on Art. 6 (1) (f) GDPR.</p>
+            <h4 className="font-bold text-slate-900 border-b pb-1 mb-2 text-base">Informacje ogólne</h4>
+            <p>Podczas uzyskiwania dostępu do naszej strony internetowej automatycznie rejestrowane są informacje o charakterze ogólnym (pliki logów serwera). Obejmuje to adres IP, typ przeglądarki i system operacyjny. Jest to przetwarzane w celu zapewnienia stabilności połączenia na podstawie art. 6 ust. 1 lit. f RODO.</p>
           </section>
           <section>
-            <h4 className="font-bold text-slate-900 border-b pb-1 mb-2 text-base">Cookies</h4>
-            <p>Like many other websites, we also use "cookies". These are small text files stored on your device to improve the user experience.</p>
+            <h4 className="font-bold text-slate-900 border-b pb-1 mb-2 text-base">Pliki cookies</h4>
+            <p>Podobnie jak wiele innych stron internetowych, my również używamy tzw. „cookies”. Są to małe pliki tekstowe zapisywane na Twoim urządzeniu w celu poprawy komfortu użytkowania.</p>
           </section>
         </div>
       ),
@@ -187,26 +187,26 @@ export default function Home() {
       privacyTitle: "Protection des données",
       privacyBody: (
         <div className="space-y-6 text-slate-600 text-left">
-          <p>The person responsible within the meaning of the data protection laws, in particular the EU General Data Protection Regulation (GDPR), is: <strong>Ahmed Gamil</strong></p>
+          <p>Le responsable au sens des lois sur la protection des données, notamment le Règlement Général sur la Protection des Données (RGPD) de l'UE, est : <strong>Ahmed Gamil</strong></p>
           <section>
-            <h4 className="font-bold text-slate-900 border-b pb-1 mb-2 text-base">Your data subject rights</h4>
-            <p>You can exercise the following rights at any time:</p>
+            <h4 className="font-bold text-slate-900 border-b pb-1 mb-2 text-base">Vos droits en tant que personne concernée</h4>
+            <p>Vous pouvez exercer les droits suivants à tout moment :</p>
             <ul className="list-disc pl-5 space-y-1 mt-2 text-xs">
-              <li>Information about your data stored by us (Art. 15 GDPR)</li>
-              <li>Correction of incorrect personal data (Art. 16 GDPR)</li>
-              <li>Deletion of your data stored by us (Art. 17 GDPR)</li>
-              <li>Restriction of data processing (Art. 18 GDPR)</li>
-              <li>Objection to the processing of your data (Art. 21 GDPR)</li>
-              <li>Data transferability (Art. 20 GDPR)</li>
+              <li>Information sur vos données stockées par nous (Art. 15 RGPD)</li>
+              <li>Correction de données personnelles incorrectes (Art. 16 RGPD)</li>
+              <li>Suppression de vos données stockées par nous (Art. 17 RGPD)</li>
+              <li>Limitation du traitement des données (Art. 18 RGPD)</li>
+              <li>Opposition au traitement de vos données (Art. 21 RGPD)</li>
+              <li>Portabilité des données (Art. 20 RGPD)</li>
             </ul>
           </section>
           <section>
-            <h4 className="font-bold text-slate-900 border-b pb-1 mb-2 text-base">General Information</h4>
-            <p>When you access our website, information of a general nature (server log files) is automatically recorded. This includes your IP address, browser type, and operating system. This is processed to ensure connection stability and system security based on Art. 6 (1) (f) GDPR.</p>
+            <h4 className="font-bold text-slate-900 border-b pb-1 mb-2 text-base">Informations générales</h4>
+            <p>Lorsque vous accédez à notre site web, des informations de nature générale (fichiers journaux du serveur) sont automatiquement enregistrées. Cela inclut votre adresse IP, le type de navigateur et le système d'exploitation, conformément à l'Art. 6 (1) (f) du RGPD.</p>
           </section>
           <section>
             <h4 className="font-bold text-slate-900 border-b pb-1 mb-2 text-base">Cookies</h4>
-            <p>Like many other websites, we also use "cookies". These are small text files stored on your device to improve the user experience.</p>
+            <p>Comme beaucoup d'autres sites web, nous utilisons également des "cookies". Ce sont de petits fichiers texte stockés sur votre appareil pour améliorer l'expérience utilisateur.</p>
           </section>
         </div>
       ),
@@ -227,26 +227,26 @@ export default function Home() {
       privacyTitle: "Protecția datelor",
       privacyBody: (
         <div className="space-y-6 text-slate-600 text-left">
-          <p>The person responsible within the meaning of the data protection laws, in particular the EU General Data Protection Regulation (GDPR), is: <strong>Ahmed Gamil</strong></p>
+          <p>Persoana responsabilă în sensul legilor privind protecția datelor, în special Regulamentul General privind Protecția Datelor (GDPR) al UE, este: <strong>Ahmed Gamil</strong></p>
           <section>
-            <h4 className="font-bold text-slate-900 border-b pb-1 mb-2 text-base">Your data subject rights</h4>
-            <p>You can exercise the following rights at any time:</p>
+            <h4 className="font-bold text-slate-900 border-b pb-1 mb-2 text-base">Drepturile dumneavoastră</h4>
+            <p>Vă puteți exercita următoarele drepturi în orice moment:</p>
             <ul className="list-disc pl-5 space-y-1 mt-2 text-xs">
-              <li>Information about your data stored by us (Art. 15 GDPR)</li>
-              <li>Correction of incorrect personal data (Art. 16 GDPR)</li>
-              <li>Deletion of your data stored by us (Art. 17 GDPR)</li>
-              <li>Restriction of data processing (Art. 18 GDPR)</li>
-              <li>Objection to the processing of your data (Art. 21 GDPR)</li>
-              <li>Data transferability (Art. 20 GDPR)</li>
+              <li>Informații despre datele dumneavoastră stocate (Art. 15 GDPR)</li>
+              <li>Corectarea datelor cu caracter personal incorecte (Art. 16 GDPR)</li>
+              <li>Ștergerea datelor dumneavoastră stocate (Art. 17 GDPR)</li>
+              <li>Restricționarea procesării datelor (Art. 18 GDPR)</li>
+              <li>Opoziția față de prelucrarea datelor (Art. 21 GDPR)</li>
+              <li>Portabilitatea datelor (Art. 20 GDPR)</li>
             </ul>
           </section>
           <section>
-            <h4 className="font-bold text-slate-900 border-b pb-1 mb-2 text-base">General Information</h4>
-            <p>When you access our website, information of a general nature (server log files) is automatically recorded. This includes your IP address, browser type, and operating system. This is processed to ensure connection stability and system security based on Art. 6 (1) (f) GDPR.</p>
+            <h4 className="font-bold text-slate-900 border-b pb-1 mb-2 text-base">Informații generale</h4>
+            <p>Când accesați site-ul nostru, sunt înregistrate automat informații cu caracter general (fișiere jurnal de server). Acestea includ adresa IP, tipul de browser și sistemul de operare, în conformitate cu Art. 6 (1) (f) GDPR.</p>
           </section>
           <section>
             <h4 className="font-bold text-slate-900 border-b pb-1 mb-2 text-base">Cookies</h4>
-            <p>Like many other websites, we also use "cookies". These are small text files stored on your device to improve the user experience.</p>
+            <p>Ca multe alte site-uri web, folosim și noi așa-numitele „cookies”. Acestea sunt fișiere text mici stocate pe dispozitivul dumneavoastră pentru a îmbunătăți experiența utilizatorului.</p>
           </section>
         </div>
       ),
