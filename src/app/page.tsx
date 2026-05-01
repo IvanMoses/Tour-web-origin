@@ -389,7 +389,7 @@ export default function Home() {
       </section>
 
       {/* GALLERY */}
-      <section id="gallery" className="py-24 bg-white scroll-mt-20 text-center">
+      <section id="gallery" className="py-24 bg-slate-50 scroll-mt-20 text-center">
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-5xl md:text-7xl font-black uppercase italic tracking-tighter mb-16">{cur.galleryTitle}</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-left">
