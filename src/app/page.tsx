@@ -310,17 +310,24 @@ export default function Home() {
       )}
 
       {/* NAVIGATION */}
-<nav className="bg-white/95 backdrop-blur-lg border-b sticky top-0 z-[100] px-4 h-20 flex justify-between items-center shadow-sm">
-  {/* Добавил flex-1 и justify-center для мобилки, на десктопе lg:flex-none вернет всё как было */}
-  <a href="#home" className="flex items-center gap-3 h-full group flex-1 lg:flex-none justify-center lg:justify-start">
-      <img src="logo.svg" alt="Logo" className="h-10 md:h-14 w-auto object-contain transition-transform group-hover:rotate-12" />
-      {/* На десктопе lg:ml-4 даст нужный отступ от лого */}
-      <span className="font-black uppercase italic tracking-tighter text-xl md:text-2xl whitespace-nowrap lg:ml-4">
-        Ahvan <span className="text-orange-600">Tour</span>
-      </span>
-  </a>
+<nav className="bg-white/95 backdrop-blur-lg border-b sticky top-0 z-[100] px-4 h-20 flex items-center justify-between shadow-sm">
+  
+  {/* Контейнер для логотипа и названия */}
+  <div className="flex-1 flex items-center relative h-full">
+    
+    {/* ЛОГО: Абсолютное позиционирование, чтобы не мешать центровке текста */}
+    <a href="#home" className="absolute left-0 flex items-center h-full group">
+        <img src="logo.svg" alt="Logo" className="h-10 md:h-14 w-auto object-contain transition-transform group-hover:rotate-12" />
+    </a>
 
-  <div className="hidden lg:flex gap-7 items-center ml-auto mr-8">
+    {/* НАЗВАНИЕ: Теперь mx-auto сработает идеально, так как логотип вынесен из потока */}
+    <span className="mx-auto font-black uppercase italic tracking-tighter text-xl md:text-2xl whitespace-nowrap">
+        Ahvan <span className="text-orange-600">Tour</span>
+    </span>
+  </div>
+
+  {/* ДЕСКТОПНОЕ МЕНЮ */}
+  <div className="hidden lg:flex gap-7 items-center ml-8 mr-8">
     {Object.entries(menu).map(([key, label]: any) => (
       <a key={key} href={`#${key}`} className="text-[10px] uppercase font-black tracking-[0.2em] text-slate-600 hover:text-orange-600 transition-colors italic">{label}</a>
     ))}
@@ -331,7 +338,8 @@ export default function Home() {
     </div>
   </div>
 
-  <button className="lg:hidden p-2 text-slate-900" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+  {/* МОБИЛЬНАЯ КНОПКА */}
+  <button className="lg:hidden p-2 text-slate-900 z-[160]" onClick={() => setIsMenuOpen(!isMenuOpen)}>
     <Menu size={28} />
   </button>
 
