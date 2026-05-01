@@ -8,16 +8,18 @@ export const CONTACTS = {
 };
 
 export const LANGUAGES: any = {
-  en: { 
-    name: "EN", 
+
+  en: {
+    name: "EN",
     brand: "AhWan Tour",
-    heroTitle: "Hurghada is Waiting", 
+    heroTitle: "Hurghada is Waiting",
     heroSub: "Best excursions from direct organizers",
-    toursTitle: "Popular Excursions", 
-    btn: "Book Now", 
+    toursTitle: "Popular Excursions",
+    btn: "Book Now",
     waHello: "Hello! I want to book a tour with AhVan Tour: ",
-    transferTitle: "Your Reliable Transfer Service in Hurghada & Surroundings",
-    transferSubtitle: "Welcome to your trusted partner for comfortable and safe transportation! We offer customized transfer services tailored to your needs – flexible, punctual, and at fair prices.",
+    transTitle: "Your Reliable",
+    transName: "Transfer Service",
+    transSubtitle: "Welcome to your trusted partner for comfortable and safe transportation! We offer customized transfer services tailored to your needs – flexible, punctual, and at fair prices.",
     transferGroupText: "Whether you are traveling alone, as a couple, with family, or in a group – we always have the right vehicle for you:",
     transferVehicles: [
       "Small cars for quick and budget-friendly rides",
@@ -35,65 +37,150 @@ export const LANGUAGES: any = {
     transferFooter: "We focus on safety, cleanliness, and customer satisfaction. Our drivers are experienced, friendly, and multilingual.",
     transferCTA: "📲 Contact us now and book your ride easily via WhatsApp!"
   },
-  ru: { 
-    name: "RU", 
+
+  ru: {
+    name: "RU",
     brand: "AhWan Tour",
-    heroTitle: "Хургада ждет тебя", 
+    heroTitle: "Хургада ждет тебя",
     heroSub: "Лучшие экскурсии от прямых организаторов",
-    toursTitle: "Популярные экскурсии", 
-    btn: "Заказать", 
+    toursTitle: "Популярные экскурсии",
+    btn: "Заказать",
     waHello: "Здравствуйте! Хочу забронировать тур в AhVan Tour: ",
-    transTitle: "Комфортный",
-    transName: "Трансфер",
-    transDesc: "Мы обеспечим ваш комфорт с первых минут пребывания в Египте. Встретим вас в аэропорту, поможем с багажом и доставим в любую точку страны на современных автомобилях."
+    transTitle: "Ваш надежный сервис",
+    transName: "Трансфера",
+    transSubtitle: "Добро пожаловать к вашему доверенному партнеру для комфортных и безопасных поездок! Мы предлагаем индивидуальные услуги трансфера, адаптированные под ваши нужды – гибко, пунктуально и по честным ценам.",
+    transferGroupText: "Путешествуете ли вы в одиночку, парой, семьей или группой – у нас всегда есть подходящий автомобиль для вас:",
+    transferVehicles: [
+      "Легковые авто для быстрых и бюджетных поездок",
+      "Средний класс для комфорта и гибкости",
+      "Большие авто и минивэны для семей и групп"
+    ],
+    transferServicesTitle: "Наши услуги:",
+    transferServices: [
+      { icon: "✈️", text: "Трансфер из аэропорта – без стресса до вашего отеля" },
+      { icon: "🏨", text: "Трансферы между отелями – надежно в любую точку" },
+      { icon: "🛍️", text: "Шоппинг-поездки – лучшие места для покупок" },
+      { icon: "🏙️", text: "Городские туры – узнайте Хургаду как местный житель" },
+      { icon: "📍", text: "Частные поездки – вы выбираете место и время" }
+    ],
+    transferFooter: "Мы уделяем особое внимание безопасности, чистоте и удовлетворенности клиентов. Наши водители опытны, дружелюбны и говорят на нескольких языках.",
+    transferCTA: "📲 Свяжитесь с нами сейчас и легко забронируйте поездку через WhatsApp!"
   },
-  de: { 
-    name: "DE", 
-    brand: "AhWan Tour", 
-    heroTitle: "Hurghada Wartet", 
-    heroSub: "Beste Ausflüge direkt vom Veranstalter", 
-    toursTitle: "Beliebte Touren", 
-    btn: "Jetzt Buchen", 
+
+  de: {
+    name: "DE",
+    brand: "AhWan Tour",
+    heroTitle: "Hurghada Wartet",
+    heroSub: "Beste Ausflüge direkt vom Veranstalter",
+    toursTitle: "Beliebte Touren",
+    btn: "Jetzt Buchen",
     waHello: "Hallo! Ich möchte buchen: ",
-    transTitle: "Bequemer",
-    transName: "Transfer",
-    transDesc: "Wir sorgen für Ihren Komfort ab der ersten Minute. Wir holen Sie am Flughafen ab и bringen Sie in modernen Autos an jeden Ort in Ägypten."
+    transTitle: "Ihr zuverlässiger",
+    transName: "Transfer-Service",
+    transSubtitle: "Ihr vertrauenswürdiger Partner für komfortable und sichere Transporte in Hurghada und Umgebung! Wir bieten maßgeschneiderte Transfers – flexibel, pünktlich und zu fairen Preisen.",
+    transferGroupText: "Ob allein, als Paar, mit der Familie oder in einer Gruppe – wir haben immer das richtige Fahrzeug für Sie:",
+    transferVehicles: [
+      "Kleinwagen für schnelle und preiswerte Fahrten",
+      "Mittelklassewagen für Komfort und Flexibilität",
+      "Große Fahrzeuge & Vans für Familien und Gruppen"
+    ],
+    transferServicesTitle: "Unsere Dienstleistungen:",
+    transferServices: [
+      { icon: "✈️", text: "Flughafentransfer – stressfrei vom Flughafen zum Hotel" },
+      { icon: "🏨", text: "Hotel-Transfers – zuverlässig zu jedem Ziel" },
+      { icon: "🛍️", text: "Shopping-Touren – entdecken Sie die besten Spots" },
+      { icon: "🏙️", text: "Stadtrundfahrten – Hurghada wie ein Local erleben" },
+      { icon: "📍", text: "Individuelle Fahrten – Sie wählen Ziel und Zeit" }
+    ],
+    transferFooter: "Sicherheit, Sauberkeit und Kundenzufriedenheit stehen bei uns an erster Stelle. Unsere Fahrer sind erfahren, freundlich und mehrsprachig.",
+    transferCTA: "📲 Kontaktieren Sie uns jetzt und buchen Sie einfach via WhatsApp!"
   },
-  pl: { 
-    name: "PL", 
-    brand: "AhWan Tour", 
-    heroTitle: "Hurghada Czeka", 
-    heroSub: "Najlepsze wycieczki bezpośrednio", 
-    toursTitle: "Popularne wycieczki", 
-    btn: "Rezerwuj", 
+
+  pl: {
+    name: "PL",
+    brand: "AhWan Tour",
+    heroTitle: "Hurghada Czeka",
+    heroSub: "Najlepsze wycieczki bezpośrednio",
+    toursTitle: "Popularne wycieczki",
+    btn: "Rezerwuj",
     waHello: "Dzień dobry! Chcę zarezerwować: ",
-    transTitle: "Wygodny",
-    transName: "Transfer",
-    transDesc: "Zapewniamy komfort od pierwszych minut w Egipcie. Odbierzemy Cię z lotniska i dowieziemy w dowolne miejsce nowoczesnymi samochodami."
+    transTitle: "Twoje niezawodne",
+    transName: "Transfery",
+    transSubtitle: "Twój zaufany partner w komfortowym i bezpiecznym transporcie w Hurghadzie i okolicach! Oferujemy indywidualne usługi transferowe – elastyczne, punktualne i w uczciwych cenach.",
+    transferGroupText: "Niezależnie od tego, czy podróżujesz sam, w parze, z rodziną czy w grupie – zawsze mamy dla Ciebie odpowiedni pojazd:",
+    transferVehicles: [
+      "Małe samochody na szybkie i ekonomiczne przejazdy",
+      "Pojazdy klasy średniej dla komfortu i elastyczności",
+      "Duże pojazdy i vany dla rodzin oraz grup"
+    ],
+    transferServicesTitle: "Nasze Usługi:",
+    transferServices: [
+      { icon: "✈️", text: "Transfery lotniskowe – bezstresowy dojazd do hotelu" },
+      { icon: "🏨", text: "Transfery między hotelami – bezpiecznie w każde miejsce" },
+      { icon: "🛍️", text: "Wyjazdy na zakupy – odkryj najlepsze miejsca" },
+      { icon: "🏙️", text: "Wycieczki po mieście – poznaj Hurghadę jak lokalny mieszkaniec" },
+      { icon: "📍", text: "Prywatne trasy – Ty wybierasz cel i czas" }
+    ],
+    transferFooter: "Stawiamy na bezpieczeństwo, czystość i zadowolenie klienta. Nasi kierowcy są doświadczeni, przyjaźni i wielojęzyczni.",
+    transferCTA: "📲 Skontaktuj się z nami i zarezerwuj przejazd przez WhatsApp!"
   },
-  fr: { 
-    name: "FR", 
-    brand: "AhWan Tour", 
-    heroTitle: "Hurghada vous Attend", 
-    heroSub: "Meilleures excursions", 
-    toursTitle: "Excursions Populaires", 
-    btn: "Réserver", 
+
+  fr: {
+    name: "FR",
+    brand: "AhWan Tour",
+    heroTitle: "Hurghada vous Attend",
+    heroSub: "Meilleures excursions",
+    toursTitle: "Excursions Populaires",
+    btn: "Réserver",
     waHello: "Bonjour! Je veux réserver: ",
-    transTitle: "Confortable",
-    transName: "Transfert",
-    transDesc: "Nous assurons votre confort dès votre arrivée. Nous vous accueillerons à l'aéroport et vous transporterons partout en Égypte."
+    transTitle: "Votre service de",
+    transName: "Transfert Fiable",
+    transSubtitle: "Votre partenaire de confiance pour un transport confortable et sécurisé à Hurghada et ses environs ! Nous proposons des services personnalisés, flexibles, ponctuels et à des prix équitables.",
+    transferGroupText: "Que vous voyagiez seul, en couple, en famille ou en groupe, nous avons le véhicule qu'il vous faut :",
+    transferVehicles: [
+      "Petites voitures pour des trajets rapides et économiques",
+      "Véhicules intermédiaires pour plus de confort",
+      "Grands véhicules et vans pour familles et groupes"
+    ],
+    transferServicesTitle: "Nos Services:",
+    transferServices: [
+      { icon: "✈️", text: "Transferts Aéroport – trajet sans stress jusqu'à votre hôtel" },
+      { icon: "🏨", text: "Transferts Hôtel – transport fiable vers toute destination" },
+      { icon: "🛍️", text: "Sorties Shopping – explorez les meilleurs endroits" },
+      { icon: "🏙️", text: "Visites de la ville – découvrez Hurghada comme un local" },
+      { icon: "📍", text: "Trajets sur mesure – vous choisissez le lieu et l'heure" }
+    ],
+    transferFooter: "Nous mettons l'accent sur la sécurité, la propreté et la satisfaction du client. Nos chauffeurs sont expérimentés, courtois et multilingues.",
+    transferCTA: "📲 Contactez-nous dès maintenant et réservez via WhatsApp !"
   },
-  ro: { 
-    name: "RO", 
-    brand: "AhWan Tour", 
-    heroTitle: "Hurghada te Așteaptă", 
-    heroSub: "Cele mai bune excursii", 
-    toursTitle: "Excursii Populare", 
-    btn: "Rezervă", 
+
+  ro: {
+    name: "RO",
+    brand: "AhWan Tour",
+    heroTitle: "Hurghada te Așteaptă",
+    heroSub: "Cele mai bune excursii",
+    toursTitle: "Excursii Populare",
+    btn: "Rezervă",
     waHello: "Bună! Vreau să rezerv: ",
-    transTitle: "Confortabil",
-    transName: "Transfer",
-    transDesc: "Vă asigurăm confortul încă din primele minute în Egipt. Vă întâmpinăm la aeroport și vă transportăm oriunde în țară."
+    transTitle: "Serviciul tău de",
+    transName: "Transfer de Încredere",
+    transSubtitle: "Partenerul tău de încredere pentru transport confortabil și sigur în Hurghada și împrejurimi! Oferim servicii de transfer personalizate – flexibile, punctuale și la prețuri corecte.",
+    transferGroupText: "Indiferent dacă călătorești singur, în cuplu, cu familia sau în grup – avem întotdeauna vehiculul potrivit pentru tine:",
+    transferVehicles: [
+      "Mașini mici pentru călătorii rapide și economice",
+      "Vehicule de clasă medie pentru confort și flexibilitate",
+      "Vehicule mari și microbuze pentru familii și grupuri"
+    ],
+    transferServicesTitle: "Serviciile Noastre:",
+    transferServices: [
+      { icon: "✈️", text: "Transferuri Aeroport – drum fără stres de la aeroport la hotel" },
+      { icon: "🏨", text: "Transferuri Hotel – transport fiabil către orice destinație" },
+      { icon: "🛍️", text: "Cumpărături – explorează cele mai bune locuri" },
+      { icon: "🏙️", text: "Tururi de oraș – descoperă Hurghada ca un localnic" },
+      { icon: "📍", text: "Călătorii personalizate – tu alegi destinația și ora" }
+    ],
+    transferFooter: "Ne concentrăm pe siguranță, curățenie și satisfacția clienților. Șoferii noștri sunt experimentați, prietenoși și vorbesc mai multe limbi.",
+    transferCTA: "📲 Contactează-ne acum și rezervă simplu prin WhatsApp!"
   }
 };
 

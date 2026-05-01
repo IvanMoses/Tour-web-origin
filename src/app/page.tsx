@@ -407,26 +407,65 @@ export default function Home() {
       </section>
 
       {/* TRANSFER */}
-      <section id="transfer" className="pt-12 pb-24 bg-slate-50 scroll-mt-20">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div className="text-left">
-              <h2 className="text-5xl md:text-6xl font-black uppercase italic tracking-tighter mb-8 text-slate-900 leading-none">
-                {t.transTitle} <span className="text-orange-600">{t.transName}</span>
-              </h2>
-              <p className="text-slate-600 text-lg mb-8">{t.transDesc}</p>
-              <a href={`https://wa.me/${CONTACTS.whatsapp.replace(/\+/g, '')}?text=Hello! I want to book a transfer.`} target="_blank" className="bg-slate-900 text-white px-10 py-5 rounded-2xl font-black text-xs uppercase tracking-widest shadow-xl hover:bg-orange-600 transition-all inline-block">{t.btn}</a>
-            </div>
-            <div className="grid grid-cols-2 gap-4">
-                <img src="/images/transfer/car1.jpeg" className="rounded-[2.5rem] shadow-xl aspect-[3/4] object-cover border-4 border-white" alt="Transfer 1" />
-                <div className="space-y-4">
-                  <img src="/images/transfer/car2.jpeg" className="rounded-[2.5rem] shadow-xl aspect-square object-cover border-4 border-white" alt="Transfer 2" />
-                  <img src="/images/transfer/car5.jpeg" className="rounded-[2.5rem] shadow-xl aspect-square object-cover border-4 border-white" alt="Transfer 5" />
-                </div>
-            </div>
+<section id="transfer" className="pt-12 pb-24 bg-transparent scroll-mt-20">
+  <div className="max-w-7xl mx-auto px-6">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      
+      {/* Левая колонка: Текст */}
+      <div className="text-left">
+        <h2 className="text-5xl md:text-6xl font-black uppercase italic tracking-tighter mb-8 text-slate-900 leading-none">
+          {t.transTitle} <span className="text-orange-600">{t.transName}</span>
+        </h2>
+        
+        <div className="space-y-6 text-slate-600 text-lg leading-relaxed">
+          <p className="font-bold text-slate-900">{t.transSubtitle}</p>
+          
+          {/* Список автомобилей */}
+          <ul className="space-y-2">
+            {t.transferVehicles?.map((item, i) => (
+              <li key={i} className="flex items-center gap-2 text-sm font-medium">
+                <span className="text-orange-600">✔</span> {item}
+              </li>
+            ))}
+          </ul>
+
+          {/* Сетка услуг (мини-карточки) */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-4">
+            {t.transferServices?.map((service, i) => (
+              <div key={i} className="bg-white p-3 rounded-xl border border-slate-100 shadow-sm flex items-center gap-3">
+                <span className="text-xl">{service.icon}</span>
+                <span className="text-[11px] font-black uppercase tracking-wider text-slate-700">{service.text}</span>
+              </div>
+            ))}
           </div>
+
+          <p className="text-sm italic pt-4">{t.transferFooter}</p>
         </div>
-      </section>
+
+        <div className="mt-10">
+          <a 
+            href={`${CONTACTS.whatsapp}?text=${encodeURIComponent(t.waHello + " Transfer Inquiry")}`} 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="bg-slate-900 text-white px-10 py-5 rounded-2xl font-black text-xs uppercase tracking-widest shadow-xl hover:bg-orange-600 transition-all inline-block"
+          >
+            {t.btn}
+          </a>
+        </div>
+      </div>
+
+      {/* Правая колонка: Галерея машин */}
+      <div className="grid grid-cols-2 gap-4">
+          <img src="/images/transfer/car1.jpeg" className="rounded-[2.5rem] shadow-xl aspect-[3/4] object-cover border-4 border-white" alt="Transfer 1" />
+          <div className="space-y-4">
+            <img src="/images/transfer/car2.jpeg" className="rounded-[2.5rem] shadow-xl aspect-square object-cover border-4 border-white" alt="Transfer 2" />
+            <img src="/images/transfer/car5.jpeg" className="rounded-[2.5rem] shadow-xl aspect-square object-cover border-4 border-white" alt="Transfer 5" />
+          </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
 
       {/* ABOUT US */}
 <section id="about" className="pt-12 pb-24 bg-slate-50 scroll-mt-20 overflow-hidden"> {/* Исправлено: bg-transparent */}
