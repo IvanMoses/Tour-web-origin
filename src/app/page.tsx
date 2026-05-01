@@ -142,12 +142,12 @@ export default function Home() {
   const cur = CONTENT_DATA[lang] || CONTENT_DATA.en;
 
   const menu: any = {
-    ru: { home: "Главная", trips: "Экскурсии", gallery: "Галерея", about: "О нас", transfer: "Трансфер", contact: "Контакты" },
-    en: { home: "Home", trips: "Trips", gallery: "Gallery", about: "About Us", transfer: "Transfer", contact: "Contacts" },
-    de: { home: "Startseite", trips: "Touren", gallery: "Galerie", about: "Über uns", transfer: "Transfer", contact: "Kontakte" },
-    pl: { home: "Główna", trips: "Wycieczki", gallery: "Galeria", about: "O nas", transfer: "Transfer", contact: "Kontakt" },
-    fr: { home: "Accueil", trips: "Excursions", gallery: "Galerie", about: "À propos", transfer: "Transfert", contact: "Contacts" },
-    ro: { home: "Acasă", trips: "Tururi", gallery: "Galerie", about: "Despre noi", transfer: "Transfer", contact: "Contact" }
+    ru: { home: "Главная", trips: "Экскурсии", gallery: "Галерея", transfer: "Трансфер", about: "О нас", contact: "Контакты" },
+    en: { home: "Home", trips: "Trips", gallery: "Gallery", transfer: "Transfer", about: "About Us", contact: "Contacts" },
+    de: { home: "Startseite", trips: "Touren", gallery: "Galerie", transfer: "Transfer", about: "Über uns", contact: "Kontakte" },
+    pl: { home: "Główna", trips: "Wycieczki", gallery: "Galeria", transfer: "Transfer", about: "O nas", contact: "Kontakt" },
+    fr: { home: "Accueil", trips: "Excursions", gallery: "Galerie", transfer: "Transfert", about: "À propos", contact: "Contacts" },
+    ro: { home: "Acasă", trips: "Tururi", gallery: "Galerie", transfer: "Transfer", about: "Despre noi", contact: "Contact" }
   }[lang];
 
   return (
