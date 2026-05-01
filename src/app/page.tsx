@@ -22,24 +22,54 @@ export default function Home() {
       slogan: "Ahvan Tour — это доверие, опыт и незабываемые моменты.",
       badge: "Опыт с 2006",
       privacyTitle: "Защита данных",
-      privacyOwner: "Ответственный: Ахмед (Ahvan Tour)",
-      privacyText1: "Мы обрабатываем данные исключительно для оформления бронирований через WhatsApp. Мы не передаем информацию третьим лицам.",
-      privacyText2: "Вы имеете право в любое время запросить информацию о ваших данных или их удаление.",
+      privacyBody: (
+        <div className="space-y-4">
+          <p>Лицом, ответственным в значении законов о защите данных, в частности Общего регламента ЕС по защите данных (GDPR), является: <strong>Ahmed (Ahvan Tour)</strong></p>
+          <h4 className="font-bold border-b pb-2">Ваши права как субъекта данных</h4>
+          <p>Вы можете в любое время реализовать следующие права:</p>
+          <ul className="list-disc pl-5 space-y-1">
+            <li>Информация о ваших данных, хранящихся у нас (ст. 15 GDPR)</li>
+            <li>Исправление неверных данных (ст. 16 GDPR)</li>
+            <li>Удаление ваших данных (ст. 17 GDPR)</li>
+            <li>Ограничение обработки (ст. 18 GDPR)</li>
+            <li>Возражение против обработки (ст. 21 GDPR)</li>
+          </ul>
+          <h4 className="font-bold border-b pb-2">Сбор общей информации</h4>
+          <p>При посещении нашего сайта автоматически записывается информация общего характера (лог-файлы сервера): тип браузера, ОС, IP-адрес и т.д. Это необходимо для обеспечения бесперебойного соединения и безопасности системы.</p>
+          <h4 className="font-bold border-b pb-2">Cookies</h4>
+          <p>Как и многие другие веб-сайты, мы также используем так называемые «куки» (cookies). Это небольшие текстовые файлы, которые сохраняются на вашем конечном устройстве.</p>
+        </div>
+      ),
       privacyClose: "Закрыть"
     },
     en: {
       aboutTitle: "About Us",
       galleryTitle: "Gallery",
       welcome: "Welcome to Ahvan Tour",
-      founder: "My name is Ahmed, founder of Ahvan Tour and a passionate excursion planner since 2006. With years of experience in tourism, I offer individually planned experiences in Egypt.",
-      background: "I live in Germany but am a native Egyptian – this combination allows me to understand both cultures and provide a professional service.",
+      founder: "My name is Ahmed, founder of Ahvan Tour and a passionate excursion planner since 2006.",
+      background: "I live in Germany but am a native Egyptian – this combination allows me to provide professional service.",
       list: ["Desert safari adventures", "Boat trips & island excursions", "Private tours to Cairo or Luxor", "Transfers & individual wishes"],
       slogan: "Ahvan Tour stands for trust, experience, and unforgettable moments.",
       badge: "Since 2006",
       privacyTitle: "Data Protection",
-      privacyOwner: "Responsible: Ahmed (Ahvan Tour)",
-      privacyText1: "We process data exclusively for processing bookings via WhatsApp. No data is passed on to third parties.",
-      privacyText2: "You have the right to information about your stored data and its deletion at any time.",
+      privacyBody: (
+        <div className="space-y-4 text-slate-700">
+          <p>The person responsible within the meaning of the data protection laws, in particular the EU General Data Protection Regulation (GDPR), is: <strong>Ahmed (Ahvan Tour)</strong></p>
+          <h4 className="font-bold border-b pb-2 text-slate-900">Your data subject rights</h4>
+          <p>You can exercise the following rights at any time:</p>
+          <ul className="list-disc pl-5 space-y-1">
+            <li>Information about your data stored by us (Art. 15 GDPR)</li>
+            <li>Correction of incorrect personal data (Art. 16 GDPR)</li>
+            <li>Deletion of your data (Art. 17 GDPR)</li>
+            <li>Restriction of data processing (Art. 18 GDPR)</li>
+            <li>Objection to the processing of your data (Art. 21 GDPR)</li>
+          </ul>
+          <h4 className="font-bold border-b pb-2 text-slate-900">Collection of general information</h4>
+          <p>If you access our website, information of a general nature (server log files) is automatically recorded. This includes browser type, OS, IP address, etc. This is processed to ensure a problem-free connection and system stability.</p>
+          <h4 className="font-bold border-b pb-2 text-slate-900">Cookies</h4>
+          <p>Like many other websites, we also use so-called “cookies”. Cookies are small text files that are stored on your end device (laptop, tablet, smartphone, etc.) when you visit our website.</p>
+        </div>
+      ),
       privacyClose: "Close"
     },
     de: {
@@ -52,9 +82,21 @@ export default function Home() {
       slogan: "Ahvan Tour steht für Vertrauen, Erfahrung und unvergessliche Momente.",
       badge: "Seit 2006",
       privacyTitle: "Datenschutz",
-      privacyOwner: "Verantwortlich: Ahmed (Ahvan Tour)",
-      privacyText1: "Wir verarbeiten Daten ausschließlich zur Abwicklung von Buchungen über WhatsApp.",
-      privacyText2: "Sie haben jederzeit das Recht auf Auskunft über Ihre Daten sowie deren Löschung.",
+      privacyBody: (
+        <div className="space-y-4">
+          <p>Verantwortlich im Sinne der Datenschutzgesetze, insbesondere der EU-Datenschutzgrundverordnung (DSGVO), ist: <strong>Ahmed (Ahvan Tour)</strong></p>
+          <h4 className="font-bold border-b pb-2">Ihre Betroffenenrechte</h4>
+          <p>Sie können jederzeit folgende Rechte ausüben:</p>
+          <ul className="list-disc pl-5 space-y-1">
+            <li>Auskunft über Ihre bei uns gespeicherten Daten (Art. 15 DSGVO)</li>
+            <li>Berichtigung unrichtiger personenbezogener Daten (Art. 16 DSGVO)</li>
+            <li>Löschung Ihrer bei uns gespeicherten Daten (Art. 17 DSGVO)</li>
+            <li>Widerspruch gegen die Verarbeitung (Art. 21 DSGVO)</li>
+          </ul>
+          <h4 className="font-bold border-b pb-2">Erfassung allgemeiner Informationen</h4>
+          <p>Beim Zugriff auf unsere Website werden automatisch Informationen allgemeiner Natur erfasst (Server-Logfiles). Diese Informationen sind technisch notwendig, um die von Ihnen angeforderten Inhalte korrekt auszuliefern.</p>
+        </div>
+      ),
       privacyClose: "Schließen"
     },
     pl: {
@@ -67,9 +109,13 @@ export default function Home() {
       slogan: "Ahvan Tour to zaufanie, doświadczenie i niezapomniane chwile.",
       badge: "Od 2006",
       privacyTitle: "Ochrona danych",
-      privacyOwner: "Odpowiedzialny: Ahmed (Ahvan Tour)",
-      privacyText1: "Dane przetwarzamy wyłącznie w celu realizacji rezerwacji przez WhatsApp.",
-      privacyText2: "Masz prawo do wglądu w swoje dane oraz ich usunięcia w dowolnym momencie.",
+      privacyBody: (
+        <div className="space-y-4">
+          <p>Osobą odpowiedzialną w rozumieniu przepisów o ochronie danych jest: <strong>Ahmed (Ahvan Tour)</strong></p>
+          <h4 className="font-bold border-b pb-2">Twoje prawa</h4>
+          <p>Masz prawo do informacji (art. 15 RODO), sprostowania (art. 16 RODO) oraz usunięcia danych (art. 17 RODO).</p>
+        </div>
+      ),
       privacyClose: "Zamknij"
     },
     fr: {
@@ -82,9 +128,12 @@ export default function Home() {
       slogan: "Ahvan Tour, c'est la confiance, l'expérience et des moments inoubliables.",
       badge: "Depuis 2006",
       privacyTitle: "Protection des données",
-      privacyOwner: "Responsable : Ahmed (Ahvan Tour)",
-      privacyText1: "Nous traitons les données uniquement pour les réservations via WhatsApp.",
-      privacyText2: "Vous avez un droit d'accès et de suppression de vos données à tout moment.",
+      privacyBody: (
+        <div className="space-y-4">
+          <p>Le responsable au sens des lois sur la protection des données est : <strong>Ahmed (Ahvan Tour)</strong></p>
+          <p>Vous avez un droit d'accès, de rectification et de suppression de vos données conformément au RGPD.</p>
+        </div>
+      ),
       privacyClose: "Fermer"
     },
     ro: {
@@ -97,9 +146,12 @@ export default function Home() {
       slogan: "Ahvan Tour înseamnă încredere, experiență și momente de neuitat.",
       badge: "Din 2006",
       privacyTitle: "Protecția datelor",
-      privacyOwner: "Responsabil: Ahmed (Ahvan Tour)",
-      privacyText1: "Prelucrăm datele exclusiv pentru programări prin WhatsApp.",
-      privacyText2: "Aveți dreptul la informare și ștergere a datelor dumneavoastră în orice moment.",
+      privacyBody: (
+        <div className="space-y-4">
+          <p>Persoana responsabilă în sensul legilor privind protecția datelor este: <strong>Ahmed (Ahvan Tour)</strong></p>
+          <p>Aveți dreptul la informare, rectificare și ștergere a datelor dumneavoastră conform GDPR.</p>
+        </div>
+      ),
       privacyClose: "Închide"
     }
   };
@@ -121,18 +173,18 @@ export default function Home() {
       {/* MODAL DATA PROTECTION */}
       {isPrivacyOpen && (
         <div className="fixed inset-0 z-[300] bg-slate-950/90 backdrop-blur-md flex items-center justify-center p-4">
-          <div className="bg-white w-full max-w-2xl max-h-[80vh] rounded-[2.5rem] overflow-hidden flex flex-col shadow-2xl">
+          <div className="bg-white w-full max-w-2xl max-h-[85vh] rounded-[2.5rem] overflow-hidden flex flex-col shadow-2xl">
             <div className="p-8 border-b flex justify-between items-center bg-slate-50">
               <span className="font-black uppercase italic tracking-tighter text-xl">{cur.privacyTitle}</span>
-              <button onClick={() => setIsPrivacyOpen(false)}><X /></button>
+              <button onClick={() => setIsPrivacyOpen(false)} className="hover:rotate-90 transition-transform"><X /></button>
             </div>
-            <div className="p-8 overflow-y-auto text-sm text-slate-600 space-y-6 text-left">
-              <p className="font-bold border-l-4 border-orange-600 pl-4">{cur.privacyOwner}</p>
-              <p>{cur.privacyText1}</p>
-              <p>{cur.privacyText2}</p>
+            <div className="p-8 overflow-y-auto text-sm text-slate-600 space-y-4 custom-scrollbar text-left">
+              {cur.privacyBody}
             </div>
             <div className="p-6 bg-slate-50 border-t">
-              <button onClick={() => setIsPrivacyOpen(false)} className="w-full bg-slate-900 text-white py-4 rounded-2xl font-black uppercase tracking-widest text-xs">{cur.privacyClose}</button>
+              <button onClick={() => setIsPrivacyOpen(false)} className="w-full bg-slate-900 text-white py-4 rounded-2xl font-black uppercase tracking-widest text-xs hover:bg-orange-600 transition-colors">
+                {cur.privacyClose}
+              </button>
             </div>
           </div>
         </div>
@@ -223,8 +275,8 @@ export default function Home() {
       </section>
 
       {/* GALLERY */}
-      <section id="gallery" className="py-24 bg-white scroll-mt-20">
-        <div className="max-w-7xl mx-auto px-6 text-center">
+      <section id="gallery" className="py-24 bg-white scroll-mt-20 text-center">
+        <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-5xl md:text-7xl font-black uppercase italic tracking-tighter mb-16">{cur.galleryTitle}</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-left">
             {TOURS.map((tour: any) => (
@@ -296,8 +348,8 @@ export default function Home() {
 
       {/* FOOTER */}
       <footer id="contact" className="py-24 bg-slate-950 text-white flex flex-col items-center">
-          <div className="flex items-center gap-3 mb-8 opacity-80">
-            <img src="logo.svg" alt="Logo" className="h-12 w-auto" />
+          <div className="flex items-center gap-3 mb-8 opacity-80 group cursor-pointer">
+            <img src="logo.svg" alt="Logo" className="h-12 w-auto transition-transform group-hover:scale-110" />
             <span className="font-black uppercase italic tracking-tighter text-2xl">Ahvan Tour</span>
           </div>
           <a href={`tel:${CONTACTS.phone}`} className="text-2xl font-bold mb-12 tracking-widest hover:text-orange-500 transition-colors">{CONTACTS.phone}</a>
