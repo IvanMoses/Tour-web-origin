@@ -433,9 +433,13 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="relative flex justify-center items-center">
-              <div className="relative z-10 w-full aspect-square max-w-[500px] bg-transparent rounded-[3.5rem] shadow-2xl flex items-center justify-center p-12 overflow-hidden group">
-                <img src="logo.svg" className="w-full h-auto transition-transform duration-700 group-hover:scale-105" alt="Logo" />
-              </div>
+             <div className="relative z-10 w-full aspect-square max-w-[500px] bg-transparent rounded-[3.5rem] shadow-2xl flex items-center justify-center p-12 overflow-hidden group">
+  <img 
+    src="logo.svg" 
+    className="w-full h-auto transition-transform duration-700 group-hover:scale-105 mix-blend-multiply" 
+    alt="Logo" 
+  />
+</div>
               <div className="absolute -bottom-6 -right-6 bg-orange-600 text-white p-8 rounded-3xl shadow-xl hidden md:block z-20">
                 <div className="text-4xl font-black italic leading-none">2006</div>
                 <div className="text-[10px] uppercase font-bold tracking-widest opacity-80">{cur.badge}</div>
