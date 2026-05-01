@@ -271,7 +271,7 @@ export default function Home() {
 
       {/* FOOTER */}
       <footer id="contact" className="py-24 bg-slate-950 text-white flex flex-col items-center">
-          <img src="/ahvan.svg" alt="Logo" className="h-16 w-auto mb-8 opacity-80" />
+          <img src="logo.svg" alt="Logo" className="h-16 w-auto mb-8 opacity-80" />
           <a href={`tel:${CONTACTS.phone}`} className="text-2xl font-bold mb-12 tracking-widest hover:text-orange-500 transition-colors">{CONTACTS.phone}</a>
           
           <div className="grid grid-cols-3 md:grid-cols-5 gap-8 mb-16 opacity-80">
