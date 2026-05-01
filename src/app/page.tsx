@@ -77,7 +77,7 @@ export default function Home() {
       {/* NAVIGATION */}
       <nav className="bg-white/95 backdrop-blur-lg border-b sticky top-0 z-[100] px-4 h-20 flex justify-between items-center shadow-sm">
         <a href="#home" className="flex items-center gap-2 h-full shrink-0">
-          <img src="/ahvan.svg" alt="Logo" className="h-9 md:h-14 w-auto object-contain" />
+          <img src="logo.svg" alt="Logo" className="h-9 md:h-14 w-auto object-contain" />
           <div className="flex leading-none gap-1">
             <span className="text-xl md:text-2xl font-black uppercase italic tracking-tighter">Ahvan</span>
             <span className="text-xl md:text-2xl font-black uppercase italic tracking-tighter text-orange-600">Tour</span>
@@ -175,7 +175,7 @@ export default function Home() {
       {/* 5. ABOUT US - Коротко и внизу */}
       <section id="about" className="py-24 bg-slate-50 border-y scroll-mt-20">
         <div className="max-w-4xl mx-auto px-6 text-center">
-           <img src="/ahvan.svg" className="h-20 w-auto mx-auto mb-8" alt="Logo" />
+           <img src="/logo.svg" className="h-20 w-auto mx-auto mb-8" alt="Logo" />
            <h2 className="text-4xl font-black uppercase italic mb-6 tracking-tighter">{currentAbout.title}</h2>
            <p className="text-slate-600 text-xl leading-relaxed mb-4">{currentAbout.founder}</p>
            <p className="text-slate-500">{currentAbout.background}</p>
