@@ -266,7 +266,7 @@ export default function Home() {
   }[lang];
 
   return (
-    <main className="min-h-screen bg-white text-slate-900 font-sans antialiased">
+    <main className="min-h-screen bg-orange-50/30 text-slate-900 font-sans antialiased">
       
       {/* MODAL DATA PROTECTION */}
       {isPrivacyOpen && (
