@@ -423,16 +423,16 @@ export default function Home() {
           {/* Список автомобилей */}
           <ul className="space-y-2">
             {t.transferVehicles?.map((item: string, i: number) => (
-              <li key={`vehicle-${i}`} className="flex items-center gap-2 text-sm font-medium">
+              <li key={`veh-${i}`} className="flex items-center gap-2 text-sm font-medium">
                 <span className="text-orange-600">✔</span> {item}
               </li>
             ))}
           </ul>
 
-          {/* Сетка услуг (мини-карточки) */}
+          {/* Сетка услуг */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-4">
             {t.transferServices?.map((service: { icon: string; text: string }, i: number) => (
-              <div key={`service-${i}`} className="bg-white p-3 rounded-xl border border-slate-100 shadow-sm flex items-center gap-3">
+              <div key={`ser-${i}`} className="bg-white p-3 rounded-xl border border-slate-100 shadow-sm flex items-center gap-3">
                 <span className="text-xl">{service.icon}</span>
                 <span className="text-[11px] font-black uppercase tracking-wider text-slate-700 leading-tight">
                   {service.text}
@@ -446,33 +446,33 @@ export default function Home() {
 
         <div className="mt-10 relative z-30">
           <a 
-            href={`${CONTACTS.whatsapp}?text=${encodeURIComponent(t.waHello + " Transfer Inquiry")}`} 
+            href={`https://wa.me/${CONTACTS.whatsapp.replace(/\D/g, '')}?text=${encodeURIComponent(t.waHello + " " + t.transName)}`} 
             target="_blank" 
             rel="noopener noreferrer"
-            className="bg-slate-900 text-white px-10 py-5 rounded-2xl font-black text-xs uppercase tracking-widest shadow-xl hover:bg-orange-600 transition-all inline-block active:scale-95"
+            className="block w-full md:inline-block md:w-auto bg-slate-900 text-white text-center px-10 py-5 rounded-2xl font-bold text-[11px] uppercase tracking-[0.3em] hover:bg-orange-600 shadow-lg transition-all active:scale-95"
           >
             {t.btn}
           </a>
         </div>
       </div>
 
-      {/* Правая колонка: Галерея машин */}
+      {/* Правая колонка: Галерея */}
       <div className="grid grid-cols-2 gap-4 relative">
           <img 
             src="/images/transfer/car1.jpeg" 
             className="rounded-[2.5rem] shadow-xl aspect-[3/4] object-cover border-4 border-white" 
-            alt="Transfer Service 1" 
+            alt="Transfer 1" 
           />
           <div className="space-y-4">
             <img 
               src="/images/transfer/car2.jpeg" 
               className="rounded-[2.5rem] shadow-xl aspect-square object-cover border-4 border-white" 
-              alt="Transfer Service 2" 
+              alt="Transfer 2" 
             />
             <img 
               src="/images/transfer/car5.jpeg" 
               className="rounded-[2.5rem] shadow-xl aspect-square object-cover border-4 border-white" 
-              alt="Transfer Service 3" 
+              alt="Transfer 5" 
             />
           </div>
       </div>
@@ -480,6 +480,7 @@ export default function Home() {
     </div>
   </div>
 </section>
+
       {/* ABOUT US */}
 <section id="about" className="pt-12 pb-24 bg-slate-50 scroll-mt-20 overflow-hidden"> {/* Исправлено: bg-transparent */}
   <div className="max-w-7xl mx-auto px-6">
