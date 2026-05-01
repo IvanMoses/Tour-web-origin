@@ -16,28 +16,20 @@ export default function Home() {
       aboutTitle: "О нас",
       galleryTitle: "Галерея",
       welcome: "Добро пожаловать в Ahvan Tour",
-      founder: "Меня зовут Ахмед, я основатель Ahvan Tour и страстный организатор экскурсий с 2006 года. С многолетним опытом в туризме, я предлагаю индивидуально спланированные поездки и незабываемые впечатления в Египте.",
-      background: "Я живу в Германии, но я египтянин по происхождению – именно эта комбинация позволяет мне понимать обе культуры и предоставлять моим клиентам надежный и профессиональный сервис.",
-      list: ["Сафари-приключения в пустыне", "Морские прогулки и острова", "Частные туры в Каир или Луксор", "Трансферы и личные пожелания"],
-      slogan: "Ahvan Tour — это доверие, опыт и незабываемые моменты.",
+      founder: "Меня зовут Ахмед, я основатель Ahvan Tour и страстный организатор экскурсий с 2006 года. С многолетним опытом в туризме, я предлагаю индивидуально спланированные поездки и незабываемые впечатления по всему Египту.",
+      background: "В настоящее время я живу в Германии, но я египтянин по происхождению. Этот уникальный опыт позволяет мне понимать обе культуры и предоставлять надежный, профессиональный и ориентированный на клиента сервис.",
+      listTitle: "Что мы предлагаем:",
+      list: ["Сафари-приключения в пустыне", "Морские прогулки и острова", "Частные туры в Каир или Луксор", "Трансферы или индивидуальные запросы"],
+      footerAbout: "Каждая поездка тщательно спланирована, чтобы обеспечить качество, комфорт и незабываемые воспоминания.",
+      slogan: "Ahvan Tour — это доверие, опыт и исключительный сервис.",
+      contactInvite: "Свяжитесь со мной для получения дополнительной информации или бронирования.",
       badge: "Опыт с 2006",
       privacyTitle: "Защита данных",
       privacyBody: (
         <div className="space-y-4">
-          <p>Лицом, ответственным в значении законов о защите данных, в частности Общего регламента ЕС по защите данных (GDPR), является: <strong>Ahmed (Ahvan Tour)</strong></p>
-          <h4 className="font-bold border-b pb-2">Ваши права как субъекта данных</h4>
-          <p>Вы можете в любое время реализовать следующие права:</p>
-          <ul className="list-disc pl-5 space-y-1">
-            <li>Информация о ваших данных, хранящихся у нас (ст. 15 GDPR)</li>
-            <li>Исправление неверных данных (ст. 16 GDPR)</li>
-            <li>Удаление ваших данных (ст. 17 GDPR)</li>
-            <li>Ограничение обработки (ст. 18 GDPR)</li>
-            <li>Возражение против обработки (ст. 21 GDPR)</li>
-          </ul>
-          <h4 className="font-bold border-b pb-2">Сбор общей информации</h4>
-          <p>При посещении нашего сайта автоматически записывается информация общего характера (лог-файлы сервера): тип браузера, ОС, IP-адрес и т.д. Это необходимо для обеспечения бесперебойного соединения и безопасности системы.</p>
-          <h4 className="font-bold border-b pb-2">Cookies</h4>
-          <p>Как и многие другие веб-сайты, мы также используем так называемые «куки» (cookies). Это небольшие текстовые файлы, которые сохраняются на вашем конечном устройстве.</p>
+          <p>Лицом, ответственным в значении законов о защите данных, является: <strong>Ahmed (Ahvan Tour)</strong></p>
+          <h4 className="font-bold border-b pb-2 text-slate-900">Ваши права</h4>
+          <p>Вы можете в любое время реализовать права на информацию, исправление, удаление и ограничение обработки ваших данных (GDPR).</p>
         </div>
       ),
       privacyClose: "Закрыть"
@@ -46,28 +38,20 @@ export default function Home() {
       aboutTitle: "About Us",
       galleryTitle: "Gallery",
       welcome: "Welcome to Ahvan Tour",
-      founder: "My name is Ahmed, founder of Ahvan Tour and a passionate excursion planner since 2006.",
-      background: "I live in Germany but am a native Egyptian – this combination allows me to provide professional service.",
-      list: ["Desert safari adventures", "Boat trips & island excursions", "Private tours to Cairo or Luxor", "Transfers & individual wishes"],
-      slogan: "Ahvan Tour stands for trust, experience, and unforgettable moments.",
+      founder: "My name is Ahmed, founder of Ahvan Tour and a passionate excursion planner since 2006. With many years of experience in tourism, I offer customized trips and unforgettable experiences across Egypt.",
+      background: "I currently live in Germany but I am originally Egyptian. This unique background allows me to understand both cultures and provide a reliable, professional, and customer-focused service.",
+      listTitle: "Whether you are looking for:",
+      list: ["Desert safari adventures", "Boat trips & island excursions", "Private tours to Cairo or Luxor", "Transfers or custom experiences"],
+      footerAbout: "Every trip is carefully planned to ensure quality, comfort, and unforgettable memories.",
+      slogan: "Ahvan Tour stands for trust, experience, and exceptional service.",
+      contactInvite: "Feel free to contact me for more information or bookings.",
       badge: "Since 2006",
       privacyTitle: "Data Protection",
       privacyBody: (
-        <div className="space-y-4 text-slate-700">
-          <p>The person responsible within the meaning of the data protection laws, in particular the EU General Data Protection Regulation (GDPR), is: <strong>Ahmed (Ahvan Tour)</strong></p>
+        <div className="space-y-4">
+          <p>The person responsible within the meaning of the data protection laws is: <strong>Ahmed (Ahvan Tour)</strong></p>
           <h4 className="font-bold border-b pb-2 text-slate-900">Your data subject rights</h4>
-          <p>You can exercise the following rights at any time:</p>
-          <ul className="list-disc pl-5 space-y-1">
-            <li>Information about your data stored by us (Art. 15 GDPR)</li>
-            <li>Correction of incorrect personal data (Art. 16 GDPR)</li>
-            <li>Deletion of your data (Art. 17 GDPR)</li>
-            <li>Restriction of data processing (Art. 18 GDPR)</li>
-            <li>Objection to the processing of your data (Art. 21 GDPR)</li>
-          </ul>
-          <h4 className="font-bold border-b pb-2 text-slate-900">Collection of general information</h4>
-          <p>If you access our website, information of a general nature (server log files) is automatically recorded. This includes browser type, OS, IP address, etc. This is processed to ensure a problem-free connection and system stability.</p>
-          <h4 className="font-bold border-b pb-2 text-slate-900">Cookies</h4>
-          <p>Like many other websites, we also use so-called “cookies”. Cookies are small text files that are stored on your end device (laptop, tablet, smartphone, etc.) when you visit our website.</p>
+          <p>You can exercise the following rights at any time: Information, Correction, Deletion, and Restriction of data processing (GDPR).</p>
         </div>
       ),
       privacyClose: "Close"
@@ -76,25 +60,19 @@ export default function Home() {
       aboutTitle: "Über uns",
       galleryTitle: "Galerie",
       welcome: "Willkommen bei Ahvan Tour",
-      founder: "Mein Name ist Ahmed, Gründer von Ahvan Tour und leidenschaftlicher Ausflugsplaner seit 2006.",
-      background: "Ich lebe in Deutschland, bin aber gebürtiger Ägypter – diese Kombination ermöglicht einen vertrauensvollen Service.",
-      list: ["Safari-Abenteuer", "Bootsausflüge", "Private Touren", "Transfers"],
-      slogan: "Ahvan Tour steht für Vertrauen, Erfahrung und unvergessliche Momente.",
+      founder: "Mein Name ist Ahmed, Gründer von Ahvan Tour und leidenschaftlicher Ausflugsplaner seit 2006. Mit langjähriger Erfahrung biete ich maßgeschneiderte Reisen in ganz Ägypten an.",
+      background: "Ich lebe derzeit in Deutschland, bin aber gebürtiger Ägypter. Dieser Hintergrund ermöglicht es mir, beide Kulturen zu verstehen und einen professionellen Service zu bieten.",
+      listTitle: "Was wir anbieten:",
+      list: ["Wüstensafari-Abenteuer", "Bootsfahrten & Inselausflüge", "Private Touren nach Kairo oder Luxor", "Transfers oder individuelle Erlebnisse"],
+      footerAbout: "Jede Reise ist sorgfältig geplant, um Qualität, Komfort und unvergessliche Erinnerungen zu garantieren.",
+      slogan: "Ahvan Tour steht für Vertrauen, Erfahrung und außergewöhnlichen Service.",
+      contactInvite: "Kontaktieren Sie mich gerne für weitere Informationen oder Buchungen.",
       badge: "Seit 2006",
       privacyTitle: "Datenschutz",
       privacyBody: (
         <div className="space-y-4">
-          <p>Verantwortlich im Sinne der Datenschutzgesetze, insbesondere der EU-Datenschutzgrundverordnung (DSGVO), ist: <strong>Ahmed (Ahvan Tour)</strong></p>
-          <h4 className="font-bold border-b pb-2">Ihre Betroffenenrechte</h4>
-          <p>Sie können jederzeit folgende Rechte ausüben:</p>
-          <ul className="list-disc pl-5 space-y-1">
-            <li>Auskunft über Ihre bei uns gespeicherten Daten (Art. 15 DSGVO)</li>
-            <li>Berichtigung unrichtiger personenbezogener Daten (Art. 16 DSGVO)</li>
-            <li>Löschung Ihrer bei uns gespeicherten Daten (Art. 17 DSGVO)</li>
-            <li>Widerspruch gegen die Verarbeitung (Art. 21 DSGVO)</li>
-          </ul>
-          <h4 className="font-bold border-b pb-2">Erfassung allgemeiner Informationen</h4>
-          <p>Beim Zugriff auf unsere Website werden automatisch Informationen allgemeiner Natur erfasst (Server-Logfiles). Diese Informationen sind technisch notwendig, um die von Ihnen angeforderten Inhalte korrekt auszuliefern.</p>
+          <p>Verantwortlich im Sinne der Datenschutzgesetze ist: <strong>Ahmed (Ahvan Tour)</strong></p>
+          <p>Sie haben jederzeit das Recht auf Auskunft, Berichtigung und Löschung Ihrer Daten gemäß DSGVO.</p>
         </div>
       ),
       privacyClose: "Schließen"
@@ -103,17 +81,18 @@ export default function Home() {
       aboutTitle: "O nas",
       galleryTitle: "Galeria",
       welcome: "Witamy w Ahvan Tour",
-      founder: "Nazywam się Ahmed, założyciel Ahvan Tour. Planuję wycieczki od 2006 roku.",
-      background: "Mieszkam w Niemczech, ale jestem rodowitym Egipcjaninem, co pozwala mi profesjonalnie łączyć obie kultury.",
-      list: ["Pustynne safari", "Rejsy statkiem", "Prywatne wycieczki", "Transfery"],
-      slogan: "Ahvan Tour to zaufanie, doświadczenie i niezapomniane chwile.",
+      founder: "Nazywam się Ahmed, założyciel Ahvan Tour. Od 2006 roku z pasją planuję wycieczki i niezapomniane przeżycia w całym Egipcie.",
+      background: "Obecnie mieszkam w Niemczech, ale pochodzę z Egiptu. Pozwala mi to doskonale rozumieć obie kultury i świadczyć usługi na najwyższym poziomie.",
+      listTitle: "Szukasz jednej z tych atrakcji?",
+      list: ["Pustynne safari", "Rejsy statkiem i wyspy", "Prywatne wycieczki do Kairu lub Luksoru", "Transfery i życzenia indywidualne"],
+      footerAbout: "Każda podróż jest starannie zaplanowana, aby zapewnić jakość, komfort i niezapomniane wspomnienia.",
+      slogan: "Ahvan Tour to zaufanie, doświadczenie i wyjątkowa obsługa.",
+      contactInvite: "Zapraszam do kontaktu w celu uzyskania informacji lub rezerwacji.",
       badge: "Od 2006",
       privacyTitle: "Ochrona danych",
       privacyBody: (
         <div className="space-y-4">
-          <p>Osobą odpowiedzialną w rozumieniu przepisów o ochronie danych jest: <strong>Ahmed (Ahvan Tour)</strong></p>
-          <h4 className="font-bold border-b pb-2">Twoje prawa</h4>
-          <p>Masz prawo do informacji (art. 15 RODO), sprostowania (art. 16 RODO) oraz usunięcia danych (art. 17 RODO).</p>
+          <p>Osobą odpowiedzialną za ochronę danych jest: <strong>Ahmed (Ahvan Tour)</strong></p>
         </div>
       ),
       privacyClose: "Zamknij"
@@ -122,16 +101,18 @@ export default function Home() {
       aboutTitle: "À propos",
       galleryTitle: "Galerie",
       welcome: "Bienvenue chez Ahvan Tour",
-      founder: "Je m'appelle Ahmed, fondateur d'Ahvan Tour et planificateur d'excursions depuis 2006.",
-      background: "Je vis en Allemagne mais je suis Égyptien d'origine, ce qui me permet d'offrir un service professionnel.",
-      list: ["Safari au désert", "Sorties en bateau", "Tours privés", "Transferts"],
-      slogan: "Ahvan Tour, c'est la confiance, l'expérience et des moments inoubliables.",
+      founder: "Je m'appelle Ahmed, fondateur d'Ahvan Tour. Depuis 2006, je propose des voyages sur mesure et des expériences inoubliables à travers l'Égypte.",
+      background: "Je vis actuellement en Allemagne mais je suis d'origine égyptienne, ce qui me permet d'offrir un service fiable et professionnel.",
+      listTitle: "Ce que nous proposons :",
+      list: ["Aventures en safari au désert", "Sorties en bateau", "Tours privés à Le Caire ou Louxor", "Transferts et demandes personnalisées"],
+      footerAbout: "Chaque voyage est soigneusement planifié pour garantir qualité et confort.",
+      slogan: "Ahvan Tour rime avec confiance, expérience et service exceptionnel.",
+      contactInvite: "N'hésitez pas à me contacter pour plus d'informations.",
       badge: "Depuis 2006",
       privacyTitle: "Protection des données",
       privacyBody: (
         <div className="space-y-4">
-          <p>Le responsable au sens des lois sur la protection des données est : <strong>Ahmed (Ahvan Tour)</strong></p>
-          <p>Vous avez un droit d'accès, de rectification et de suppression de vos données conformément au RGPD.</p>
+          <p>Le responsable de la protection des données est : <strong>Ahmed (Ahvan Tour)</strong></p>
         </div>
       ),
       privacyClose: "Fermer"
@@ -140,16 +121,18 @@ export default function Home() {
       aboutTitle: "Despre noi",
       galleryTitle: "Galerie",
       welcome: "Bine ați venit la Ahvan Tour",
-      founder: "Numele meu este Ahmed, fondatorul Ahvan Tour și planificator de excursii din 2006.",
-      background: "Locuiesc în Germania, dar sunt egiptean la origine – combinația perfectă pentru servicii profesionale.",
-      list: ["Aventuri safari", "Excursii cu barca", "Tururi private", "Transferuri"],
-      slogan: "Ahvan Tour înseamnă încredere, experiență și momente de neuitat.",
+      founder: "Numele meu este Ahmed, fondatorul Ahvan Tour. Din 2006, planific cu pasiune excursii personalizate și experiențe de neuitat în tot Egiptul.",
+      background: "Locuiesc în prezent în Germania, dar sunt originar din Egipt. Acest lucru îmi permite să ofer un serviciu profesionist și de încredere.",
+      listTitle: "Indiferent ce căutați:",
+      list: ["Aventuri safari în deșert", "Plimbări cu barca", "Tururi private la Cairo sau Luxor", "Transferuri și experiențe personalizate"],
+      footerAbout: "Fiecare călătorie este planificată cu atenție pentru a asigura confort și amintiri de neuitat.",
+      slogan: "Ahvan Tour înseamnă încredere, experiență și servicii excepționale.",
+      contactInvite: "Contactați-mă pentru informații suplimentare sau rezervări.",
       badge: "Din 2006",
       privacyTitle: "Protecția datelor",
       privacyBody: (
         <div className="space-y-4">
-          <p>Persoana responsabilă în sensul legilor privind protecția datelor este: <strong>Ahmed (Ahvan Tour)</strong></p>
-          <p>Aveți dreptul la informare, rectificare și ștergere a datelor dumneavoastră conform GDPR.</p>
+          <p>Persoana responsabilă este: <strong>Ahmed (Ahvan Tour)</strong></p>
         </div>
       ),
       privacyClose: "Închide"
@@ -331,15 +314,28 @@ export default function Home() {
               <div className="flex items-center gap-2 text-orange-600 font-black uppercase text-xs tracking-[0.3em] mb-6"><ShieldCheck size={18} /> Reliable & Professional</div>
               <h2 className="text-5xl md:text-7xl font-black uppercase italic tracking-tighter leading-none text-slate-900 mb-8">{cur.aboutTitle}</h2>
               <div className="space-y-6 text-slate-600 text-lg md:text-xl leading-relaxed">
-                <p className="font-bold text-slate-900">{cur.welcome}</p>
+                <p className="font-bold text-slate-900 text-2xl">{cur.welcome}</p>
                 <p>{cur.founder}</p>
                 <p>{cur.background}</p>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-3 pt-2">
-                  {cur.list?.map((item: string, i: number) => (
-                    <div key={i} className="flex items-center gap-2 text-[11px] font-black uppercase text-slate-800 tracking-wider"><Star size={12} className="text-orange-600 fill-orange-600" /> {item}</div>
-                  ))}
+                
+                <div className="pt-4">
+                  <p className="font-black uppercase text-xs tracking-widest text-slate-900 mb-4">{cur.listTitle}</p>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    {cur.list?.map((item: string, i: number) => (
+                      <div key={i} className="flex items-center gap-2 text-[11px] font-black uppercase text-slate-800 tracking-wider bg-white p-3 rounded-xl border border-slate-100 shadow-sm">
+                        <Star size={12} className="text-orange-600 fill-orange-600" /> {item}
+                      </div>
+                    ))}
+                  </div>
                 </div>
-                <div className="mt-10 p-8 bg-white rounded-[2rem] border border-slate-100 shadow-sm italic text-slate-500 border-l-8 border-l-orange-600">"{cur.slogan}"</div>
+
+                <p className="pt-4">{cur.footerAbout}</p>
+                
+                <div className="mt-8 p-8 bg-white rounded-[2rem] border border-slate-100 shadow-sm italic text-slate-700 border-l-8 border-l-orange-600">
+                  <span className="text-orange-600 mr-2">👉</span> {cur.slogan}
+                </div>
+
+                <p className="text-sm font-bold text-slate-400 uppercase tracking-widest">{cur.contactInvite}</p>
               </div>
             </div>
           </div>
