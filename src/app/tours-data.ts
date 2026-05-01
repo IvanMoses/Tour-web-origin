@@ -1,6 +1,6 @@
 export const CONTACTS = {
   phone: "+20 15 56464007", // Твой номер для звонков
-  whatsapp: "+20 15 56464007", // Номер без + для ссылки
+  whatsapp: "https://wa.me/201556464007", // Номер без + для ссылки
   telegram: "https://t.me/yourname",
   instagram: "https://www.instagram.com/ahvan_tour?igsh=dHFodzBvNWExZDVm&utm_source=qr",
   tiktok: "https://www.tiktok.com/@ahvan_tour?_r=1&_t=ZG-95wWh9IpB3I",
