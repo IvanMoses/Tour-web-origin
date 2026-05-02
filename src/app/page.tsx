@@ -313,30 +313,19 @@ export default function Home() {
 <nav className="bg-white/95 backdrop-blur-lg border-b sticky top-0 z-[100] px-4 h-20 flex items-center justify-between shadow-sm">
   
   {/* Контейнер для логотипа и названия */}
-  <div className="flex items-center flex-shrink-0">
-  {/* Логотип-картинка с отступом справа на десктопе */}
-  <img 
-    src="/logo.svg" 
-    alt="Logo" 
-    className="h-16 md:h-18 w-auto mr-3 md:mr-10 transition-all" 
-  />
-
-  {/* Название бренда */}
-  <span className="
-    /* База: мобилка */
-    text-lg font-[1000] uppercase italic tracking-tighter leading-none
-    flex flex-row gap-1
+  <div className="flex-1 flex items-center relative h-full">
     
-    /* Десктоп: увеличиваем, растягиваем и отодвигаем */
-    md:text-4xl 
-    md:tracking-[0.25em] 
-    md:ml-4
-    transition-all duration-300
-  ">
-    <span className="text-slate-900">AHVAN</span>
-    <span className="text-orange-600">TOUR</span>
-  </span>
-</div>
+    {/* ЛОГО: Абсолютное позиционирование, чтобы не мешать центровке текста */}
+    <a href="#home" className="absolute left-0 flex items-center h-full group">
+        <img src="logo.svg" alt="Logo" className="h-16 md:h-18 w-auto object-contain transition-transform group-hover:rotate-12" />
+    </a>
+
+    {/* НАЗВАНИЕ: Теперь mx-auto сработает идеально, так как логотип вынесен из потока */}
+    <span className="mx-auto font-black uppercase italic tracking-tighter text-xl md:text-2xl whitespace-nowrap">
+        Ahvan <span className="text-orange-600">Tour</span>
+    </span>
+  </div>
+
 
   {/* ДЕСКТОПНОЕ МЕНЮ */}
   <div className="hidden lg:flex gap-7 items-center ml-8 mr-8">
