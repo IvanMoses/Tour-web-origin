@@ -321,9 +321,18 @@ export default function Home() {
     </a>
 
     {/* НАЗВАНИЕ: Теперь mx-auto сработает идеально, так как логотип вынесен из потока */}
-    <span className="mx-auto font-black uppercase italic tracking-tighter text-xl md:text-2xl whitespace-nowrap">
-        Ahvan <span className="text-orange-600">Tour</span>
-    </span>
+    <span className="
+  /* Базовые стили и мобилка (оставляем аккуратным) */
+  text-xl font-black uppercase italic tracking-tighter text-slate-900 
+  
+  /* Десктоп (увеличиваем и растягиваем) */
+  md:text-3xl      /* Делаем шрифт заметно больше */
+  md:tracking-widest /* Растягиваем расстояние между буквами */
+  md:mx-auto       /* Помогаем центрироваться, если нужно заполнить пустоту */
+  transition-all duration-300
+">
+  {t.brand}
+</span>
   </div>
 
   {/* ДЕСКТОПНОЕ МЕНЮ */}
