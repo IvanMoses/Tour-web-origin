@@ -315,7 +315,7 @@ export default function Home() {
   {/* Контейнер для логотипа и названия */}
   <div className="flex items-center gap-3 md:gap-6 flex-shrink-0">
   {/* Само лого-картинка (чемодан) */}
-  <img src="/logo.png" alt="Logo" className="h-8 md:h-12 w-auto" />
+  <img src="logo.svg" alt="Logo" className="h-8 md:h-12 w-auto" />
 
   {/* Название бренда */}
   <span className="
