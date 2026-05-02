@@ -317,7 +317,7 @@ export default function Home() {
     
     {/* ЛОГО: Абсолютное позиционирование, чтобы не мешать центровке текста */}
     <a href="#home" className="absolute left-0 flex items-center h-full group">
-        <img src="logo.svg" alt="Logo" className="h-10 md:h-14 w-auto object-contain transition-transform group-hover:rotate-12" />
+        <img src="logo.svg" alt="Logo" className="h-12 md:h-16 w-auto object-contain transition-transform group-hover:rotate-12" />
     </a>
 
     {/* НАЗВАНИЕ: Теперь mx-auto сработает идеально, так как логотип вынесен из потока */}
@@ -407,7 +407,7 @@ export default function Home() {
       </section>
 
       {/* TRANSFER */}
-<section id="transfer" className="pt-12 pb-24 bg-transparent scroll-mt-20">
+<section id="transfer" className="pt-12 pb-24 bg-slate-50 scroll-mt-20">
   <div className="max-w-7xl mx-auto px-6">
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
       
