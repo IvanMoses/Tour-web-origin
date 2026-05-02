@@ -316,9 +316,9 @@ export default function Home() {
   <div className="flex items-center flex-shrink-0">
   {/* Логотип-картинка с отступом справа на десктопе */}
   <img 
-    src="/logo.png" 
+    src="/logo.svg" 
     alt="Logo" 
-    className="h-8 md:h-12 w-auto mr-3 md:mr-10 transition-all" 
+    className="h-16 md:h-18 w-auto mr-3 md:mr-10 transition-all" 
   />
 
   {/* Название бренда */}
