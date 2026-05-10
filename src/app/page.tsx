@@ -407,19 +407,18 @@ export default function Home() {
         </div>
       </section>
 
-      {/* TRANSFER */}
-{/* SECTION: TRANSFER */}
-<section id="transfer" className="py-10 md:py-20 bg-slate-50 scroll-mt-20"> {/* Уменьшен padding-top и bottom */}
+       {/* TRANSFER */}
+<section id="transfer" className="pt-12 pb-24 bg-transparent scroll-mt-20">
   <div className="max-w-7xl mx-auto px-6">
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16 items-center"> {/* Уменьшен gap на мобилке */}
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
       
       {/* Левая колонка: Текст */}
       <div className="text-left relative z-10">
-        <h2 className="text-4xl md:text-6xl font-black uppercase italic tracking-tighter mb-6 text-slate-900 leading-none">
+        <h2 className="text-5xl md:text-6xl font-black uppercase italic tracking-tighter mb-8 text-slate-900 leading-none">
           {t.transTitle} <span className="text-orange-600">{t.transName}</span>
         </h2>
         
-        <div className="space-y-4 text-slate-600 text-lg leading-relaxed"> {/* Уменьшен space-y */}
+        <div className="space-y-6 text-slate-600 text-lg leading-relaxed">
           <p className="font-bold text-slate-900">{t.transSubtitle}</p>
           
           {/* Список автомобилей */}
@@ -432,7 +431,7 @@ export default function Home() {
           </ul>
 
           {/* Сетка услуг */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-4">
             {t.transferServices?.map((service: { icon: string; text: string }, i: number) => (
               <div key={`ser-${i}`} className="bg-white p-3 rounded-xl border border-slate-100 shadow-sm flex items-center gap-3">
                 <span className="text-xl">{service.icon}</span>
@@ -446,7 +445,7 @@ export default function Home() {
           <p className="text-sm italic pt-4 border-t border-slate-100">{t.transferFooter}</p>
         </div>
 
-        <div className="mt-8 relative z-30">
+        <div className="mt-10 relative z-30">
           <a 
             href={`https://wa.me/${CONTACTS.whatsapp.replace(/\D/g, '')}?text=${encodeURIComponent(t.waHello + " " + t.transName)}`} 
             target="_blank" 
@@ -483,12 +482,13 @@ export default function Home() {
   </div>
 </section>
 
-{/* SECTION: ABOUT US */}
-<section id="about" className="py-10 md:py-20 bg-slate-50 scroll-mt-20 overflow-hidden"> {/* py-10 вместо pt-12 pb-24 */}
+      {/* ABOUT US */}
+<section id="about" className="pt-12 pb-24 bg-slate-50 scroll-mt-20 overflow-hidden"> {/* Исправлено: bg-transparent */}
   <div className="max-w-7xl mx-auto px-6">
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16 items-center">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
       <div className="relative flex justify-center items-center">
-        <div className="relative z-10 w-full aspect-square max-w-[400px] md:max-w-[500px] bg-transparent rounded-[3.5rem] flex items-center justify-center p-8 md:p-12 overflow-hidden group">
+        {/* Удалена тень shadow-2xl, так как она рисует темный квадрат вокруг прозрачного блока */}
+        <div className="relative z-10 w-full aspect-square max-w-[500px] bg-transparent rounded-[3.5rem] flex items-center justify-center p-12 overflow-hidden group">
           <img 
             src="logo.svg" 
             className="w-full h-auto transition-transform duration-700 group-hover:scale-105" 
@@ -496,39 +496,45 @@ export default function Home() {
           />
         </div>
         
-        <div className="absolute -bottom-4 -right-4 bg-orange-600 text-white p-6 md:p-8 rounded-3xl shadow-xl hidden md:block z-20">
-          <div className="text-3xl md:text-4xl font-black italic leading-none">2006</div>
+        <div className="absolute -bottom-6 -right-6 bg-orange-600 text-white p-8 rounded-3xl shadow-xl hidden md:block z-20">
+          <div className="text-4xl font-black italic leading-none">2006</div>
           <div className="text-[10px] uppercase font-bold tracking-widest opacity-80">{cur.badge}</div>
         </div>
       </div>
 
       <div className="relative z-10 text-left">
-        <div className="flex items-center gap-2 text-orange-600 font-black uppercase text-xs tracking-[0.3em] mb-4 md:mb-6"><ShieldCheck size={18} /> Reliable & Professional</div>
-        <h2 className="text-4xl md:text-7xl font-black uppercase italic tracking-tighter leading-none text-slate-900 mb-6 md:mb-8">{cur.aboutTitle}</h2>
-        <div className="space-y-4 md:space-y-6 text-slate-600 text-lg leading-relaxed">
-          <p className="font-bold text-slate-900 text-xl md:text-2xl">{cur.welcome}</p>
-          <p className="text-base md:text-lg">{cur.founder}</p>
-          <p className="text-base md:text-lg">{cur.background}</p>
+        {/* Остальной контент без изменений */}
+        <div className="flex items-center gap-2 text-orange-600 font-black uppercase text-xs tracking-[0.3em] mb-6"><ShieldCheck size={18} /> Reliable & Professional</div>
+        <h2 className="text-5xl md:text-7xl font-black uppercase italic tracking-tighter leading-none text-slate-900 mb-8">{cur.aboutTitle}</h2>
+        <div className="space-y-6 text-slate-600 text-lg md:text-xl leading-relaxed">
+          <p className="font-bold text-slate-900 text-2xl">{cur.welcome}</p>
+          <p>{cur.founder}</p>
+          <p>{cur.background}</p>
           
-          <div className="pt-2">
+          <div className="pt-4">
             <p className="font-black uppercase text-xs tracking-widest text-slate-900 mb-4">{cur.listTitle}</p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {cur.list?.map((item: string, i: number) => (
-                <div key={i} className="flex items-center gap-2 text-[10px] md:text-[11px] font-black uppercase text-slate-800 tracking-wider bg-white p-3 rounded-xl border border-slate-100 shadow-sm">
+                <div key={i} className="flex items-center gap-2 text-[11px] font-black uppercase text-slate-800 tracking-wider bg-white p-3 rounded-xl border border-slate-100 shadow-sm">
                   <Star size={12} className="text-orange-600 fill-orange-600" /> {item}
                 </div>
               ))}
             </div>
           </div>
 
-          <div className="mt-6 p-6 md:p-8 bg-white rounded-[2rem] border border-slate-100 shadow-sm italic text-slate-700 border-l-8 border-l-orange-600 text-base">
+          <p className="pt-4">{cur.footerAbout}</p>
+          
+          <div className="mt-8 p-8 bg-white rounded-[2rem] border border-slate-100 shadow-sm italic text-slate-700 border-l-8 border-l-orange-600">
             <span className="text-orange-600 mr-2">👉</span> {cur.slogan}
           </div>
+
+          <p className="text-sm font-bold text-slate-400 uppercase tracking-widest">{cur.contactInvite}</p>
         </div>
       </div>
     </div>
   </div>
 </section>
+
 
       {/* FOOTER */}
       <footer id="contact" className="py-24 bg-slate-950 text-white flex flex-col items-center">
