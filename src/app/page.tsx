@@ -492,7 +492,7 @@ export default function Home() {
         </div>
       </section>
 
-       {/* TRANSFER */}
+     {/* TRANSFER */}
 <section id="transfer" className="pt-12 pb-12 bg-slate-50 scroll-mt-20">
   <div className="max-w-7xl mx-auto px-6">
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -542,24 +542,59 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Правая колонка: Галерея */}
+      {/* Правая колонка: Галерея машин с кликом */}
       <div className="grid grid-cols-2 gap-4 relative">
-          <img 
-            src="/images/transfer/car1.jpeg" 
-            className="rounded-[2.5rem] shadow-xl aspect-[3/4] object-cover border-4 border-white" 
-            alt="Transfer 1" 
-          />
+          {/* Первая большая машина */}
+          <div 
+            className="cursor-zoom-in group overflow-hidden rounded-[2.5rem] shadow-xl border-4 border-white aspect-[3/4]"
+            onClick={() => {
+              const transferImages = ["/images/transfer/car1.jpeg", "/images/transfer/car2.jpeg", "/images/transfer/car5.jpeg"];
+              setActiveAlbum({ gallery: transferImages, names: { [lang]: t.transName } });
+              setActiveImgIndex(0);
+              setIsLightboxOpen(true);
+            }}
+          >
+            <img 
+              src="/images/transfer/car1.jpeg" 
+              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" 
+              alt="Transfer 1" 
+            />
+          </div>
+
           <div className="space-y-4">
-            <img 
-              src="/images/transfer/car2.jpeg" 
-              className="rounded-[2.5rem] shadow-xl aspect-square object-cover border-4 border-white" 
-              alt="Transfer 2" 
-            />
-            <img 
-              src="/images/transfer/car5.jpeg" 
-              className="rounded-[2.5rem] shadow-xl aspect-square object-cover border-4 border-white" 
-              alt="Transfer 5" 
-            />
+            {/* Вторая машина */}
+            <div 
+              className="cursor-zoom-in group overflow-hidden rounded-[2.5rem] shadow-xl border-4 border-white aspect-square"
+              onClick={() => {
+                const transferImages = ["/images/transfer/car1.jpeg", "/images/transfer/car2.jpeg", "/images/transfer/car5.jpeg"];
+                setActiveAlbum({ gallery: transferImages, names: { [lang]: t.transName } });
+                setActiveImgIndex(1);
+                setIsLightboxOpen(true);
+              }}
+            >
+              <img 
+                src="/images/transfer/car2.jpeg" 
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" 
+                alt="Transfer 2" 
+              />
+            </div>
+
+            {/* Третья машина */}
+            <div 
+              className="cursor-zoom-in group overflow-hidden rounded-[2.5rem] shadow-xl border-4 border-white aspect-square"
+              onClick={() => {
+                const transferImages = ["/images/transfer/car1.jpeg", "/images/transfer/car2.jpeg", "/images/transfer/car5.jpeg"];
+                setActiveAlbum({ gallery: transferImages, names: { [lang]: t.transName } });
+                setActiveImgIndex(2);
+                setIsLightboxOpen(true);
+              }}
+            >
+              <img 
+                src="/images/transfer/car5.jpeg" 
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" 
+                alt="Transfer 5" 
+              />
+            </div>
           </div>
       </div>
       
