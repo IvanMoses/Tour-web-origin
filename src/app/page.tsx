@@ -506,7 +506,6 @@ export default function Home() {
         <div className="space-y-6 text-slate-600 text-lg leading-relaxed">
           <p className="font-bold text-slate-900">{t.transSubtitle}</p>
           
-          {/* Список автомобилей */}
           <ul className="space-y-2">
             {t.transferVehicles?.map((item: string, i: number) => (
               <li key={`veh-${i}`} className="flex items-center gap-2 text-sm font-medium">
@@ -515,7 +514,6 @@ export default function Home() {
             ))}
           </ul>
 
-          {/* Сетка услуг */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-4">
             {t.transferServices?.map((service: { icon: string; text: string }, i: number) => (
               <div key={`ser-${i}`} className="bg-white p-3 rounded-xl border border-slate-100 shadow-sm flex items-center gap-3">
@@ -542,14 +540,18 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Правая колонка: Галерея машин с кликом */}
+      {/* Правая колонка: Галерея машин (БЕЗОПАСНАЯ ВЕРСИЯ) */}
       <div className="grid grid-cols-2 gap-4 relative">
-          {/* Первая большая машина */}
+          {/* Первая машина */}
           <div 
             className="cursor-zoom-in group overflow-hidden rounded-[2.5rem] shadow-xl border-4 border-white aspect-[3/4]"
             onClick={() => {
               const transferImages = ["/images/transfer/car1.jpeg", "/images/transfer/car2.jpeg", "/images/transfer/car5.jpeg"];
-              setActiveAlbum({ gallery: transferImages, names: { [lang]: t.transName } });
+              setActiveAlbum({ 
+                gallery: transferImages, 
+                names: { [lang]: t.transName || 'Fleet' },
+                desc: { [lang]: "" } // ЗАГЛУШКА: предотвращает ошибку Runtime
+              });
               setActiveImgIndex(0);
               setIsLightboxOpen(true);
             }}
@@ -567,7 +569,11 @@ export default function Home() {
               className="cursor-zoom-in group overflow-hidden rounded-[2.5rem] shadow-xl border-4 border-white aspect-square"
               onClick={() => {
                 const transferImages = ["/images/transfer/car1.jpeg", "/images/transfer/car2.jpeg", "/images/transfer/car5.jpeg"];
-                setActiveAlbum({ gallery: transferImages, names: { [lang]: t.transName } });
+                setActiveAlbum({ 
+                  gallery: transferImages, 
+                  names: { [lang]: t.transName || 'Fleet' },
+                  desc: { [lang]: "" } // ЗАГЛУШКА
+                });
                 setActiveImgIndex(1);
                 setIsLightboxOpen(true);
               }}
@@ -584,7 +590,11 @@ export default function Home() {
               className="cursor-zoom-in group overflow-hidden rounded-[2.5rem] shadow-xl border-4 border-white aspect-square"
               onClick={() => {
                 const transferImages = ["/images/transfer/car1.jpeg", "/images/transfer/car2.jpeg", "/images/transfer/car5.jpeg"];
-                setActiveAlbum({ gallery: transferImages, names: { [lang]: t.transName } });
+                setActiveAlbum({ 
+                  gallery: transferImages, 
+                  names: { [lang]: t.transName || 'Fleet' },
+                  desc: { [lang]: "" } // ЗАГЛУШКА
+                });
                 setActiveImgIndex(2);
                 setIsLightboxOpen(true);
               }}
