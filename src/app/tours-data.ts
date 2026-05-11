@@ -332,7 +332,7 @@ Cină și Spectacol Oriental: Savurați o cină BBQ cu muzică orientală și da
   },
   {
     id: 3,
-    image: "https://media.istockphoto.com/id/175526084/photo/entrance-of-luxor-temple-egypt.jpg?s=2048x2048&w=is&k=20&c=b2UTpXEiPQras1FjAaGNPlYCZAdJVsXu3F-7sE_GsJU=",
+    image: "https://media.istockphoto.com/id/1355995823/photo/luxor-temple-famous-landmark-of-egypt-first-pylon-view.jpg?s=612x612&w=0&k=20&c=pD6Zthl0Qibex5g4-uFgHHoqDQWy3vduDj-sI3Amtss=",
     price: 97,
     names: { ru: "Луксор", en: "Luxor", de: "Luxor", pl: "Luksor", fr: "Louxor", ro: "Luxor" },
     desc: {
@@ -356,7 +356,7 @@ Cină și Spectacol Oriental: Savurați o cină BBQ cu muzică orientală și da
   },
   {
     id: 4,
-    image: "https://media.istockphoto.com/id/1360323358/photo/scuba-divers-couple-near-beautiful-coral-reef-surrounded-with-shoal-of-coral-fish-and-three.jpg?s=2048x2048&w=is&k=20&c=VqzcWcAPNbzeEUMBLehWqe1OEUqSqODdq8FkdY8ne2E=",
+    image: "https://media.istockphoto.com/id/2210168738/photo/man-scuba-diver-checking-beautiful-colorful-healthy-coral-reef-with-diversity-of-hard-corals.jpg?s=612x612&w=0&k=20&c=j0L6r2zoHXlm3KEs4PJiebUSyQVpTZPlyxO9Ftd6LzM=",
     price: 55,
     names: { 
       ru: "Дайвинг", 
@@ -425,7 +425,7 @@ Sub îndrumarea instructorilor certificați, veți descoperi lumea subacvatică 
 
  {
     id: 5,
-    image: "https://media.istockphoto.com/id/1303043820/photo/mother-and-calf-dolphin-swimming-by.jpg?s=2048x2048&w=is&k=20&c=ROwzQl41EC0WuC93Fu2Ur2aWl5J9o1qcOeJKf1lqQ-c=",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2j8ntw9b99FtMMrHvyMRsY0ZIIzxXtYZ7Sg&s",
     price: 35,
     names: { 
       ru: "Дом Дельфинов", 
