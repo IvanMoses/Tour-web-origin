@@ -666,13 +666,28 @@ export default function Home() {
 </section>
 
 
-      {/* FOOTER */}
-      <footer id="contact" className="py-24 bg-slate-950 text-white flex flex-col items-center">
-          <div className="flex items-center gap-3 mb-8 opacity-80 group cursor-pointer">
-            <img src="logo.svg" alt="Logo" className="h-12 w-auto transition-transform group-hover:scale-110" />
-            <span className="font-black uppercase italic tracking-tighter text-2xl -ml-2 block text-center">Ahvan Tour</span>
-          </div>
-          <a href={`tel:${CONTACTS.phone}`} className="text-2xl font-bold mb-12 tracking-widest hover:text-orange-500 transition-colors">{CONTACTS.phone}</a>
+        {/* FOOTER */}
+<footer id="contact" className="py-24 bg-slate-950 text-white flex flex-col items-center">
+    {/* Контейнер для лого и текста */}
+    <div className="relative flex items-center justify-center mb-8 w-full max-w-[300px]">
+      {/* Логотип теперь позиционируется абсолютно слева, чтобы не смещать центр текста */}
+      <img 
+        src="logo.svg" 
+        alt="Logo" 
+        className="h-10 w-auto opacity-80 absolute left-0 md:left-4" 
+      />
+      
+      {/* Текст теперь будет четко по центру контейнера (и экрана) */}
+      <span className="font-black uppercase italic tracking-tighter text-2xl text-white">
+        Ahvan Tour
+      </span>
+    </div>
+
+    <a href={`tel:${CONTACTS.phone}`} className="text-2xl font-bold mb-12 tracking-widest hover:text-orange-500 transition-colors">
+      {CONTACTS.phone}
+    </a>
+    
+    {/* Остальной код без изменений... */}
           <div className="grid grid-cols-3 md:grid-cols-5 gap-8 mb-16 opacity-80">
             <a href={CONTACTS.instagram} target="_blank" className="flex flex-col items-center gap-2 group"><Instagram size={24} className="group-hover:text-orange-500 transition-colors" /><span className="text-[9px] uppercase font-bold tracking-widest opacity-50">Instagram</span></a>
             <a href={`https://wa.me/${CONTACTS.whatsapp.replace(/\+/g, '')}`} target="_blank" className="flex flex-col items-center gap-2 group"><div className="font-black text-xl group-hover:text-orange-500 transition-colors">WA</div><span className="text-[9px] uppercase font-bold tracking-widest opacity-50">WhatsApp</span></a>
