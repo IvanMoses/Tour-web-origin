@@ -618,7 +618,7 @@ export default function Home() {
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
       <div className="relative flex justify-center items-center">
         {/* Удалена тень shadow-2xl, так как она рисует темный квадрат вокруг прозрачного блока */}
-        <div className="relative z-10 w-full aspect-square max-w-[500px] bg-transparent rounded-[3.5rem] flex items-center justify-center pt-12 pb-6 overflow-hidden group">
+        <div className="relative z-10 w-full aspect-square max-w-[500px] bg-transparent rounded-[3.5rem] flex items-center justify-center pt-6 pb-12 overflow-hidden group">
           <img 
             src="logo.svg" 
             className="w-full h-auto transition-transform duration-700 group-hover:scale-105" 
