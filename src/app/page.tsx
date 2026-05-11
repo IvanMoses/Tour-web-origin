@@ -668,24 +668,34 @@ export default function Home() {
 
         {/* FOOTER */}
 <footer id="contact" className="py-24 bg-slate-950 text-white flex flex-col items-center">
-    {/* Контейнер для лого и текста */}
-    <div className="relative flex items-center justify-center mb-8 w-full max-w-[300px]">
-      {/* Логотип теперь позиционируется абсолютно слева, чтобы не смещать центр текста */}
+    {/* Контейнер для лого и названия */}
+    <div className="relative flex items-center justify-center mb-8 w-full max-w-[400px]">
+      
+      {/* Логотип */}
       <img 
         src="logo.svg" 
         alt="Logo" 
-        className="h-10 w-auto opacity-80 absolute left-0 md:left-4" 
+        className="h-10 w-auto opacity-80 absolute left-4 md:left-10 hidden sm:block" 
       />
       
-      {/* Текст теперь будет четко по центру контейнера (и экрана) */}
-      <span className="font-black uppercase italic tracking-tighter text-2xl text-white">
+      {/* Название-якорь с эффектом при наведении */}
+      <a 
+        href="#home" 
+        className="font-black uppercase italic tracking-tighter text-2xl transition-colors duration-300 hover:text-orange-600"
+      >
         Ahvan Tour
-      </span>
+      </a>
     </div>
 
-    <a href={`tel:${CONTACTS.phone}`} className="text-2xl font-bold mb-12 tracking-widest hover:text-orange-500 transition-colors">
+    {/* Номер телефона */}
+    <a 
+      href={`tel:${CONTACTS.phone}`} 
+      className="text-2xl font-bold mb-12 tracking-widest hover:text-orange-500 transition-colors"
+    >
       {CONTACTS.phone}
     </a>
+
+    {/* Остальной код футера остается без изменений... */}
     
     {/* Остальной код без изменений... */}
           <div className="grid grid-cols-3 md:grid-cols-5 gap-8 mb-16 opacity-80">
